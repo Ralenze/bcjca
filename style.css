@@ -61,7 +61,7 @@ nav img{
 }
 .text-box p{
     margin: 10px 0 40px;
-    font-size: 14px;
+    font-size: 25px;
     color: #fff;
 }
 nav .fa {display: none;}
@@ -71,15 +71,111 @@ nav .fa {display: none;}
     color: #fff;
     border: 1px solid #fff;
     padding: 12px 34px;
-    font-size: 13px;
+    font-size: 26px;
     background: transparent;
     position: relative;
     cursor: pointer;
     transition: 0.2s;
 }
+.text-panels h1 {
+text-align: center;
+color: white;
+
+
+}
+.headline > h1  {
+    font-size: 50px;
+    }
+    
+
+.text-panels{
+    background: rgb(29, 31, 33);
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(0deg, rgb(29,31,33),rgb(0,0,0));
+
+
+}
+.cardholder {
+    height: 90vh;
+    width: 100%;
+}
+.cardlinker{
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+    background: rgba(64,222,231,0.915);
+    z-index: 1;
+;
+}
+
 .hero-btn:hover{
     background-color: rgba(0, 255, 255, 0.4);
 border: 1px solid rgba(0, 255, 255, 0.4);
+}
+
+
+
+.headline{
+padding: 10vh;
+
+}
+
+.cardholder .card .image {
+height: 300px;
+width: 300px;
+border-radius: 50%;
+background: #7d2ae8;
+align-items: center;
+}
+.cardholder .card .image img{
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid #fff;
+
+}
+.grouper-content{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+.card {
+    padding: 5vh;
+    overflow-x: visible;
+   
+}
+.cardcaption{
+    width: 306px;
+    left: 3px;
+    height: 20%;
+    position: relative;
+    bottom: 90px;
+    backdrop-filter: grayscale(80%);
+    justify-content: center;
+}
+.cardcaption a {
+    border: none;
+    text-align: center;
+    width: 238px;
+    position: relative;
+    font-size: 25px;
+    display: block;
+}
+.footer-hori-bar{
+    width: 100%;
+    height: 10vh;
+    backdrop-filter: contrast(0%);
+    
+}
+.footer-hori-bar > p {
+    color: rgb(101, 34, 49);
+    margin-left: 10vh;
+    position: relative;
+    top: 4vh;
 }
 @media(max-width: 700px){
     .text-box h1{
@@ -93,7 +189,7 @@ border: 1px solid rgba(0, 255, 255, 0.4);
     }
     .nav-links {
         position: absolute;
-        background: #364475;
+        backdrop-filter: contrast(55%);        
         height: 100vh;
         width: 200px;
         top: 0;
@@ -112,5 +208,21 @@ border: 1px solid rgba(0, 255, 255, 0.4);
     .nav-links ul{
         padding: 30px;
 
+    }
+    .headline h1 {
+        font-size: 30px;
+    }
+    .grouper-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-panels{
+        background: rgb(29, 31, 33);
+        height: 100em;
+        background: linear-gradient(0deg, rgb(29,31,33),rgb(0,0,0));
+    
+    
     }
 }
