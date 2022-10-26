@@ -4,6 +4,7 @@ function showBtn(){
    let menu = document.getElementById('menu');
    console.log(menu);
    menu.style.display = "block";
+   menubutton.style.display = "none";
 }
 
 function hideBtn(){
@@ -12,4 +13,23 @@ function hideBtn(){
    let menu = document.getElementById('menu');
    console.log(menu);
    menu.style.display = "none";
+   let x =  document.getElementById('menubtn');
+   x.style.display = "block";
+
+
+}
+function openExternalLink(a){
+    console.log("made it here");
+    switch(a){
+        case 1:
+
+            window.open('https://github.com/Ralenze/bcjca', "_blank");
+            break;
+        case 2:
+            window.open('https://www.instagram.com/bcjrchess', "_blank");
+            break;
+    
+            
+    }
+
 }
