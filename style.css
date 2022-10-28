@@ -1,81 +1,82 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Bebas Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue', sans-serif;
 }
 .header {
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("images/chessplaceholder.png");
-    background-position: center;
-    background-size: cover;
-    position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("images/chessplaceholder.png");
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }   
 nav{
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
 }
 nav img{
-    width: 150px;
+  width: 150px;
 }
 .nav-links{
-    flex: 1;
-    text-align: right;
+  flex: 1;
+  text-align: right;
 }
 .nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
 }
 .nav-links ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
 }
 .nav-links ul li::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #f44336;
-    display: block;
-    margin: auto;
-    transition: 0.2s;
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.2s;
 }
 .nav-links ul li:hover::after{
-    width: 100%;
+  width: 100%;
 }
 .text-box{
-    width: 90%;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
 }
 .text-box h1{
-    font-size: 62px;
+  font-size: 62px;
 }
 .text-box p{
-    margin: 10px 0 40px;
-    font-size: 25px;
-    color: #fff;
+  margin: 10px 0 40px;
+  font-size: 25px;
+  color: #fff;
 }
 nav .fa {display: none;}
 .hero-btn{
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 12px 34px;
-    font-size: 26px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-    transition: 0.2s;
+  display: inline-block;
+  text-decoration: none;
+  text-shadow: 2px 2px 10px #020613;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 26px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s;
 }
 .text-panels h1 {
 text-align: center;
@@ -83,39 +84,44 @@ color: white;
 
 
 }
-.headline > h1  {
-    font-size: 50px;
-    }
-    
-
+.headline > h1 {
+font-size: 50px;
+}
 .text-panels{
-    height: 90vh;
-    width: 100%;
-    background: linear-gradient(0deg, rgb(29, 31, 33), rgb(0, 0, 0))
+  height: 90vh;
+  width: 100%;
+  background: linear-gradient(0deg, rgb(29,31,33),rgb(0,0,0));
+
 
 }
+
+body {
+background: linear-gradient(0deg, rgb(29,31,33),rgb(0,0,0));
+}
+
 .cardholder {
-    height: 90vh;
-    width: 100%;
+  height: 90vh;
+  width: 100%;
+/*     background: linear-gradient(0deg, rgb(29,31,33),rgb(0,0,0)); */
 }
 .cardlinker{
-    width: 100%;
-    height: 100%;
-    border-radius: 15%;
-    background: rgba(64,222,231,0.915);
-    z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 15%;
+  background: rgba(64,222,231,0.915);
+  z-index: 1;
 ;
 }
 
 .hero-btn:hover{
-    background-color: rgba(0, 255, 255, 0.4);
+  background-color: rgba(0, 255, 255, 0.4);
 border: 1px solid rgba(0, 255, 255, 0.4);
 }
 
 
 
 .headline{
-padding: 10vh;
+padding: 30px;
 
 }
 
@@ -127,127 +133,147 @@ background: #7d2ae8;
 align-items: center;
 }
 .cardholder .card .image img{
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 
-    object-fit: cover;
-    border-radius: 10%;
-    border: 3px solid #fff;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 3px solid #fff;
 
 }
+
 .grouper-content{
-    display: flex;
-    flex-direction: row;
-
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+
 .card {
-    padding: 5vh;
-    overflow-x: visible;
-   
+  padding: 30px;
+  transition: 250ms all ease-in-out;
+}
+.card:hover {
+transform: scale(1.05);
+box-shadow: 0px 2px 40px #101213;
 }
 .cardcaption{
-    width: 200px;
-    left: 3px;
-    height: 20%;
-    position: relative;
-    bottom: 90px;
-    backdrop-filter: grayscale(80%);
-    justify-content: center;
+  width: 200px;
+  left: 3px;
+  height: 20%;
+  position: relative;
+  bottom: 90px;
+  backdrop-filter: grayscale(80%);
+  justify-content: center;
 }
 .cardcaption a {
-    border: none;
-    text-align: center;
-    width: 230px;
-    position: relative;
-    font-size: 25px;
-    display: block;
+  border: none;
+  text-align: center;
+  width: 238px;
+  position: relative;
+  font-size: 25px;
+  display: block;
 }
 .footer-hori-bar{
-    width: 100%;
-    height: 10vh;
-    background-color: rgb(60,60,69);
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(60,60,69);
 
-    
+  
 }
 .footer-hori-bar > p {
-    color: rgb(144, 144, 144);
-    margin-left: 10vh;
-    position: relative;
-    bottom: 6vh;
+  color: rgb(144, 144, 144);
+  margin-left: 10vh;
+  position: relative;
+  bottom: 6vh;
 }
 .footer-ext-link{
-    width: 50%;
-    position: relative;
-    left: 50%;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  width: 50%;
+  position: relative;
+  left: 50%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-    height: 10vh;
+  height: 10vh;
 }
 .footer-ext-link  * {
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 40px;
-    
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 40px;
+  z-index: 100000;
+  
 }
 .footer-ext-link * :hover {
-   font-size:45px;
+ font-size:45px;
 }
-.footer-ext-link :nth-child(1){
-    border-left: 3px solid rgb(0, 0, 0);
-    border-radius: 3%;
+.footer-ext-link #Github {
+  border-left: 3px solid rgb(0, 0, 0);
+  border-radius: 3%;
 
 }
-@media(max-width: 700px){
-    .text-box h1{
-        font-size: 20px;
-    }
-    .text-box p{
-        font-size: 10px;
-    }
-    .nav-links ul li {
-        display: block;
-    }
-    .nav-links {
-        position: absolute;
-        backdrop-filter: contrast(55%);        
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: 0px;
-        display: none;
-        text-align: left;
-        z-index: 2;
-    }
-    nav .fa{
-        display: block;
-        color: white;
-        margin: 15px;
-        font-size:20px;
-        cursor: pointer;
-    }
-    .nav-links ul{
-        padding: 30px;
+@media(max-width: 800px){
+  .text-box h1{
+      font-size: 20px;
+  }
+  .text-box p{
+      font-size: 10px;
+  }
+  .nav-links ul li {
+      display: block;
+  }
+  .nav-links {
+      position: absolute;
+      backdrop-filter: contrast(55%);        
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: 0px;
+      display: none;
+      text-align: left;
+      z-index: 2;
+  }
+  nav .fa{
+      display: block;
+      color: white;
+      margin: 15px;
+      font-size:20px;
+      cursor: pointer;
+  }
+  .nav-links ul{
+      padding: 30px;
 
-    }
-    .headline h1 {
-        font-size: 30px;
-    }
-    .grouper-content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .text-panels{
-        background: rgb(29, 31, 33);
-        height: 100em;
-        background: linear-gradient(0deg, rgb(29,31,33),rgb(0,0,0));
-    
-    
-    }
+  }
+  .headline h1 {
+      font-size: 30px;
+  }
+  .grouper-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .text-panels{
+      background: rgb(29, 31, 33);
+      height: 90em;
+      background: linear-gradient(0deg, rgb(29,31,33),rgb(0,0,0));
+      
+  
+  }
+  .footer-hori-bar{
+      position: relative;
+      top: 49em;
+  
+  }
+  .footer-ext-link div {
+      position: relative;
+      width: 25%;
+
+  }
+  #Github {
+      position: relative;
+
+      border-left: 2px solid ;
+  }
 }
