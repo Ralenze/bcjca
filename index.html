@@ -1,51 +1,189 @@
 <!DOCTYPE html>
-<html>
-  <link rel = "stylesheet" href = "style.css">
-  <script src="https://kit.fontawesome.com/23c443f0b3.js" crossorigin="anonymous"></script>
-  <!-- font awesome. use for ig icons and stuff ig?-->
-  <body>
-  <!-- naming convention not great.... switch stuff for me- thanks :D -->
-  <div id = "titleArea">
-    <!-- so... potentially laoding everything at once and just changing opacity
-       to get new one instead of unloading and reloading an image maybe faster...? 
-       also, i was having issues doing background-image manipulation-
+<html><head>
 
-       reason have off thing is that i need images to not start in existence or they'll be in front... 
-    -->
-    <img class = "bgImg  active " src ="images/titleImg0.jpg" >
-    <img class = "bgImg  off"    src ="images/titleImg1.jpg" >
-    <img class = "bgImg  off"    src ="images/titleImg2.png" > <!--note this is a png... when get new image make sure change-->
-    <img class = "bgImg  off"    src ="images/titleImg3.jpg" >
+    <meta name="viewport" content=""width=device-width, intial-scale="1.0">
+    <title> BCJCR </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calendar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+    <body onload="startTime()">
+        <section class="header">
+            <nav>
+                <a href="index.html"> <img src="images/bcjcalogo.png">
+                </a>
+                <div class="nav-links" id="menu">
+                    <i class="fa fa-times" id="hidebtn" onclick="hideBtn()" aria-hidden="true"></i>
 
-    <h1 id = "title"> BlackPink is in your area</h1>
+                    <ul>
+                        <li> <a href=""> HOME </a></li>
+                        <li> <a href=""> ABOUT </a></li>
+                        <li> <a href=""> EVENTS </a></li>
+                        <li> <a href=""> JOIN US! </a></li>
 
-    <!-- also i dunno where put navbar thing... and how want style it...-->
+                    </ul>
+                </div>
+                <i id="menubtn" class="fa fa-bars" onclick="showBtn()" aria-hidden="true"></i>
+            </nav>
+            <div class="text-box">
+                <h1>BC's Greatest High School Chess Organization</h1>
+                <p> The British Columbia Junior Chess Association is a wonderful
+                    way to participate in tournaments across BC! 
+                </p>
+                <a href="" class="hero-btn"> Sign up for BCJCA membership here! </a>
+            </div>
+        </section>
+        <section class="calsection">
+            <div class="calcontainer">
+                <div class="calcard">
+                  <div class="front">
+                    <div class="contentfront">
+                      <div class="month">
+                        <table>
+                          <tr class="orangeTr">
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>T</th>
+                            <th>F</th>
+                            <th>S</th>
+                            <th>S</th>
+                          </tr>
+                          <tr class="whiteTr">
+                            <th></th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                          </tr>
+                          <tr class="whiteTr">
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                            <th>11</th>
+                            <th>12</th>
+                            <th>13</th>
+                          </tr>
+                          <tr class="whiteTr">
+                            <th>14</th>
+                            <th>15</th>
+                            <th>16</th>
+                            <th>17</th>
+                            <th>18</th>
+                            <th>19</th>
+                            <th>20</th>
+                          </tr>
+                          <tr class="whiteTr">
+                            <th>21</th>
+                            <th>22</th>
+                            <th>23</th>
+                            <th>24</th>
+                            <th>25</th>
+                            <th>26</th>
+                            <th>27</th>
+                          </tr>
+                          <tr class="whiteTr">
+                            <th>28</th>
+                            <th>29</th>
+                            <th>30</th>
+                            <th>31</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="date">
+                        <div class="datecont">
+                          <div id="date"></div>
+                          <div id="day"></div>
+                          <div id="month"></div>
+                          <i class="fa fa-pencil edit" aria-hidden="true"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="contentback">
+                      <div class="backcontainer">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section class="cardholder">
+        <div class="text-panels">
+            <div class="headline">
+            <h1> Being part of BCJCA allows you to... </h1> </div>
+            <div class="card-grouper">
+                <div class="grouper-content">
+                <div class="card">
+                    <div class ="content">
+                        <div class="image">
 
-    <div id = "navBarDiv">
-      <ul id = "navBar">
-        <li> <img height = 30px src = "images/logo.png"/> </li>
-        <li> <a> About       </a> </li>
-        <li> <a> Why Join    </a> </li> <!-- mmm about and why join might be redundant. also do we have any stats that good...-->
-        <li> <a> Scheduling  </a> </li>
-        <li> <a> FAQ         </a> </li>
-        <li> <a> The Team    </a> </li>
+                        <img src="images/smileguy.png">
+                        <div class="cardcaption">
+                            <a href="" class="hero-btn"> Meet Like-Minded People </a>
+                        </div>
+                    </div>
+                    
+                    </div> 
+                </div>               
+                <div class="card">
+                    
+                    <div class ="content">
+                        <div class="image">
 
-        <li> <a> <i class="fa-brands fa-instagram fa-2x"></i> </a> </li>
-        <li> <a> <i class="fa-brands fa-github    fa-2x"></i> </a> </li>
-        <li> <a> <i class="fa-brands fa-discord   fa-2x"></i> </a> </li>
+                            <img src="images/chessimage.png">
+                            <div class="cardcaption">
+                                <a href="" class="hero-btn"> Participate in Tournaments</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    
+                    <div class ="content">
+                        <div class="image">
 
-        <!--i wanted to move logos to right side, but dunno how to- :D -->
-      </ul>
-    </div>
+                            <img src="images/brainpower.jpeg">
+                            <div class="cardcaption">
+                                <a href="" class="hero-btn"> Practice and Learn Chess </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
 
-  </div>  <!-- end of title area div-->
+                
+        </div>
+    </section>
+    <section id="footer">
+        <div class="footer-hori-bar">
+            
 
-  <div id = aboutDiv>>
+            <div class="footer-ext-link">
+            <i style="font-size:40px"  class="fa">&#xf09b;</i>
+            <i style="font-size:40px" class="fa">&#xf16d;</i>
+            <i style="font-size:40px" class="fa">&#xf09a;</i>
+            <i class="fa fa-discord" aria-hidden="true"></i>
 
-  </div>>
+            </div>
+
+            <p> Copyright © 2022 </p>
 
 
-<script src="index.js"></script>
-</body>
+        </div>
+
+    </section>
+        <script src="index.js"></script>
+    </body>
 </html>
-
