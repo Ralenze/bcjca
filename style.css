@@ -11,6 +11,9 @@
     background-size: cover;
     position: relative;
 }   
+.selectednavlink {
+    border-bottom: 2px solid #ff3336;
+}
 nav{
     display: flex;
     padding: 2% 6%;
@@ -178,13 +181,14 @@ align-items: center;
 .footer-hori-bar > p {
     color: rgb(144, 144, 144);
     margin-left: 10vh;
+    font-size: 24px;
     position: relative;
     bottom: 6vh;
 }
 .footer-ext-link{
-    width: 50%;
+    width: 40%;
     position: relative;
-    left: 50%;
+    left: 60%;
     justify-content: center;
     display: flex;
     flex-direction: row;
@@ -209,30 +213,11 @@ align-items: center;
 
 }
 
-.clubtitle {
-position: relative;
-left: 30%;
-color: white;
-font-size: 55px;
-z-index: 2;
-}
-
-.aboutslider {
-    position: relative;
-    opacity: 0;
-    left: -100px;
-    color:rgba(0, 255, 255, 0.4);
-    -webkit-animation-name: slidingin;
-    -webkit-animation-duration: 8s;
-    animation-name: slidingin;
-    animation-duration: 8s;
-    z-index: 1;
-}
 
 
-.hide {
-    display: none;
-}
+
+
+
 
 
 
@@ -248,7 +233,12 @@ z-index: 2;
 }
 
 
+.coloritnice{
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(80, 230, 228)), to(rgb(39, 62, 125)));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 
+    }
 
 
 
@@ -315,11 +305,12 @@ z-index: 2;
     .footer-ext-link div {
         position: relative;
         width: 25%;
+        left: 20%;
 
     }
-    #Github {
+    #mail {
         position: relative;
 
-        border-left: 2px solid ;
+        border-left: 2px solid black ;
     }
 }
