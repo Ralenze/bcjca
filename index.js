@@ -84,9 +84,6 @@ await getPromiseFromEvent(slider[moduloselector], "webkitAnimationEnd");
  the orange bar underneath about... TODO that.
  */
  if (x.includes("about")){
-    let a = document.getElementById('navholder');
-    let o = a.firstChild;
-     o = o.nextSibling;
-     o.style.background = "#f44336";
+   
      slidetextabout();
 }
