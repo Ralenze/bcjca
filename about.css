@@ -6,6 +6,7 @@ width: 100%;
 .clubtitle {
     position: relative;
     left: 35%;
+    width: 50%;
     color: white;
     font-size: 55px;
     z-index: 2;
