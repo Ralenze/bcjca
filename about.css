@@ -1,0 +1,61 @@
+.nav-links ul:nth-child(2)::after {
+width: 100%;
+
+}
+
+.clubtitle {
+    position: relative;
+    left: 35%;
+    color: white;
+    font-size: 55px;
+    z-index: 2;
+    }
+    
+.aboutslider {
+        position: relative;
+        opacity: 0;
+        left: -100px;
+        color:rgba(0, 255, 255, 0.4);
+        -webkit-animation-name: slidingin;
+        -webkit-animation-duration: 8s;
+        animation-name: slidingin;
+        animation-duration: 8s;
+        z-index: 1;
+    }
+    
+    
+.hide {
+        display: none;
+    }
+
+.clubtitleseparator {
+    height: 8px;
+position: relative;
+    width: 70%;
+    left: 15%;
+    background-color: rgba(0, 255, 255, 0.2);
+    border-radius: 10%;
+
+
+}
+
+.header p {
+    padding: 24px;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 35px;
+    text-indent: 4%;
+    color:rgb(110, 81, 116)
+}
+@keyframes slidingin{
+        15% {opacity: 0}
+        30% { opacity: 1;
+                left: 0px;}
+        70% {opacity: 1;
+        left: 0px;}
+        85% {opacity: 0}
+        100% { opacity: 0;
+            left: -100px;}
+}
+    
+    
