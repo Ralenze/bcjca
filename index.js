@@ -83,7 +83,7 @@ await getPromiseFromEvent(slider[moduloselector], "webkitAnimationEnd");
  Basically, if we are in the about page we want some words to go in and out and we want to have 
  the orange bar underneath about... TODO that.
  */
- if (x.includes("about")){
+if (x.includes("about")){
    
      slidetextabout();
 }

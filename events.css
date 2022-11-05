@@ -1,185 +1,205 @@
-body{
-    margin:0;
-    background-color:#010712;
-    background-image:url(https://static.pexels.com/photos/1526/dark-blur-blurred-gradient.jpg);
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    height:100vh;
-  }
-  .container{
-    width:400px;
-    height:200px;
-    position:relative;
-    perspective: 1000;
-    -webkit-perspective: 1000;
-    left:calc(50% - 200px);
-    top:calc(50vh - 100px);
-  }
-  .card{
-    width:100%;
-    height:100%;
-    position:absolute;
-    transform-style:preserve-3d;
-    -webkit-transform-style:preserve-3d;
-    transition:transform 1s ease;
-    cursor:pointer;
-  }
-  .back, .front{
-    border-radius:6px;
-    position:absolute;
-    width:100%;
-    height:100%;
-    transform-style:preserve-3d;
-    -webkit-transform-style:preserve-3d;
-    
-    backface-visibility:hidden;
-    -webkit-backface-visibility:hidden;
-  }
-  .contentfront{
-    width:100%;
-    height:100%;
-    float:left;
-    transform:translatez(60px);
-    -webkit-transform:translatez(60px);
-    
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    
-    transform-style:preserve-3d;
-    -webkit-transform-style:preserve-3d;
-    
-  }
-  .contentback{
-    width:100%;
-    height:100%;
-    float:left;
-    transform:translatez(60px);
-    -webkit-transform:translatez(60px);
-    
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    
-    transform-style:preserve-3d;
-    -webkit-transform-style:preserve-3d;
-    
-  }
-  .back{
-    transform:rotateY(180deg);
-    background-color:#232227;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  .front{
-    text-transform:uppercase;
-    background-color:#232227;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  .date{
-    height:100%;
-    width:130px;
-    float:left;
-    background-color:#E76642;
-    border-radius:0 6px 6px 0;
-    text-align:right;
-    padding:10px 30px;
-    box-sizing:border-box;
-    transform-style:preserve-3d;
-    -webkit-transform-style:preserve-3d;
-  }
-  .datecont{
-    height:100%;
-    transform:translatez(60px) scale(.9);
-    -webkit-transform:translatez(60px) scale(.9);
-  }
-  #date{
-    font-size:50px;
-    color:#ECECE7;
-    font-family: 'Montserrat', sans-serif;
-    font-weight:500;
-    float:right;
-  }
-  #day{
-    float:right;
-    font-size:14px;
-    color:#232227;
-    font-family: 'Montserrat', sans-serif;
-    font-weight:400;
-  }
-  #month{
-    float:right;
-    font-size:10px;
-    color:#232227;
-    font-family: 'Montserrat', sans-serif;
-    font-weight:200;
-  }
-  .date i{
-    color:#ECECE7;
-    position:absolute;
-    bottom:10px;
-    right:0;
-  }
-  .date i:hover{
-    color:#232227;
-    transition:.3s ease;
-  }
-  .month{
-    height:100%;
-    width:270px;
-    float:left;
-    padding:20px 30px;
-    box-sizing:border-box;
-  }
-  .month table{
-    width:100%;
-  }
-  .orangeTr{
-    color:#E76642;
-    font-family: 'Montserrat', sans-serif;
-  }
-  .whiteTr{
-    color:#ECECE7;
-    font-family: 'Montserrat', sans-serif;
-  }
-  .whiteTr:hover{
-    color:#D3D3D3;
-    transition:.3s ease;
-  }
-  .month{
-    height:50px;
-  }
-  .month p{
-    width:14%;
-    font-size:10px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight:400;
+.nav-links ul:nth-child(2)::after {
+  width: 100%;
+  
   }
   
-  .flipped{
-    transform:rotateY(-180deg);
-    /*height:400px;
-    width:200px;
-    left:calc(50% - 100px);
-    top:calc(50vh - 200px);*/
+  .clubtitle {
+      position: relative;
+      left: 35%;
+      width: 50%;
+      color: white;
+      font-size: 55px;
+      z-index: 2;
+      }
+      
+  .aboutslider {
+          position: relative;
+          opacity: 0;
+          left: -100px;
+          color:rgba(0, 255, 255, 0.4);
+          -webkit-animation-name: slidingin;
+          -webkit-animation-duration: 8s;
+          animation-name: slidingin;
+          animation-duration: 8s;
+          z-index: 1;
+      }
+      
+      
+  .hide {
+          display: none;
+      }
+  
+  .clubtitleseparator {
+      height: 8px;
+  position: relative;
+      width: 70%;
+      left: 15%;
+      background-color: rgba(0, 255, 255, 0.2);
+      border-radius: 10%;
+  
+  
   }
-  .backcontainer{
-    transform-style:preserve-3d;
-    width:calc(100% - 60px);
-    height:calc(100% - 40px);
-    float:left;
-    margin-left:30px;
-    margin-top:20px;
-    /*transform:translatez(60px) scale();*/
-    
-    background-color:#E76642;
-    border-radius:6px;
-    padding:10px 30px;
-    box-sizing:border-box;
-    transform-style:preserve-3d;
-    -webkit-transform-style:preserve-3d;
+  
+  .header p {
+      padding: 24px;
+      margin-left: 15%;
+      margin-right: 15%;
+      font-size: 35px;
+      text-indent: 4%;
+      color:rgb(110, 81, 116)
   }
+  @keyframes slidingin{
+          15% {opacity: 0}
+          30% { opacity: 1;
+                  left: 0px;}
+          70% {opacity: 1;
+          left: 0px;}
+          85% {opacity: 0}
+          100% { opacity: 0;
+              left: -100px;}
+  }
+      
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .timeline p{
+    color: white;
+  }
+
+  .timeline p:hover{
+    color: #f44336;
+  }
+  
+  .timeline h2{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration-line: underline;
+    text-decoration-color: #f44336;
+  }
+
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color:rgba(255, 255, 255, 0.15);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color:#f44336;
+    border: 4px solid #f44336;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid rgba(255, 255, 255, 0.25);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0.25);
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid rgba(255, 255, 255, 0.25);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgba(255, 255, 255, 0.25) transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: rgba(255, 255, 255, 0.25);
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Full-width containers */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+      left: 60px;
+      border: medium transparent black;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent black transparent transparent;
+    }
+  
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+      left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+  }
+      
