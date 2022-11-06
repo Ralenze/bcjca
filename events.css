@@ -10,7 +10,14 @@
       color: white;
       font-size: 55px;
       z-index: 2;
+     
       }
+.slider {
+  position: relative;
+  left: -10%;
+  opacity: 0;
+  transition: 0.65s;
+}
       
   .aboutslider {
           position: relative;
@@ -72,6 +79,7 @@
 
   .timeline p{
     color: white;
+    transition: 0.2s;
   }
 
   .timeline p:hover{
