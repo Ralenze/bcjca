@@ -14,7 +14,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/9f85037272.js" crossorigin="anonymous"></script>
     </head> 
-    <body>
+    <body onload="hide()">
         <section class="header" style="background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(63, 31, 76, 0.8))"> 
             <nav>
                 <a href="index.html"> <img src="images/bcjcalogo.png">
@@ -36,42 +36,46 @@
             <h1 class="clubtitle"> Upcoming</h1>
             <h1 class="clubtitle slider" style="color:rgba(0, 255, 255, 0.4)"> Events</h1>
             <div class="clubtitleseparator">
-
             </div>
             <br>
             <br>
             <div class="timeline">
-                <div class="container left">
+                <div class="container left" onclick="show()">
                     <div class="content">
                       <h2>Monday November 11, 2022</h2>
                       <p>BCJCA Blitz Open</p>
+                      <h6><i class="fa-solid fa-location-dot"></i> Online  
+                      <i class="fa-solid fa-clock"></i> 3 - 4 pm PST  
+                      <i class="fa-solid fa-stopwatch-20"></i> 3 | 5  
+                      </h6>
+                      <h6 class="details"></i></h6>
                     </div>
                   </div>
-                <div class="container right">
+                <div class="container right" onclick="show()">
                   <div class="content">
                     <h2>Saturday November 26, 2022</h2>
                     <p>BCJCA Quarterfinals</p>
                   </div>
                 </div>
-                <div class="container left">
+                <div class="container left" onclick="show()">
                   <div class="content">
                     <h2>Wednesday November 30, 2022</h2>
                     <p>BCJCA Semifinals</p>
                   </div>
                 </div>
-                <div class="container right">
+                <div class="container right" onclick="show()">
                   <div class="content">
                     <h2>Saturday November 26, 2022</h2>
                     <p>BCJCA Quarterfinals</p>
                   </div>
                 </div>
-                <div class="container left">
+                <div class="container left" onclick="show()">
                   <div class="content">
                     <h2>Wednesday November 30, 2022</h2>
                     <p>BCJCA Semifinals</p>
                   </div>
                 </div>
-                <div class="container right">
+                <div class="container right" onclick="show()">
                   <div class="content">
                     <h2>Saturday November 26, 2022</h2>
                     <p>BCJCA Quarterfinals</p>
@@ -81,14 +85,6 @@
               <br>
               <br>
             </section>
-            <main>
-                <div class="clubtitle">
-                   
-
-
-                </div>
-
-            </main>
             <footer id="footer">
                 <div class="footer-hori-bar">
                     <div class="footer-ext-link">

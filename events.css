@@ -88,9 +88,20 @@
   
   .timeline h2{
     color:white;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration-line: underline;
     text-decoration-color: #f44336;
+  }
+
+  .timeline h6{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .timeline i{
+    color: #f44336;
   }
 
   /* The actual timeline (the vertical ruler) */
@@ -112,7 +123,7 @@
     background-color: inherit;
     width: 50%;
   }
-  
+
   /* The circles on the timeline */
   .container::after {
     content: '';
