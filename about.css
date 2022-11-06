@@ -50,7 +50,7 @@
         color:rgb(61, 140, 141)
     }
     .clubcardtitle{
-        --heighttotal: 1200vh;
+        --heighttotal: 650vh;
         height: var(--heighttotal);
         width: 100%;
         background: linear-gradient(180deg, var(--autotest), rgb(55, 19, 103));
