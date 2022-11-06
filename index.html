@@ -1,107 +1,99 @@
 <!DOCTYPE html>
-<html><head>
+<html>
 
-    <meta name="viewport" content=""width=device-width, intial-scale="1.0">
-    <title> BCJCR </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head> 
-    <body>
-        <section class="header">
-            <nav>
-                <a href="index.html"> <img src="images/bcjcalogo.png">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> BCJCA </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9f85037272.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="/"><img src="images/bcjcalogo.png"></a>
+      <!-- text in logo not seen, need a border or something -->
+      <div class="nav-links" id="menu">
+        <i class="fa fa-times" id="hidebtn" onclick="hideBtn()" aria-hidden="true"></i>
+        <ul>
+          <li> <a href="index.html"> HOME </a></li>
+          <li> <a href="about.html"> ABOUT </a></li>
+          <li> <a href="events.html"> EVENTS </a></li>
+          <li> <a href="join.html"> JOIN US! </a></li>
+        </ul>
+      </div>
+      <i id="menubtn" class="fa fa-bars" onclick="showBtn()" aria-hidden="true"></i>
+    </nav>
+    <div class="text-box">
+      <h1>BC's Greatest High School Chess Organization</h1>
+      <p> The British Columbia Junior Chess Association is a wonderful
+        way to participate in tournaments across BC!
+      </p>
+      <a href="" class="hero-btn"> Sign up for BCJCA membership here! </a>
+    </div>
+  </section>
+
+  <section class="cardholder">
+    <div class="text-panels">
+      <div class="headline">
+        <h1> Being part of BCJCA allows you to... </h1>
+      </div>
+      <div class="card-grouper">
+        <div class="grouper-content">
+          <div class="card">
+            <div class="content">
+              <div class="image">
+                <a href="">
+                  <img src="images/smileguy.png">
                 </a>
-                <div class="nav-links" id="menu">
-                    <i class="fa fa-times" id="hidebtn" onclick="hideBtn()" aria-hidden="true"></i>
-
-                    <ul>
-                        <li> <a href=""> HOME </a></li>
-                        <li> <a href=""> ABOUT </a></li>
-                        <li> <a href=""> EVENTS </a></li>
-                        <li> <a href=""> JOIN US! </a></li>
-
-                    </ul>
+                <div class="cardcaption">
+                  <a href="" class="hero-btn"> Meet Like-Minded People </a>
                 </div>
-                <i id="menubtn" class="fa fa-bars" onclick="showBtn()" aria-hidden="true"></i>
-            </nav>
-            <div class="text-box">
-                <h1>BC's Greatest High School Chess Organization</h1>
-                <p> The British Columbia Junior Chess Association is a wonderful
-                    way to participate in tournaments across BC! 
-                </p>
-                <a href="" class="hero-btn"> Sign up for BCJCA membership here! </a>
+              </div>
             </div>
-            
-        </section>
-        <section class="cardholder">
-        <div class="text-panels">
-            <div class="headline">
-            <h1> Being part of BCJCA allows you to... </h1> </div>
-            <div class="card-grouper">
-                <div class="grouper-content">
-                <div class="card">
-                    <div class ="content">
-                        <div class="image">
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="image">
+                <a href="">
+                  <img src="images/chessimage.png">
+                </a>
+                <div class="cardcaption">
+                  <a href="" class="hero-btn"> Participate in Tournaments</a>
 
-                        <img src="images/smileguy.png">
-                        <div class="cardcaption">
-                            <a href="" class="hero-btn"> Meet Like-Minded People </a>
-                        </div>
-                    </div>
-                    
-                    </div> 
-                </div>               
-                <div class="card">
-                    
-                    <div class ="content">
-                        <div class="image">
-
-                            <img src="images/chessimage.png">
-                            <div class="cardcaption">
-                                <a href="" class="hero-btn"> Participate in Tournaments</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="card">
-                    
-                    <div class ="content">
-                        <div class="image">
-
-                            <img src="images/brainpower.jpeg">
-                            <div class="cardcaption">
-                                <a href="" class="hero-btn"> Practice and Learn Chess </a>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="image">
+                <a href="">
+                  <img src="images/brainpower.jpeg">
+                </a>
+                <div class="cardcaption">
+                  <a href="" class="hero-btn"> Practice and Learn Chess </a>
                 </div>
+              </div>
             </div>
-            </div>
-
-                
+          </div>
         </div>
-    </section>
-    <section id="footer">
-        <div class="footer-hori-bar">
-            
-
-            <div class="footer-ext-link">
-            <i style="font-size:40px"  class="fa">&#xf09b;</i>
-            <i style="font-size:40px" class="fa">&#xf16d;</i>
-            <i style="font-size:40px" class="fa">&#xf09a;</i>
-            <i class="fa fa-discord" aria-hidden="true"></i>
-
-            </div>
-
-            <p> Copyright © 2022 </p>
-
-
-        </div>
-
-    </section>
-        <script src="index.js"></script>
-    </body>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+  <div class="footer-hori-bar">
+      <div class="footer-ext-link">
+        <a href="mailto:bcjca@gmail.com"><i class="fa-regular fa-envelope coloritnice"> </i></a>
+        <a href="https://www.instagram.com/bcjrchess/" target="_blank"><i class="fa-brands fa-instagram coloritnice"></i></a>
+        <a href="https://github.com/Ralenze/bcjca" target="_blank"><i class="fa-brands fa-github coloritnice"></i></a>
+        <a href="https://discord.gg/QRjbTbdbJx" target="_blank"><i class="fa-brands fa-discord coloritnice"></i></a>
+      </div>
+      <p> Copyright © 2022 </p>
+    </div>
+</footer>
+  <script src="index.js"></script>
+  </body>
 </html>
