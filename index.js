@@ -1,3 +1,8 @@
+var script = document.createElement('script');
+script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
+document.getElementsByTagName('head')[0].appendChild(script);
+// ... give time for script to load, then type (or see below for non wait option)
+
 function showBtn(){
     console.log("made it here");
    let menubutton =  document.getElementById('menubtn');
@@ -83,7 +88,38 @@ await getPromiseFromEvent(slider[moduloselector], "webkitAnimationEnd");
  Basically, if we are in the about page we want some words to go in and out and we want to have 
  the orange bar underneath about... TODO that.
  */
-if (x.includes("about")){
+ if (x.includes("about")){
    
      slidetextabout();
+     
 }
+
+$(document).ready(function(){
+
+const calling = async() => {
+    console.log("Made it!");
+    console.log($(window).scrollTop());
+
+  setTimeout(1000, calling);
+  
+}
+
+
+let displayCardRows = [true, true, true, true, true, true, true];
+let incrementer = 0;
+let b = window.location.pathname;
+console.log(b);
+let x = b.toString();
+const loadCards = async() => {if(($(window).scrollTop() + $(window).height() >= (1050 + 700 * incrementer) && x.includes("about") &&  displayCardRows[incrementer] == true)) {
+
+  $('.clubcardrow')[incrementer].style.opacity = 1;
+  $('.clubcardrow')[incrementer].style.left = 0;
+  incrementer++;
+  loadCards();
+  console.log(incrementer);
+}}
+loadCards();
+$(window).scroll(loadCards); 
+} 
+);
+
