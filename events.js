@@ -7,9 +7,4 @@ $(document).ready(function(){
     let toSlide = $('.slider');
     toSlide[0].style.opacity = "1";
     toSlide[0].style.left = "35%";
-
-
-
-
-
 })
