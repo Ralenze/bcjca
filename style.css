@@ -23,6 +23,10 @@ nav{
 nav img{
     width: 150px;
 }
+nav #light{
+    font-size: 25px;
+    color: white;
+}
 .nav-links{
     flex: 1;
     text-align: right;
@@ -114,7 +118,6 @@ color: white;
     background-color: rgba(0, 255, 255, 0.4);
 border: 1px solid rgba(0, 255, 255, 0.4);
 }
-
 
 
 .headline{
@@ -213,13 +216,27 @@ align-items: center;
 
 }
 
-
-
-
-
-
-
-
+/* scrollbar width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* track */
+::-webkit-scrollbar-track {
+    background: rgb(0, 80, 80);
+    box-shadow: inset 0 0 5px rgba(0, 57, 57, 0.4);
+}
+  
+/* handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear,
+    left bottom,
+    left top,
+    color-stop(0.44, rgb(64,222,231)),
+    color-stop(0.72, rgb(43,193, 197)),
+    color-stop(0.86, rgb(21, 163, 171)));
+}
 
 @keyframes slidingin{
     15% {opacity: 0}

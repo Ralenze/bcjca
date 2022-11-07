@@ -123,3 +123,15 @@ $(window).scroll(loadCards);
 } 
 );
 
+function letThereBeLight(){
+  let icon = document.getElementById('light');
+  let logo = document.getElementById('logo');
+  if(icon.style.color === "white"){
+    icon.style.color = "rgba(0, 255, 255, 0.4)";
+    logo.src = "https://github.com/Ralenze/bcjca/blob/main/images/bcjcalight.png?raw=true"
+  }else{
+    icon.style.color = "white";
+    logo.src = "https://github.com/Ralenze/bcjca/blob/main/images/bcjcalogo.png?raw=true"
+  }
+}
+

@@ -104,6 +104,10 @@
     color: #f44336;
   }
 
+  .timeline .details{
+    display: block;
+  }
+
   /* The actual timeline (the vertical ruler) */
   .timeline::after {
     content: '';
