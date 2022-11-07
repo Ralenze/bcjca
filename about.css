@@ -1,201 +1,204 @@
-    :root {
-        --autotest: rgba(27, 16, 146, 0.8);
-    }
-    
-    .clubtitle {
-        position: relative;
-        width: 50%;
-        left: 35%;
-        color: white;
-        font-size: 55px;
-        z-index: 2;
-        }
-        
-    .aboutslider {
-            position: relative;
-            opacity: 0;
-            left: -100px;
-            color:rgba(0, 255, 255, 0.4);
-            -webkit-animation-name: slidingin;
-            -webkit-animation-duration: 8s;
-            animation-name: slidingin;
-            animation-duration: 6s;
-            z-index: 1;
-        }
-        
-        
-    .hide {
-            display: none;
-        }
-    
-    .clubtitleseparator {
-        height: 8px;
-    position: relative;
-        width: 70%;
-        left: 15%;
-        background-color: rgba(0, 255, 255, 0.2);
-        border-radius: 10%;
-   
-    }
-    .header {
+:root {
+    --autotest: rgba(27, 16, 146, 0.8);
+}
 
-        background-image: linear-gradient(rgb(0, 0, 0), var(--autotest));
+.clubtitle {
+    position: relative;
+    width: 50%;
+    left: 35%;
+    color: white;
+    font-size: 55px;
+    z-index: 2;
     }
-    .header p {
-        padding: 24px;
-        margin-left: 15%;
-        margin-right: 15%;
-        font-size: 35px;
-        text-indent: 4%;
-        color:rgb(61, 140, 141)
+    
+.aboutslider {
+        position: relative;
+        opacity: 0;
+        left: -100px;
+        color:rgb(255, 136, 0);
+        -webkit-animation-name: slidingin;
+        -webkit-animation-duration: 8s;
+        animation-name: slidingin;
+        animation-duration: 6s;
+        z-index: 1;
+    }
+    
+    
+.hide {
+        display: none;
+    }
+
+.clubtitleseparator {
+    height: 8px;
+position: relative;
+    width: 70%;
+    left: 15%;
+    background-color: rgba(0, 255, 255, 0.2);
+    border-radius: 10%;
+
+}
+.header {
+
+    background-image: linear-gradient(rgb(0, 0, 0), var(--autotest));
+}
+.header p {
+    padding: 24px;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 35px;
+    text-indent: 4%;
+    color:rgb(90, 237, 235)
+}
+.clubcardtitle{
+    --heighttotal: 650vh;
+    height: var(--heighttotal);
+    width: 100%;
+    background: linear-gradient(180deg, var(--autotest), rgb(55, 19, 103));
+}
+.clubcardtitle h1 {
+    text-align: center;
+    position: relative;
+    padding-top: 45px;
+    font-size: 120px;
+    color: rgb(57, 157, 203);
+}
+.clubcardholder {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+
+}
+.clubcardrow{
+    position: relative;
+    margin-top: 5%;
+    height: 75vh; /* we want height to equal to 90vh or whatever */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transition: 0.7s;
+    opacity: 0;
+    left: -20%;
+
+}
+
+
+.clubcard{
+    position: relative;
+
+    margin: 0% 5%;
+    width: 32%;
+    height: 100%;
+    top: 0;
+    border-radius: 18%;
+    border: 3px solid black;
+    overflow: hidden;
+    transition: 0.2s all ease-in-out;
+   
+}
+.clubcard:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 2px 40px #101213;
+}
+.clubcardtop{
+    height: 60vh;
+    background: linear-gradient(60deg, rgb(243, 148, 203), rgb(238, 13, 204));
+    justify-content: center;
+    overflow: hidden;
+    
+}
+.clubcardtop img{
+    background-position: center center;
+    height: 100%; width: 100%;
+
+}
+
+.clubleader{
+    position: relative;
+    height: 325px;
+    width: 325px;
+    left: calc(50% - 162.5px);
+    top: calc(50% - 162.5px);
+    border-radius: 100%;
+    background-color: rgb(84, 84, 236);
+    overflow: hidden;
+
+}
+.clubleader img{
+    background-position: center center;
+    height: 325px;
+    width: 325px;
+
+}
+.clubleader.override {
+    overflow: visible;
+
+
+}
+.clubleader.override img {
+    background-position: center center;
+    height: 500px;
+    width: 500px;
+}
+.clubcardbottom{
+    height: 20%;
+
+    background-color: rgba(147, 45, 103, 0.251);
+    justify-content: center;
+}
+.clubcardbottom h1 {
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+    bottom: 25%;
+    color: rgb(13, 196, 196)
+}
+@keyframes slidingin{
+        8% {opacity: 0}
+        16% { opacity: 1;
+                left: 0px;}
+        84% {opacity: 1;
+        left: 0px;}
+        92% {opacity: 0}
+        100% { opacity: 0;
+            left: -100px;}
+}
+    
+@media(max-width:700px) {
+
+    .nav-links{ 
+
+        height: 60vh;
+    }
+    .nav- p {
+        font-size: 18px;
     }
     .clubcardtitle{
-        --heighttotal: 650vh;
-        height: var(--heighttotal);
-        width: 100%;
-        background: linear-gradient(180deg, var(--autotest), rgb(55, 19, 103));
+        height: 1600vh;
     }
-    .clubcardtitle h1 {
-        text-align: center;
-        padding: 45px;
-        font-size: 62px;
-    }
-    .clubcardholder {
-        display: flex;
+    .clubcardrow {
         flex-direction: column;
-        height: 80%;
-        width: 100%;
+        height: 300vh;
+        width: 90vh;
 
     }
-    .clubcardrow{
-        position: relative;
-        margin-top: 5%;
-        height: 75vh; /* we want height to equal to 90vh or whatever */
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        transition: 0.7s;
-        opacity: 0;
-        left: -20%;
-    
+    .clubcard {
+        height: 200%;
+        width: 75%;
+        align-self: center;
+        margin: 10px;
+
     }
-
-   
-    .clubcard{
-        position: relative;
-
-        margin: 0% 5%;
-        width: 32%;
+    .clubcardtop {
+        height: 72vh;
+    }
+    .clubcard .clubcardtop img {
         height: 100%;
-        top: 0;
-        border-radius: 18%;
-        border: 3px solid black;
-        overflow: hidden;
-        transition: 0.2s all ease-in-out;
-       
+        width: 100%;
+        background: center center;
     }
-    .clubcard:hover {
-        transform: scale(1.05);
-        box-shadow: 0px 2px 40px #101213;
+    .clubcardbottom {
+        height: 18vh;
     }
-    .clubcardtop{
-        height: 60vh;
-        background: linear-gradient(60deg, rgb(243, 148, 203), rgb(238, 13, 204));
-        justify-content: center;
-        overflow: hidden;
-        
-    }
-    .clubcardtop img{
-        background-position: center center;
-        height: 100%; width: 100%;
-
-    }
-    
-    .clubleader{
-        position: relative;
-        height: 325px;
-        width: 325px;
-        left: calc(50% - 162.5px);
-        top: calc(50% - 162.5px);
-        border-radius: 100%;
-        background-color: rgb(84, 84, 236);
-        overflow: hidden;
-
-    }
-    .clubleader img{
-        background-position: center center;
-        height: 325px;
-        width: 325px;
-
-    }
-    .clubleader.override {
-        overflow: visible;
-
-
-    }
-    .clubleader.override img {
-        background-position: center center;
-        height: 500px;
-        width: 500px;
-    }
-    .clubcardbottom{
-        height: 20%;
-
-        background-color: rgba(147, 45, 103, 0.251);
-        justify-content: center;
-    }
-    .clubcardbottom h1 {
-        position: relative;
-        text-align: center;
-        bottom: 25%;
-        color: rgb(13, 196, 196)
-    }
-    @keyframes slidingin{
-            8% {opacity: 0}
-            16% { opacity: 1;
-                    left: 0px;}
-            84% {opacity: 1;
-            left: 0px;}
-            92% {opacity: 0}
-            100% { opacity: 0;
-                left: -100px;}
-    }
-        
-    @media(max-width:700px) {
-
-        .nav-links{ 
-
-            height: 60vh;
-        }
-        .nav- p {
-            font-size: 18px;
-        }
-        .clubcardtitle{
-            height: 1600vh;
-        }
-        .clubcardrow {
-            flex-direction: column;
-            height: 300vh;
-            width: 90vh;
-
-        }
-        .clubcard {
-            height: 200%;
-            width: 75%;
-            align-self: center;
-            margin: 10px;
-
-        }
-        .clubcardtop {
-            height: 72vh;
-        }
-        .clubcard .clubcardtop img {
-            height: 100%;
-            width: 100%;
-            background: center center;
-        }
-        .clubcardbottom {
-            height: 18vh;
-        }
-    }
+}
