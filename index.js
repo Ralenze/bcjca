@@ -128,7 +128,7 @@ function letThereBeLight(){
   let icon = document.getElementById('light');
   let logo = document.getElementById('logo');
   if(icon.style.color === "white"){
-    icon.style.color = "rgba(0, 255, 255, 0.4)";
+    icon.style.color = "rgba(255, 240, 0, 1)";
     logo.src = "https://github.com/Ralenze/bcjca/blob/main/images/bcjcalight.png?raw=true"
   }else{
     icon.style.color = "white";

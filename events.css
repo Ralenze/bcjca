@@ -170,8 +170,9 @@
     color: black;
   }
   
-  .flip-card-back {
-    background-color: #2980b9;
+  .flip-card-back {/*#2980b9*/
+    border-radius: 10px;
+    background-color: rgba(0, 255, 255, 0.3);
     color: white;
     transform: rotateY(180deg);
   }
@@ -259,5 +260,22 @@
     .right {
       left: 0%;
     }
+  }
+
+  .eventBtn{
+    background: transparent;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
+  .eventBtn:hover{
+    background:rgba(0, 255, 255, 0.4);
+  }
+
+  .eventError{
+    font-size: 25px;
   }
       
