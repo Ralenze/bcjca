@@ -122,6 +122,7 @@ loadCards();
 $(window).scroll(loadCards); 
 } 
 );
+document.getElementById('light').style.color = 'white';
 
 function letThereBeLight(){
   let icon = document.getElementById('light');
