@@ -176,6 +176,7 @@
     color: white;
     transform: rotateY(180deg);
   }
+
   /* Place the container to the left */
   .left {
     left: 0;
@@ -269,6 +270,7 @@
     border: 2px solid white;
     text-decoration: none;
     font-size: 50px;
+    margin-top: 13%;
   }
 
   .eventBtn:hover{
@@ -277,5 +279,6 @@
 
   .eventError{
     font-size: 25px;
+    margin-top: 14%;
   }
       
