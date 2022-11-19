@@ -8,3 +8,7 @@ $(document).ready(function(){
     toSlide[0].style.opacity = "1";
     toSlide[0].style.left = "35%";
 })
+
+function link(){
+    window.open($(".flip-card-back").data("location"), "_blank");
+}
