@@ -1,0 +1,42 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+	overflow-x: hidden; 
+}
+
+form{
+    background-color: rgba(0, 0, 0, 0.372);
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    margin-bottom: 0px;
+    box-shadow: 2px 2px 2px 2px #f44336ca;
+}
+
+form label{
+    color: white;
+    font-size: 25px;
+}
+
+form input{
+    height: 20px;
+    width: 515px;
+}
+
+form button{
+    font-size: 25px;
+    color: white;
+    background-color: rgba(0, 255, 255, 0.2);
+    border-color: transparent;
+    border-radius: 10px;
+    margin: 40px auto;
+    margin-bottom: 0px;
+    padding: 3px 100px;
+}
+
+form button:hover{
+    background-color: #f44336ca;
+}
