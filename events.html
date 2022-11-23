@@ -1,130 +1,138 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, intial-scale=1.0">
-        <title> BCJCR </title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="events.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/9f85037272.js" crossorigin="anonymous"></script>
-    </head> 
-    <body>
-        <section class="header" style="background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(63, 31, 76, 0.8))"> 
-            <nav>
-                <a href="index.html"> <img id="logo" src="images/bcjcalogo.png">
-                </a>
-                <i class="fa-regular fa-lightbulb" id="light" onclick="letThereBeLight()"></i>
-                <div class="nav-links" id="menu">
-                    <i class="fa fa-times" id="hidebtn" onclick="hideBtn()" aria-hidden="true"></i>
-
-                    <ul id="navholder">
-                        <li class="removered"> <a href='index.html'> HOME </a></li>
-                        <li> <a href="about.html"> ABOUT </a></li>
-                        <li> <a class="selectednavlink" href="events.html"> EVENTS </a></li>
-                        <li> <a href="join.html"> JOIN US! </a></li>
-                    </ul>
-
-                </div>
-                <i id="menubtn" class="fa fa-bars" onclick="showBtn()" aria-hidden="true"></i>
-
-            </nav>
-            <h1 class="clubtitle"> Upcoming</h1>
-            <h1 class="clubtitle slider" style="color:rgba(0, 255, 255, 0.4)"> Matches • Events • Tourneys</h1>
-            <div class="clubtitleseparator">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> BCJCR </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="events.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9f85037272.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header" style="background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(63, 31, 76, 0.8))">
+        <nav>
+            <a href="index.html">
+                <img id="logo" src="images/bcjcalogo.png">
+            </a>
+            <i class="fa-regular fa-lightbulb" id="light" onclick="letThereBeLight()"></i>
+            <div class="nav-links" id="menu">
+                <i class="fa fa-times" id="hidebtn" onclick="hideBtn()" aria-hidden="true"></i>
+                <ul id="navholder">
+                    <li class="removered">
+                        <a href='index.html'> HOME </a>
+                    </li>
+                    <li>
+                        <a href="about.html"> ABOUT </a>
+                    </li>
+                    <li>
+                        <a class="selectednavlink" href="events.html"> EVENTS </a>
+                    </li>
+                    <li>
+                        <a href="join.html"> JOIN US! </a>
+                    </li>
+                </ul>
             </div>
-            <br>
-            <br>
-            <div class="timeline">
-                <div class="container left">
-                  <div class="flip-card-inner">
+            <i id="menubtn" class="fa fa-bars" onclick="showBtn()" aria-hidden="true"></i>
+        </nav>
+        <h1 class="clubtitle"> Upcoming</h1>
+        <h1 class="clubtitle slider" style="color:rgba(0, 255, 255, 0.4)"> Matches • Events • Tourneys</h1>
+        <div class="clubtitleseparator"></div>
+        <br>
+        <br>
+        <div class="timeline">
+            <div class="container left">
+                <div class="flip-card-inner">
                     <div class="content flip-card-front">
-                      <h2>Monday November 21, 2022</h2>
-                      <p>Burnaby Central vs Moscrop</p>
-                      <div class="details">
-                        <h6><i class="fa-solid fa-location-dot"></i> Chess.com
-                        <i class="fa-solid fa-clock"></i> 6 - 7 pm PST  
-                        <i class="fa-solid fa-stopwatch-20"></i> 10 | 0 
-                        </h6>
+                        <h2>Monday November 21, 2022</h2>
+                        <p>Burnaby Central vs Moscrop</p>
+                        <div class="details">
+                            <h6>
+                                <i class="fa-solid fa-location-dot"></i> Chess.com <i class="fa-solid fa-clock"></i> 6 - 7 pm PST <i class="fa-solid fa-stopwatch-20"></i> 10 | 0
+                            </h6>
                         </div>
-                      </div>
-                      <div class="flip-card-back" data-location="https://chess.com/home" onclick="link()">
-                          <button class="eventBtn">Join!</button>
-                      </div>
                     </div>
-                  </div>
-                <div class="container right">
-                  <div class="flip-card-inner">
+                    <div class="flip-card-back" data-location="https://chess.com/home" onclick="link()">
+                        <button class="eventBtn">Join!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="flip-card-inner">
                     <div class="content flip-card-front">
-                      <h2>Thursday November 24, 2022</h2>
-                      <p>Moscrop vs New West</p>
-                      <div class="details">
-                        <h6><i class="fa-solid fa-location-dot"></i> Chess.com  
-                          <i class="fa-solid fa-clock"></i> 7 - 8 pm PST  
-                          <i class="fa-solid fa-stopwatch-20"></i> 10 | 0
-                        </h6>
-                      </div>
+                        <h2>Thursday November 24, 2022</h2>
+                        <p>Moscrop vs New West</p>
+                        <div class="details">
+                            <h6>
+                                <i class="fa-solid fa-location-dot"></i> Chess.com <i class="fa-solid fa-clock"></i> 7 - 8 pm PST <i class="fa-solid fa-stopwatch-20"></i> 10 | 0
+                            </h6>
+                        </div>
                     </div>
                     <div class="flip-card-back" data-location="https://www.chess.com/home">
-                      <button class="eventBtn">Join!</button>
+                        <button class="eventBtn">Join!</button>
                     </div>
-                  </div>
                 </div>
-                <div class="container left">
-                  <div class="flip-card-inner">
+            </div>
+            <div class="container left">
+                <div class="flip-card-inner">
                     <div class="content flip-card-front">
-                      <h2>Thursday December 1, 2022</h2>
-                      <p>BCJCA Event Placeholder</p>
-                      <div class="details">
-                        <h6><i class="fa-solid fa-location-dot"></i> Chess.com
-                        <i class="fa-solid fa-clock"></i> 6 - 7 pm PST  
-                        <i class="fa-solid fa-stopwatch-20"></i> 10 | 0 
-                        </h6>
+                        <h2>Thursday December 1, 2022</h2>
+                        <p>BCJCA Event Placeholder</p>
+                        <div class="details">
+                            <h6>
+                                <i class="fa-solid fa-location-dot"></i> Chess.com <i class="fa-solid fa-clock"></i> 6 - 7 pm PST <i class="fa-solid fa-stopwatch-20"></i> 10 | 0
+                            </h6>
                         </div>
-                      </div>
-                      <div class="flip-card-back" data-location="https://chess.com/home" onclick="link()">
-                          <button class="eventBtn">Join!</button>
-                      </div>
                     </div>
-                  </div>
-                <div class="container right">
-                  <div class="flip-card-inner">
+                    <div class="flip-card-back" data-location="https://chess.com/home" onclick="link()">
+                        <button class="eventBtn">Join!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="flip-card-inner">
                     <div class="content flip-card-front">
-                      <h2>Thursday December 1, 2022</h2>
-                      <p>BCJCA Event Placeholder</p>
-                      <div class="details">
-                        <h6><i class="fa-solid fa-location-dot"></i> Chess.com  
-                          <i class="fa-solid fa-clock"></i> 7 - 8 pm PST  
-                          <i class="fa-solid fa-stopwatch-20"></i> 10 | 0
-                        </h6>
-                      </div>
+                        <h2>Thursday December 1, 2022</h2>
+                        <p>BCJCA Event Placeholder</p>
+                        <div class="details">
+                            <h6>
+                                <i class="fa-solid fa-location-dot"></i> Chess.com <i class="fa-solid fa-clock"></i> 7 - 8 pm PST <i class="fa-solid fa-stopwatch-20"></i> 10 | 0
+                            </h6>
+                        </div>
                     </div>
                     <div class="flip-card-back" data-location="https://www.chess.com/home">
-                      <button class="eventBtn">Join!</button>
+                        <button class="eventBtn">Join!</button>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <br>
-              <br>
-            </section>
-            <footer id="footer">
-                <div class="footer-hori-bar">
-                    <div class="footer-ext-link">
-                      <a id="mail" href="mailto:bcjca@gmail.com"><i class="fa-regular fa-envelope coloritnice"> </i></a>
-                      <a href="https://www.instagram.com/bcjrchess/" target="_blank"><i class="fa-brands fa-instagram coloritnice"></i></a>
-                      <a href="https://github.com/Ralenze/bcjca" target="_blank"><i class="fa-brands fa-github coloritnice"></i></a>
-                      <a href="https://discord.gg/QRjbTbdbJx" target="_blank"><i class="fa-brands fa-discord coloritnice"></i></a>
-                    </div>
-                    <p> Copyright © 2022 </p>
-                  </div>
-              </footer>
-        <script src="index.js"></script>
-        <script src="events.js"></script>
-    </body>
+            </div>
+        </div>
+        <br>
+        <br>
+    </section>
+    <footer id="footer">
+        <div class="footer-hori-bar">
+            <div class="footer-ext-link">
+                <a id="mail" href="mailto:bcjca@gmail.com">
+                    <i class="fa-regular fa-envelope coloritnice"></i>
+                </a>
+                <a href="https://www.instagram.com/bcjrchess/" target="_blank">
+                    <i class="fa-brands fa-instagram coloritnice"></i>
+                </a>
+                <a href="https://github.com/Ralenze/bcjca" target="_blank">
+                    <i class="fa-brands fa-github coloritnice"></i>
+                </a>
+                <a href="https://discord.gg/QRjbTbdbJx" target="_blank">
+                    <i class="fa-brands fa-discord coloritnice"></i>
+                </a>
+            </div>
+            <p> Copyright © 2022 </p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="events.js"></script>
+</body>
 </html>

@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Bebas Neue', sans-serif;
 }
+
 .header {
     min-height: 100vh;
     width: 100%;
@@ -10,24 +11,27 @@
     background-position: center;
     background-size: cover;
     position: relative;
-}   
+}
+
 .selectednavlink {
     border-bottom: 2px solid #ff3336;
 }
-nav{
+
+nav {
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
 }
-nav img{
+nav img {
     width: 150px;
 }
-nav #light{
+nav #light {
     font-size: 25px;
     color: white;
 }
-.nav-links{
+
+.nav-links {
     flex: 1;
     text-align: right;
 }
@@ -37,12 +41,12 @@ nav #light{
     padding: 8px 12px;
     position: relative;
 }
-.nav-links ul li a{
+.nav-links ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 25px;
 }
-.nav-links ul li::after{
+.nav-links ul li::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -51,10 +55,11 @@ nav #light{
     margin: auto;
     transition: 0.2s;
 }
-.nav-links ul li:hover::after{
+.nav-links ul li:hover::after {
     width: 100%;
 }
-.text-box{
+
+.text-box {
     width: 90%;
     color: #fff;
     position: absolute;
@@ -63,16 +68,20 @@ nav #light{
     transform: translate(-50%,-50%);
     text-align: center;
 }
-.text-box h1{
+.text-box h1 {
     font-size: 62px;
 }
-.text-box p{
+.text-box p {
     margin: 10px 0 40px;
     font-size: 25px;
     color: #fff;
 }
-nav .fa {display: none;}
-.hero-btn{
+
+nav .fa {
+   display: none;
+}
+
+.hero-btn {
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -84,80 +93,74 @@ nav .fa {display: none;}
     cursor: pointer;
     transition: 0.2s;
 }
-.text-panels h1 {
-text-align: center;
-color: white;
-
-
+.hero-btn:hover{
+    background-color: rgba(0, 255, 255, 0.4);
+    border: 1px solid rgba(0, 255, 255, 0.4);
 }
-.headline > h1  {
-    font-size: 50px;
-    }
-    
 
-.text-panels{
+.text-panels {
     height: 90vh;
     width: 100%;
-    background: linear-gradient(0deg, rgb(29, 31, 33), rgb(0, 0, 0))
-
+    background: linear-gradient(0deg, rgb(29, 31, 33), rgb(0, 0, 0)) 
 }
+.text-panels h1 {
+    text-align: center;
+    color: white;
+}
+
+.headline > h1 {
+    font-size: 50px;
+}
+
 .cardholder {
     height: 90vh;
     width: 100%;
 }
-.cardlinker{
+.cardholder .card .image {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: #7d2ae8;
+    align-items: center;
+}
+.cardholder .card .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid #fff;
+}
+
+.cardlinker {
     width: 100%;
     height: 100%;
     border-radius: 15%;
     background: rgba(64,222,231,0.915);
     z-index: 1;
-;
+    ;
 }
 
-.hero-btn:hover{
-    background-color: rgba(0, 255, 255, 0.4);
-border: 1px solid rgba(0, 255, 255, 0.4);
+.headline {
+    padding: 10vh;
 }
 
-
-.headline{
-padding: 10vh;
-
-}
-
-.cardholder .card .image {
-height: 300px;
-width: 300px;
-border-radius: 50%;
-background: #7d2ae8;
-align-items: center;
-}
-.cardholder .card .image img{
-    height: 100%;
-    width: 100%;
-
-    object-fit: cover;
-    border-radius: 10%;
-    border: 3px solid #fff;
-
-}
-.grouper-content{
+.grouper-content {
     display: flex;
     flex-direction: row;
-
     justify-content: center;
 }
+
 .card {
     padding: 5vh;
     overflow-x: visible;
-    transition:  250ms all ease-in-out;
-    
+    transition: 250ms all ease-in-out;
 }
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0px 2px 40px #101213;
-  }
-.cardcaption{
+}
+
+.cardcaption {
     width: 200px;
     left: 3px;
     height: 20%;
@@ -174,12 +177,11 @@ align-items: center;
     font-size: 25px;
     display: block;
 }
-.footer-hori-bar{
+
+.footer-hori-bar {
     width: 100%;
     height: 10vh;
     background-color: rgb(60,60,69);
-
-    
 }
 .footer-hori-bar > p {
     color: rgb(144, 144, 144);
@@ -188,6 +190,7 @@ align-items: center;
     position: relative;
     bottom: 6vh;
 }
+
 .footer-ext-link{
     width: 40%;
     position: relative;
@@ -196,89 +199,65 @@ align-items: center;
     display: flex;
     flex-direction: row;
     align-items: center;
-
     height: 10vh;
 }
-.footer-ext-link  * {
+.footer-ext-link * {
     padding: 10px;
     cursor: pointer;
     transition: 0.3s;
     font-size: 40px;
     z-index: 100000;
-    
 }
 .footer-ext-link * :hover {
-   font-size:45px;
+    font-size:45px;
 }
 .footer-ext-link #Github {
     border-left: 3px solid rgb(0, 0, 0);
     border-radius: 3%;
-
 }
 
 /* scrollbar width */
 ::-webkit-scrollbar {
     width: 10px;
 }
-  
 /* track */
 ::-webkit-scrollbar-track {
     background: rgb(0, 80, 80);
     box-shadow: inset 0 0 5px rgba(0, 57, 57, 0.4);
 }
-  
 /* handle */
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-image: -webkit-gradient(linear,
-    left bottom,
-    left top,
-    color-stop(0.44, rgb(64,222,231)),
-    color-stop(0.72, rgb(43,193, 197)),
-    color-stop(0.86, rgb(21, 163, 171)));
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(64,222,231)), color-stop(0.72, rgb(43,193, 197)), color-stop(0.86, rgb(21, 163, 171)));
 }
-
 @keyframes slidingin{
-    15% {opacity: 0}
-    30% { opacity: 1;
-            left: 0px;}
-    70% {opacity: 1;
-    left: 0px;}
-    85% {opacity: 0}
-    100% { opacity: 0;
-        left: -100px;}
+    15% { opacity: 0 }
+    30% {
+        opacity: 1;
+        left: 0px;
+    }
+    70% {
+        opacity: 1;
+        left: 0px;
+    }
+    85% { opacity: 0 }
+    100% {
+        opacity: 0;
+        left: -100px;
+    }
 }
-
-
 .coloritnice{
     background: -webkit-gradient(linear, left top, left bottom, from(rgb(80, 230, 228)), to(rgb(39, 62, 125)));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-
-    }
-
-
-
-
-
-
-
-
-
-
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 @media(max-width: 700px){
-    .text-box h1{
-        font-size: 20px;
-    }
-    .text-box p{
-        font-size: 10px;
-    }
-    .nav-links ul li {
-        display: block;
-    }
+    .text-box h1 { font-size: 20px; }
+    .text-box p { font-size: 10px; }
+    .nav-links ul li { display: block; }
     .nav-links {
         position: absolute;
-        backdrop-filter: contrast(55%);        
+        backdrop-filter: contrast(55%);
         height: 100vh;
         width: 200px;
         top: 0;
@@ -287,20 +266,15 @@ align-items: center;
         text-align: left;
         z-index: 2;
     }
-    nav .fa{
+    nav .fa {
         display: block;
         color: white;
         margin: 15px;
         font-size:20px;
         cursor: pointer;
     }
-    .nav-links ul{
-        padding: 30px;
-
-    }
-    .headline h1 {
-        font-size: 30px;
-    }
+    .nav-links ul{ padding: 30px; }
+    .headline h1 { font-size: 30px; }
     .grouper-content{
         display: flex;
         flex-direction: column;
@@ -311,23 +285,18 @@ align-items: center;
         background: rgb(29, 31, 33);
         height: 90em;
         background: linear-gradient(0deg, rgb(29,31,33),rgb(0,0,0));
-        
-    
     }
     .footer-hori-bar{
         position: relative;
         top: 49em;
-    
-    }
+ }
     .footer-ext-link div {
         position: relative;
         width: 25%;
         left: 20%;
-
     }
     #mail {
         position: relative;
-
         border-left: 2px solid black ;
     }
 }
