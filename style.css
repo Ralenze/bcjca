@@ -249,6 +249,7 @@ nav .fa {
 .coloritnice{
     background: -webkit-gradient(linear, left top, left bottom, from(rgb(80, 230, 228)), to(rgb(39, 62, 125)));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 @media(max-width: 700px){
