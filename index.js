@@ -131,5 +131,9 @@ function compLoaded() {
 
     // All components looaded, recommend putting here instead of body.onload
     document.getElementById('light').style.color = 'white';
+
+    letThereBeLight() // initialize one to change for black background
+
+    window.scrollTo(0, 0); // scrool to top
 }
 //#endregion
