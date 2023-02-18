@@ -1,7 +1,14 @@
-var script = document.createElement('script');
-script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
-document.getElementsByTagName('head')[0].appendChild(script);
-// ... give time for script to load, then type (or see below for non wait option)
+function letThereBeLight() {
+    let icon = document.getElementById('light');
+    let logo = document.getElementById('logo');
+    if (icon.style.color === "white") {
+        icon.style.color = "rgba(255, 240, 0, 1)";
+        logo.src = "https://github.com/Ralenze/bcjca/blob/main/images/bcjcalight.png?raw=true"
+    } else {
+        icon.style.color = "white";
+        logo.src = "https://github.com/Ralenze/bcjca/blob/main/images/bcjcalogo.png?raw=true"
+    }
+}
 
 function showBtn() {
     console.log("made it here");
@@ -33,9 +40,6 @@ function openExternalLink(a){
             break; 
     }
 }
-let b = window.location.pathname;
-console.log(b);
-let x = b.toString();
 
 function getPromiseFromEvent(item, event) {
     return new Promise( (resolve) => {
@@ -55,7 +59,7 @@ function getPromiseFromEvent(item, event) {
 This function selects all the span/words under our club title (BCJCA is about ). Then it selects one
 to slide in and make visible. Repeats using incrementer
   */
-const slidetextabout = async () => {
+slidetextabout = async () => {
     let slidex = document.getElementsByClassName('clubtitle');
    
     let slider = slidex[0].children;
@@ -71,14 +75,15 @@ const slidetextabout = async () => {
     }
 }
 
-
  /* 
  Basically, if we are in the about page we want some words to go in and out and we want to have 
  the orange bar underneath about... TODO that.
  */
-if (x.includes("about")) {
+let b = window.location.pathname;
+console.log(b);
+let x = b.toString();
+if (x.includes("about")) 
     slidetextabout();
-}
 
 $(document).ready(function() {
     const calling = async() => {
@@ -107,17 +112,24 @@ $(document).ready(function() {
     loadCards();
     $(window).scroll(loadCards); 
 });
-document.getElementById('light').style.color = 'white';
 
-function letThereBeLight(){
-    let icon = document.getElementById('light');
-    let logo = document.getElementById('logo');
-    if (icon.style.color === "white") {
-        icon.style.color = "rgba(255, 240, 0, 1)";
-        logo.src = "https://github.com/Ralenze/bcjca/blob/main/images/bcjcalight.png?raw=true"
-    } else {
-        icon.style.color = "white";
-        logo.src = "https://github.com/Ralenze/bcjca/blob/main/images/bcjcalogo.png?raw=true"
-    }
+//#region HTMl components
+// List total number of component need to load
+let COMP_LOAD = document.querySelectorAll("[html-src]").length;
+// Load all HTML using fetch
+document.querySelectorAll("[html-src]").forEach(elm => {
+    fetch(elm.getAttribute('html-src')).then(res => res.text())
+    .then((res) => {
+        elm.innerHTML = res + elm.innerHTML; // element got precedence
+        compLoaded();
+    });
+});
+
+function compLoaded() {
+    COMP_LOAD -= 1;
+    if (COMP_LOAD != 0) return; // if not done loading
+
+    // All components looaded, recommend putting here instead of body.onload
+    document.getElementById('light').style.color = 'white';
 }
-
+//#endregion

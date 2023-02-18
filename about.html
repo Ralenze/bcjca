@@ -1,44 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> BCJCR </title>
-    <link rel="stylesheet" href="style.css">
+<head html-src="components/head.html">
     <link rel="stylesheet" href="about.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="index.js" defer></script>
     <script src="https://kit.fontawesome.com/9f85037272.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="header">
-        <nav>
-            <a href="index.html">
-                <img id="logo" src="images/bcjcalogo.png">
-            </a>
-            <i class="fa-regular fa-lightbulb" id="light" onclick="letThereBeLight()"></i>
-            <div class="nav-links" id="menu">
-                <i class="fa fa-times" id="hidebtn" onclick="hideBtn()" aria-hidden="true"></i>
-                <ul id="navholder">
-                    <li class="removered">
-                        <a href='index.html'> HOME </a>
-                    </li>
-                    <li>
-                        <a class="selectednavlink" href="about.html"> ABOUT </a>
-                    </li>
-                    <li>
-                        <a href="events.html"> EVENTS </a>
-                    </li>
-                    <li>
-                        <a href="join.html"> JOIN US! </a>
-                    </li>
-                </ul>
-            </div>
-            <i id="menubtn" class="fa fa-bars" onclick="showBtn()" aria-hidden="true"></i>
-        </nav>
+        <nav html-src="components/nav.html"></nav>
         <h1 class="clubtitle"> BCJCA is about <span class="hide"> innovation </span>
             <span class="hide"> leadership </span>
             <span class="hide"> teamwork </span>
@@ -335,6 +305,5 @@
             <p> Copyright © 2022 </p>
         </div>
     </footer>
-    <script src="index.js"></script>
 </body>
 </html>

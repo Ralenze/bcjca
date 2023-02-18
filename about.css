@@ -37,6 +37,7 @@
 }
 
 .header {
+    
     background-image: linear-gradient(rgb(0, 0, 0), var(--autotest));
 }
 .header p {
