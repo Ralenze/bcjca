@@ -1,0 +1,189 @@
+[
+    {
+        "name": "Template",
+        "est": 2022,
+        "description": "",
+        "image": "",
+        "contact": {
+            "leaders": [],
+            "email": "",
+            "location": "Vancouver, BC",
+            "discord": ""
+        }
+    },
+    {
+        "name": "Burnaby Central",
+        "est": 2022,
+        "description": "",
+        "image": "images/bcsschess.png",
+        "contact": {
+            "leaders": [],
+            "email": "",
+            "location": "Burnaby, BC",
+            "discord": ""
+        }
+    },
+    {
+        "name": "Burnaby North",
+        "est": 2022,
+        "description": "",
+        "image": "images/BNSChess.jpg",
+        "contact": {
+            "leaders": [],
+            "email": "",
+            "location": "Burnaby, BC",
+            "discord": ""
+        }
+    },
+    {
+        "name": "Burnaby South",
+        "est": 2022,
+        "description": "",
+        "image": "images/bsss.png",
+        "contact": {
+            "leaders": [],
+            "email": "",
+            "location": "Burnaby, BC",
+            "discord": ""
+        }
+    },
+    {
+        "name": "Kitsilano",
+        "est": 2022,
+        "description": "",
+        "image": "images/kits.png",
+        "contact": {
+            "leaders": [],
+            "email": "",
+            "location": "Vancouver, BC",
+            "discord": ""
+        }
+    },
+    {
+        "name": "MacNeill",
+        "est": 2021,
+        "description": "",
+        "image": "images/MacNeillLogo.png",
+        "contact": {
+            "leaders": [
+                "Prajwal Prashanth",
+                "Hubert Chau",
+                "Jason Yeo",
+                "Meshroon Golam",
+                "David Wu"
+            ],
+            "email": "prjwl028@gmail.com",
+            "location": "Richmond, BC",
+            "discord": "https://discord.gg/pdfAE6TqRh"
+        }
+    },
+    {
+        "name": "McMath",
+        "est": 2022,
+        "description": "",
+        "image": "images/mcmath.png",
+        "contact": {
+            "leaders": [
+                "Andrew",
+                "Bennett",
+                "Vishnugupt"
+            ],
+            "email": "",
+            "location": "Richmond, BC",
+            "discord": ""
+        }
+    },
+    {
+        "name": "Moscrop",
+        "est": 2020,
+        "description": "",
+        "image": "images/moscroplogo.png",
+        "contact": {
+            "leaders": [
+                "Bella Wang",
+                "Samuel Zheng"
+            ],
+            "email": "",
+            "location": "Burnaby, BC",
+            "discord": ""
+        }
+    },
+    {
+        "name": "Mount Douglas",
+        "est": 2022,
+        "description": "",
+        "image": "images/mountdouglas.png",
+        "contact": {
+            "leaders": [],
+            "email": "",
+            "location": "Victoria, BC",
+            "discord": ""
+        }
+    },
+    {
+        "name": "New West",
+        "est": 2022,
+        "description": "",
+        "image": "images/hyacks.png",
+        "contact": {
+            "leaders": [],
+            "email": "",
+            "location": "New Westminster, BC",
+            "discord": ""
+        }
+    },
+    {
+        "name": "North Surrey",
+        "est": 2022,
+        "description": "",
+        "image": "images/nwsssimon.png",
+        "contact": {
+            "leaders": [
+                "Isaac Brugge",
+                "Simon Nguyen",
+                "Azher"
+            ],
+            "email": "",
+            "location": "Surrey, BC",
+            "discord": ""
+        }
+    },
+    {
+        "name": "Sentinel",
+        "est": 2022,
+        "description": "",
+        "image": "images/sentinellogo.png",
+        "contact": {
+            "leaders": [],
+            "email": "",
+            "location": "Surrey, BC",
+            "discord": ""
+        }
+    },
+    {
+        "name": "Tupper",
+        "est": 2022,
+        "description": "",
+        "image": "images/tupperlogo.png",
+        "contact": {
+            "leaders": [],
+            "email": "",
+            "location": "Surrey, BC",
+            "discord": ""
+        }
+    },
+    {
+        "name": "West Van",
+        "est": 2020,
+        "description": "We do weekly chess trainings, organize tournaments with other West Van schools, encourage our team members to keep improving their skills in friendly games. We also do fun activities, such as Kahoot or Puzzlestorm, to make our lessons more interesting.",
+        "image": "images/westvantemporary.png",
+        "contact": {
+            "leaders": [
+                "Eric Tao Xie"
+            ],
+            "email": "erictao6666@gmail.com",
+            "location": "West Vancouver, BC",
+            "discord": "https://discord.gg/eb3tmx2Vej"
+        }
+    }
+]
