@@ -50,6 +50,12 @@
     color: rgb(90, 237, 235)
 }
 
+@media only screen and (max-width: 600px) {
+    .header p {
+        font-size: 25px;
+    }
+}
+
 .clubcardtitle {
     --heighttotal: 650vh;
     /* height: var(--heighttotal); */
