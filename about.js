@@ -83,8 +83,9 @@ function schoolCards() {
                     img.src = data[i].image;
                 }
                 img.alt = data[i].name;
-                img.width = 400;
-                img.height = 400;
+                img.style.width = "400px";
+                img.style.height = "400px";
+                img.style.objectFit = "cover";
                 clubCardTop.appendChild(img);
                 let clubLeader = document.createElement("div");
                 clubLeader.className = "clubleader";
