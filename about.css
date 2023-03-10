@@ -50,21 +50,6 @@
     color: rgb(90, 237, 235)
 }
 
-@media only screen and (max-width: 600px) {
-    .header p {
-        font-size: 25px;
-    }
-
-    .clubcardtitle h1 {
-        text-align: center;
-        position: relative;
-        padding-top: 45px;
-        font-size: 70px;
-        color: rgb(57, 157, 203);
-        padding-bottom: 0.5em;
-    }
-}
-
 .clubcardtitle {
     --heighttotal: 650vh;
     /* height: var(--heighttotal); */
@@ -83,11 +68,31 @@
     padding-bottom: 0.5em;
 }
 
+@media only screen and (max-width: 600px) {
+    .header p {
+        font-size: 25px;
+    }
+
+    .clubcardtitle h1 {
+        text-align: center;
+        position: relative;
+        padding-top: 45px;
+        font-size: 70px;
+        color: rgb(57, 157, 203);
+        padding-bottom: 0.5em;
+    }
+}
+
 .clubcardholder {
     display: flex;
     flex-direction: column;
     height: 80%;
     width: 100%;
+}
+
+#container {
+    padding: 10px;
+
 }
 
 .clubcardrow {
