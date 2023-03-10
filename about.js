@@ -25,6 +25,7 @@ function schoolCards() {
 
                 let p = document.createElement("p");
                 p.innerHTML = `${data[i].description}`;
+                p.style = "margin: -0.5em 0;";
                 info.appendChild(p);
 
                 br = document.createElement("br");
