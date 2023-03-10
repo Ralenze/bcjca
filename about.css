@@ -54,6 +54,15 @@
     .header p {
         font-size: 25px;
     }
+
+    .clubcardtitle h1 {
+        text-align: center;
+        position: relative;
+        padding-top: 45px;
+        font-size: 70px;
+        color: rgb(57, 157, 203);
+        padding-bottom: 0.5em;
+    }
 }
 
 .clubcardtitle {
