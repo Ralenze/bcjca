@@ -27,7 +27,7 @@ footer {
 .header {
     min-height: calc(100vh - 70px);
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("images/chessplaceholder.png");
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("/_images/chessplaceholder.png");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -351,14 +351,14 @@ nav .fa {
 
     .nav-links {
         position: absolute;
-        background-color: rgba(4, 8, 27, 0.7);
+        background-color: rgba(4, 8, 27, 0.8);
         height: 100vh;
         width: 200px;
         top: 0;
         right: 0px;
         display: none;
         text-align: left;
-        z-index: 2;
+        z-index: 10000000;
     }
 
     nav .fa {

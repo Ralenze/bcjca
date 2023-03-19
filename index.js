@@ -3,12 +3,10 @@ function letThereBeLight() {
     let logo = document.getElementById("logo");
     if (icon.style.color === "white") {
         icon.style.color = "rgba(255, 240, 0, 1)";
-        logo.src =
-            "https://github.com/Ralenze/bcjca/blob/main/images/bcjcalight.png?raw=true";
+        logo.src = "/_images/bcjcalight.png";
     } else {
         icon.style.color = "white";
-        logo.src =
-            "https://github.com/Ralenze/bcjca/blob/main/images/bcjcalogo.png?raw=true";
+        logo.src = "/_images/bcjcalogo.png";
     }
 }
 
