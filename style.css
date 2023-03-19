@@ -4,9 +4,14 @@
     font-family: 'Bebas Neue', sans-serif;
 }
 
+html, body {
+    height: 100%;
+    overflow-y: hidden;
+}
+
 
 .header {
-    min-height: 100vh;
+    min-height: calc(100vh - 70px);
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("images/chessplaceholder.png");
     background-position: center;
@@ -202,15 +207,16 @@ nav .fa {
 
 .footer-hori-bar {
     width: 100%;
+    height: 70px;
     background-color: rgb(60, 60, 69);
 }
 
 .footer-hori-bar>p {
     color: rgb(144, 144, 144);
-    margin-left: 10vh;
+    margin-left: 5vh;
     font-size: 24px;
     position: relative;
-    bottom: 6vh;
+    bottom: 45px;
 }
 
 .footer-ext-link {
@@ -221,7 +227,7 @@ nav .fa {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 10vh;
+    height: 70px;
 }
 
 .footer-ext-link * {
