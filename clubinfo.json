@@ -2,7 +2,6 @@
     {
         "name": "Template",
         "est": 2022,
-        "description": "",
         "image": "",
         "contact": {
             "leaders": [],
@@ -161,14 +160,18 @@
     },
     {
         "name": "Sentinel",
-        "est": 2022,
+        "est": 2019,
         "description": "",
         "image": "images/sentinellogo.png",
         "contact": {
-            "leaders": [],
-            "email": "",
-            "location": "Surrey, BC",
-            "discord": ""
+            "leaders": [
+                "Raymond Zhang",
+                "Robert Sentrov",
+                "Gavin Wang"
+            ],
+            "email": "raymondztn@outlook.com",
+            "location": "West Vancouver, BC",
+            "discord": "https://discord.gg/UAjgytjyn8"
         }
     },
     {
@@ -187,7 +190,6 @@
     {
         "name": "West Van",
         "est": 2020,
-        "description": "We do weekly chess trainings, organize tournaments with other West Van schools, encourage our team members to keep improving their skills in friendly games. We also do fun activities, such as Kahoot or Puzzlestorm, to make our lessons more interesting.",
         "image": "images/westvantemporary.png",
         "contact": {
             "leaders": [

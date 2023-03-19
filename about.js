@@ -20,14 +20,6 @@ function schoolCards() {
                 h1.style = "padding-bottom: 0;";
                 info.appendChild(h1);
 
-                let br = document.createElement("br");
-                info.appendChild(br);
-
-                let p = document.createElement("p");
-                p.innerHTML = `${data[i].description}`;
-                p.style = "margin: -0.5em 0;";
-                info.appendChild(p);
-
                 br = document.createElement("br");
                 info.appendChild(br);
 
@@ -84,8 +76,8 @@ function schoolCards() {
                     img.src = data[i].image;
                 }
                 img.alt = data[i].name;
-                img.style.width = "400px";
-                img.style.height = "400px";
+                img.style.width = "200px";
+                img.style.height = "200px";
                 clubCardTop.appendChild(img);
                 let clubLeader = document.createElement("div");
                 clubLeader.className = "clubleader";
