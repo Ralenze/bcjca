@@ -6,7 +6,21 @@
 
 html, body {
     height: 100%;
-    overflow-y: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(60, 60, 69);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    float: bottom;
 }
 
 
@@ -17,6 +31,7 @@ html, body {
     background-position: center;
     background-size: cover;
     position: relative;
+    flex: 1 0 auto;
 }
 
 .selectednavlink {
@@ -207,34 +222,39 @@ nav .fa {
 
 .footer-hori-bar {
     width: 100%;
-    height: 70px;
-    background-color: rgb(60, 60, 69);
+    height: 50px;
+    background-color: rgb(3, 7, 23);
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer-hori-bar>p {
-    color: rgb(144, 144, 144);
-    margin-left: 5vh;
+    color: rgb(76, 79, 94);
+    margin-left: 2em;
     font-size: 24px;
     position: relative;
-    bottom: 45px;
+    bottom: 38px;
 }
 
 .footer-ext-link {
-    width: 40%;
+    width: 400px;
     position: relative;
-    left: 60%;
+    left: calc(100% - 400px);
     justify-content: center;
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 70px;
+    height: 50px;
+    /* margin-right: 2vh; */
+    /* margin-left: 2vh; */
 }
 
 .footer-ext-link * {
     padding: 10px;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 40px;
+    font-size: 32px;
     z-index: 100000;
 }
 
@@ -245,6 +265,25 @@ nav .fa {
 .footer-ext-link #Github {
     border-left: 3px solid rgb(0, 0, 0);
     border-radius: 3%;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-hori-bar {
+        text-align: center;
+    }
+
+    .footer-ext-link {
+        width: 100%;
+        left: 0;
+    }
+
+    .footer-ext-link>a {
+        flex-grow: 1;
+    }
+
+    .footer-hori-bar>p {
+        display: none;
+    }
 }
 
 /* scrollbar width */
@@ -360,10 +399,5 @@ nav .fa {
         position: relative;
         width: 25%;
         left: 20%;
-    }
-
-    #mail {
-        position: relative;
-        border-left: 2px solid black;
     }
 }
