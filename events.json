@@ -1,0 +1,39 @@
+[
+    {
+        "name": "Template",
+        "date": "Monday, November 21, 2022",
+        "details": {
+            "where": "Chess.com",
+            "time": "6 - 7 pm PT",
+            "clock": "10 | 0"
+        },
+        "link": "https://chess.com/home"
+    },
+    {
+        "name": "Burnaby Qualifiers",
+        "date": "Saturday, May 13th, 2023",
+        "details": {
+            "where": "TBD",
+            "time": "TBD",
+            "clock": "TBD"
+        }
+    },
+    {
+        "name": "Van West Qualifiers",
+        "date": "Saturday, April 15th, 2023",
+        "details": {
+            "where": "TBD",
+            "time": "15 + 5",
+            "clock": "10 am - 3 pm PT"
+        }
+    },
+    {
+        "name": "Provincials",
+        "date": "Saturday, June 17th, 2023",
+        "details": {
+            "where": "TBD",
+            "time": "TBD",
+            "clock": "TBD"
+        }
+    }
+]
