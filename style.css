@@ -4,13 +4,34 @@
     font-family: 'Bebas Neue', sans-serif;
 }
 
-.header {
-    min-height: 100vh;
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("images/chessplaceholder.png");
+    background-color: rgb(60, 60, 69);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    float: bottom;
+}
+
+
+.header {
+    min-height: calc(100vh - 70px);
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("images/chessplaceholder.png");
     background-position: center;
     background-size: cover;
     position: relative;
+    flex: 1 0 auto;
 }
 
 .selectednavlink {
@@ -23,9 +44,11 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
 nav img {
     width: 150px;
 }
+
 nav #light {
     font-size: 25px;
     color: white;
@@ -35,17 +58,20 @@ nav #light {
     flex: 1;
     text-align: right;
 }
+
 .nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
+
 .nav-links ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 25px;
 }
+
 .nav-links ul li::after {
     content: '';
     width: 0%;
@@ -55,6 +81,7 @@ nav #light {
     margin: auto;
     transition: 0.2s;
 }
+
 .nav-links ul li:hover::after {
     width: 100%;
 }
@@ -65,12 +92,14 @@ nav #light {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
+
 .text-box h1 {
     font-size: 62px;
 }
+
 .text-box p {
     margin: 10px 0 40px;
     font-size: 25px;
@@ -78,7 +107,7 @@ nav #light {
 }
 
 nav .fa {
-   display: none;
+    display: none;
 }
 
 .hero-btn {
@@ -93,29 +122,34 @@ nav .fa {
     cursor: pointer;
     transition: 0.2s;
 }
-.hero-btn:hover{
+
+.hero-btn:hover {
     background-color: rgba(0, 255, 255, 0.4);
     border: 1px solid rgba(0, 255, 255, 0.4);
 }
 
 .text-panels {
-    height: 90vh;
+    /* height: 90vh; */
+    height: 100%;
     width: 100%;
-    background: linear-gradient(0deg, rgb(29, 31, 33), rgb(0, 0, 0)) 
+    background: linear-gradient(0deg, rgb(29, 31, 33), rgb(0, 0, 0));
 }
+
 .text-panels h1 {
     text-align: center;
     color: white;
 }
 
-.headline > h1 {
+.headline>h1 {
     font-size: 50px;
 }
 
 .cardholder {
-    height: 90vh;
+    height: 100%;
     width: 100%;
+    /* padding-bottom: 5vh; */
 }
+
 .cardholder .card .image {
     height: 300px;
     width: 300px;
@@ -123,6 +157,7 @@ nav .fa {
     background: #7d2ae8;
     align-items: center;
 }
+
 .cardholder .card .image img {
     height: 100%;
     width: 100%;
@@ -135,40 +170,47 @@ nav .fa {
     width: 100%;
     height: 100%;
     border-radius: 15%;
-    background: rgba(64,222,231,0.915);
+    background: rgba(64, 222, 231, 0.915);
     z-index: 1;
     ;
 }
 
 .headline {
-    padding: 10vh;
+    /* padding: 10vh; */
+    padding-top: 5vh;
 }
 
 .grouper-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 1em;
 }
 
 .card {
-    padding: 5vh;
+    /* padding: 5vh; */
+    margin: 3vw;
     overflow-x: visible;
     transition: 250ms all ease-in-out;
 }
+
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0px 2px 40px #101213;
+    border-radius: 10%;
 }
 
 .cardcaption {
-    width: 200px;
+    width: 100%;
     left: 3px;
     height: 20%;
     position: relative;
     bottom: 90px;
+    background-color: rgba(4, 9, 30, 0.4);
     backdrop-filter: grayscale(80%);
     justify-content: center;
 }
+
 .cardcaption a {
     border: none;
     text-align: center;
@@ -180,124 +222,182 @@ nav .fa {
 
 .footer-hori-bar {
     width: 100%;
-    height: 10vh;
-    background-color: rgb(60,60,69);
-}
-.footer-hori-bar > p {
-    color: rgb(144, 144, 144);
-    margin-left: 10vh;
-    font-size: 24px;
-    position: relative;
-    bottom: 6vh;
+    height: 50px;
+    background-color: rgb(3, 7, 23);
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
 }
 
-.footer-ext-link{
-    width: 40%;
+.footer-hori-bar>p {
+    color: rgb(76, 79, 94);
+    margin-left: 2em;
+    font-size: 24px;
     position: relative;
-    left: 60%;
+    bottom: 38px;
+}
+
+.footer-ext-link {
+    width: 400px;
+    position: relative;
+    left: calc(100% - 400px);
     justify-content: center;
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 10vh;
+    height: 50px;
+    /* margin-right: 2vh; */
+    /* margin-left: 2vh; */
 }
+
 .footer-ext-link * {
     padding: 10px;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 40px;
+    font-size: 32px;
     z-index: 100000;
 }
+
 .footer-ext-link * :hover {
-    font-size:45px;
+    font-size: 45px;
 }
+
 .footer-ext-link #Github {
     border-left: 3px solid rgb(0, 0, 0);
     border-radius: 3%;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-hori-bar {
+        text-align: center;
+    }
+
+    .footer-ext-link {
+        width: 100%;
+        left: 0;
+    }
+
+    .footer-ext-link>a {
+        flex-grow: 1;
+    }
+
+    .footer-hori-bar>p {
+        display: none;
+    }
 }
 
 /* scrollbar width */
 ::-webkit-scrollbar {
     width: 10px;
 }
+
 /* track */
 ::-webkit-scrollbar-track {
     background: rgb(0, 80, 80);
     box-shadow: inset 0 0 5px rgba(0, 57, 57, 0.4);
 }
+
 /* handle */
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(64,222,231)), color-stop(0.72, rgb(43,193, 197)), color-stop(0.86, rgb(21, 163, 171)));
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(64, 222, 231)), color-stop(0.72, rgb(43, 193, 197)), color-stop(0.86, rgb(21, 163, 171)));
 }
-@keyframes slidingin{
-    15% { opacity: 0 }
+
+@keyframes slidingin {
+    15% {
+        opacity: 0
+    }
+
     30% {
         opacity: 1;
         left: 0px;
     }
+
     70% {
         opacity: 1;
         left: 0px;
     }
-    85% { opacity: 0 }
+
+    85% {
+        opacity: 0
+    }
+
     100% {
         opacity: 0;
         left: -100px;
     }
 }
-.coloritnice{
+
+.coloritnice {
     background: -webkit-gradient(linear, left top, left bottom, from(rgb(80, 230, 228)), to(rgb(39, 62, 125)));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-@media(max-width: 700px){
-    .text-box h1 { font-size: 20px; }
-    .text-box p { font-size: 10px; }
-    .nav-links ul li { display: block; }
+
+@media(max-width: 800px) {
+
+    .text-box h1 {
+        font-size: 32px;
+    }
+
+    .text-box p {
+        font-size: 24px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
     .nav-links {
         position: absolute;
-        backdrop-filter: contrast(55%);
+        background-color: rgba(4, 8, 27, 0.8);
         height: 100vh;
         width: 200px;
         top: 0;
         right: 0px;
         display: none;
         text-align: left;
-        z-index: 2;
+        z-index: 10;
     }
+
     nav .fa {
         display: block;
         color: white;
         margin: 15px;
-        font-size:20px;
+        font-size: 20px;
         cursor: pointer;
     }
-    .nav-links ul{ padding: 30px; }
-    .headline h1 { font-size: 30px; }
-    .grouper-content{
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    .headline h1 {
+        font-size: 30px;
+    }
+
+    .grouper-content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .text-panels{
+
+    .text-panels {
         background: rgb(29, 31, 33);
-        height: 90em;
-        background: linear-gradient(0deg, rgb(29,31,33),rgb(0,0,0));
+        height: 100%;
+        background: linear-gradient(0deg, rgb(29, 31, 33), rgb(0, 0, 0));
     }
-    .footer-hori-bar{
+
+    .footer-hori-bar {
         position: relative;
-        top: 49em;
- }
+        /* top: 49em; */
+    }
+
     .footer-ext-link div {
         position: relative;
         width: 25%;
         left: 20%;
-    }
-    #mail {
-        position: relative;
-        border-left: 2px solid black ;
     }
 }

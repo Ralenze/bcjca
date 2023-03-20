@@ -3,30 +3,36 @@
 }
 
 html {
-	overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
-form{
+form {
     background-color: rgba(0, 0, 0, 0.372);
     border-radius: 10px;
     padding: 40px;
     max-width: 600px;
     margin: 40px auto;
-    margin-bottom: 0px;
+    margin-bottom: 5em;
     box-shadow: 2px 2px 2px 2px #f44336ca;
 }
 
-form label{
+form label {
     color: white;
     font-size: 25px;
 }
 
-form input{
-    height: 20px;
+form input {
+    font-size: 20px;
+    height: 1em;
+    line-height: 1em;
     width: 515px;
+    border-radius: 6px;
+    background-color: rgba(213, 68, 64, 0.5);
+    border-color: transparent;
+    color: white;
 }
 
-form button{
+form button {
     font-size: 25px;
     color: white;
     background-color: rgba(0, 255, 255, 0.2);
@@ -35,8 +41,9 @@ form button{
     margin: 40px auto;
     margin-bottom: 0px;
     padding: 3px 100px;
+    width: 100%;
 }
 
-form button:hover{
+form button:hover {
     background-color: #f44336ca;
 }
