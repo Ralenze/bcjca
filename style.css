@@ -351,14 +351,14 @@ nav .fa {
 
     .nav-links {
         position: absolute;
-        background-color: rgba(4, 8, 27, 0.7);
+        background-color: rgba(4, 8, 27, 0.8);
         height: 100vh;
         width: 200px;
         top: 0;
         right: 0px;
         display: none;
         text-align: left;
-        z-index: 2;
+        z-index: 10;
     }
 
     nav .fa {

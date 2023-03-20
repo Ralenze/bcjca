@@ -248,9 +248,6 @@
 }
 
 @media(max-width:700px) {
-    .nav-links {
-        height: 60vh;
-    }
 
     .nav- p {
         font-size: 18px;
