@@ -19,10 +19,10 @@ function eventCards() {
         .then((data) => {
             data.shift();
             const timeline = document.getElementById("timeline");
-            timeline.innerHTML = "";
             timeline.className = "timeline";
 
             let card, inner, front, back, h2, p, h6, details, button;
+            let cards = [];
 
             for (let i = 0; i < data.length; i++) {
                 card = document.createElement("div");
@@ -72,8 +72,9 @@ function eventCards() {
 
                 card.appendChild(inner);
 
-                timeline.appendChild(card);
+                cards.push(card);
             }
+            timeline.replaceChildren(...cards);
         })
         .catch((error) => console.log(error));
 }
