@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head html-src="components/head.html">
+    <link rel="stylesheet" href="events.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="index.js" defer></script>
+    <script src="events.js" defer></script>
+    <script src="https://kit.fontawesome.com/9f85037272.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header" style="background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(63, 31, 76, 0.8))">
+        <nav html-src="components/nav.html"></nav>
+        <h1 class="clubtitle"> Upcoming</h1>
+        <!-- Change the dash back to circle, unable because fontawesome faster than compLoad() -->
+        <h1 class="clubtitle slider" style="color:rgba(0, 255, 255, 0.4)">
+            Matches - Events - Tourneys
+        </h1>
+        <div class="clubtitleseparator"></div>
+        <br>
+        <br>
+        <div class="timeline">
+            <div class="container left">
+                <div class="flip-card-inner">
+                    <div class="content flip-card-front">
+                        <h2>Monday November 21, 2022</h2>
+                        <p>Burnaby Central vs Moscrop</p>
+                        <div class="details">
+                            <h6>
+                                <i class="fa-solid fa-location-dot"></i> Chess.com <i class="fa-solid fa-clock"></i> 6 - 7 pm PST <i class="fa-solid fa-stopwatch-20"></i> 10 | 0
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="flip-card-back" data-location="https://chess.com/home" onclick="link()">
+                        <button class="eventBtn">Join!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="flip-card-inner">
+                    <div class="content flip-card-front">
+                        <h2>Thursday November 24, 2022</h2>
+                        <p>Moscrop vs New West</p>
+                        <div class="details">
+                            <h6>
+                                <i class="fa-solid fa-location-dot"></i> Chess.com <i class="fa-solid fa-clock"></i> 7 - 8 pm PST <i class="fa-solid fa-stopwatch-20"></i> 10 | 0
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="flip-card-back" data-location="https://www.chess.com/home">
+                        <button class="eventBtn">Join!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="flip-card-inner">
+                    <div class="content flip-card-front">
+                        <h2>Thursday December 1, 2022</h2>
+                        <p>BCJCA Event Placeholder</p>
+                        <div class="details">
+                            <h6>
+                                <i class="fa-solid fa-location-dot"></i> Chess.com <i class="fa-solid fa-clock"></i> 6 - 7 pm PST <i class="fa-solid fa-stopwatch-20"></i> 10 | 0
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="flip-card-back" data-location="https://chess.com/home" onclick="link()">
+                        <button class="eventBtn">Join!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="flip-card-inner">
+                    <div class="content flip-card-front">
+                        <h2>Thursday December 1, 2022</h2>
+                        <p>BCJCA Event Placeholder</p>
+                        <div class="details">
+                            <h6>
+                                <i class="fa-solid fa-location-dot"></i> Chess.com <i class="fa-solid fa-clock"></i> 7 - 8 pm PST <i class="fa-solid fa-stopwatch-20"></i> 10 | 0
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="flip-card-back" data-location="https://www.chess.com/home">
+                        <button class="eventBtn">Join!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </section>
+    <footer html-src="components/footer.html"></footer>
+</body>
+</html>

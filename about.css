@@ -87,14 +87,15 @@
     flex-direction: column;
     height: 80%;
     /* width: 100%; */
-    /* max-width: 90%; */
+    max-width: 90%;
     margin: 0 auto;
 }
 
-
+/* 
 #container {
+    max-width: 90%;
     margin: 0 auto;
-}
+} */
 
 .clubcardrow {
     position: relative;
@@ -247,9 +248,9 @@
 }
 
 @media(max-width:700px) {
-    /* .nav-links {
+    .nav-links {
         height: 60vh;
-    } */
+    }
 
     .nav- p {
         font-size: 18px;

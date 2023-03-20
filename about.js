@@ -71,9 +71,9 @@ function schoolCards() {
                 clubCardTop.className = "clubcardtop";
                 let img = document.createElement("img");
                 if (data[i].image === "") {
-                    img.src = "/_images/defaultclublogo.jpg";
+                    img.src = "images/defaultclublogo.jpg";
                 } else {
-                    img.src = `/_${data[i].image}`;
+                    img.src = data[i].image;
                 }
                 img.alt = data[i].name;
                 img.style.width = "200px";
