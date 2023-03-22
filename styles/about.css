@@ -2,6 +2,32 @@
     --autotest: rgba(27, 16, 146, 0.8);
 }
 
+/* Control class */
+.hide {
+    display: none;
+}
+
+/* Elements */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Page layout */
+header {
+    background-image: linear-gradient(rgb(0, 0, 0), var(--autotest));
+}
+
+header p {
+    padding: 24px;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 35px;
+    text-indent: 4%;
+    color: rgb(90, 237, 235)
+}
+
+/* Page classes */
 .clubtitle {
     position: relative;
     width: 50%;
@@ -23,10 +49,6 @@
     z-index: 1;
 }
 
-.hide {
-    display: none;
-}
-
 .clubtitleseparator {
     height: 8px;
     position: relative;
@@ -36,18 +58,6 @@
     border-radius: 10%;
 }
 
-.header {
-    background-image: linear-gradient(rgb(0, 0, 0), var(--autotest));
-}
-
-.header p {
-    padding: 24px;
-    margin-left: 15%;
-    margin-right: 15%;
-    font-size: 35px;
-    text-indent: 4%;
-    color: rgb(90, 237, 235)
-}
 
 .clubcardtitle {
     --heighttotal: 650vh;
@@ -65,21 +75,6 @@
     font-size: 100px;
     color: rgb(57, 157, 203);
     padding-bottom: 0.5em;
-}
-
-@media only screen and (max-width: 600px) {
-    .header p {
-        font-size: 25px;
-    }
-
-    .clubcardtitle h1 {
-        text-align: center;
-        position: relative;
-        padding-top: 45px;
-        font-size: 60px;
-        color: rgb(57, 157, 203);
-        padding-bottom: 0.5em;
-    }
 }
 
 .clubcardholder {
@@ -222,32 +217,53 @@
     top: -45px !important;
 }
 
-@keyframes slidingin {
-    8% {
-        opacity: 0
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+    gap: 2em 0;
+}
+
+.grid-item {
+    background-color: #ccc;
+    width: 200px;
+    height: 200px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.big {
+    width: 400px;
+    height: 400px;
+}
+
+.animate-grid {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.animate-grid.active {
+    opacity: 1;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 600px) {
+    header p {
+        font-size: 25px;
     }
 
-    16% {
-        opacity: 1;
-        left: 0px;
-    }
-
-    84% {
-        opacity: 1;
-        left: 0px;
-    }
-
-    92% {
-        opacity: 0
-    }
-
-    100% {
-        opacity: 0;
-        left: -100px;
+    .clubcardtitle h1 {
+        text-align: center;
+        position: relative;
+        padding-top: 45px;
+        font-size: 60px;
+        color: rgb(57, 157, 203);
+        padding-bottom: 0.5em;
     }
 }
 
-@media(max-width:700px) {
+@media only screen and (max-width:700px) {
 
     .nav- p {
         font-size: 18px;
@@ -290,6 +306,32 @@
     } */
 }
 
+/* Animation */
+@keyframes slidingin {
+    8% {
+        opacity: 0
+    }
+
+    16% {
+        opacity: 1;
+        left: 0px;
+    }
+
+    84% {
+        opacity: 1;
+        left: 0px;
+    }
+
+    92% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 0;
+        left: -100px;
+    }
+}
+
 /* .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -307,38 +349,3 @@
     opacity: 0;
     transition: opacity 1s ease-out;
 } */
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    justify-items: center;
-    gap: 2em 0;
-}
-
-.grid-item {
-    background-color: #ccc;
-    width: 200px;
-    height: 200px;
-    transform: translateY(100px);
-    opacity: 0;
-    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-}
-
-.big {
-    width: 400px;
-    height: 400px;
-}
-
-.animate-grid {
-    opacity: 0;
-    transition: opacity 1s ease-out;
-}
-
-.animate-grid.active {
-    opacity: 1;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
