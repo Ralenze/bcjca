@@ -1,6 +1,6 @@
 function schoolCards() {
     console.log("schoolcards");
-    fetch("/info/clubinfo.json")
+    fetch("clubinfo.json")
         .then((response) => response.json())
         .then((data) => {
             data.shift();

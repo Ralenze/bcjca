@@ -15,7 +15,7 @@ function link() {
 
 function eventCards() {
     console.log("eventcards");
-    fetch("/info/events.json")
+    fetch("events.json")
         .then((response) => response.json())
         .then((data) => {
             data.shift();
