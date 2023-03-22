@@ -1,16 +1,21 @@
-$(document).ready(function () {
-    let toSlide = $(".slider");
+// Wait for the document to be ready before running the code
+document.addEventListener("DOMContentLoaded", function () {
+    let toSlide = document.querySelectorAll(".slider");
     toSlide[0].style.opacity = "1";
     toSlide[0].style.left = "35%";
 });
 
+// Define the link function
 function link() {
-    window.open($(".flip-card-back").data("location"), "_blank");
+    const location = document.querySelector(".flip-card-back").dataset.location;
+    if (location !== "undefined") {
+        window.open(location, "_blank");
+    }
 }
 
 function eventCards() {
     console.log("eventcards");
-    fetch("events.json")
+    fetch("info/events.json")
         .then((response) => response.json())
         .then((data) => {
             data.shift();
@@ -59,10 +64,12 @@ function eventCards() {
                 back.setAttribute("data-location", data[i].link);
                 back.onclick = link;
 
-                button = document.createElement("button");
-                button.className = "eventBtn";
-                button.innerHTML = "Join!";
-                back.appendChild(button);
+                if (data[i].link !== undefined) {
+                    button = document.createElement("button");
+                    button.className = "eventBtn";
+                    button.innerHTML = "Join!";
+                    back.appendChild(button);
+                }
 
                 inner.appendChild(back);
 

@@ -1,6 +1,6 @@
 function schoolCards() {
     console.log("schoolcards");
-    fetch("clubinfo.json")
+    fetch("info/clubinfo.json")
         .then((response) => response.json())
         .then((data) => {
             data.shift();
@@ -130,3 +130,29 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+function getPromiseFromEvent(item, event) {
+    return new Promise((resolve) => {
+        const listener = async () => {
+            item.removeEventListener(event, listener);
+            item.classList.add("hide");
+            resolve();
+            return;
+        };
+        item.classList.add("aboutslider");
+        item.classList.remove("hide");
+        item.addEventListener(event, listener);
+    });
+}
+
+async function slidetextabout() {
+    let slidex = document.getElementsByClassName("clubtitle");
+    let slider = slidex[0].children;
+    let incrementer = 0;
+    const num = slider.length;
+    while (true) {
+        let moduloselector = incrementer % num;
+        await getPromiseFromEvent(slider[moduloselector], "animationend");
+        incrementer = (incrementer % num) + 1;
+    }
+}

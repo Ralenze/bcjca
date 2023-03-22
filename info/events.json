@@ -13,19 +13,21 @@
         "name": "Van West Qualifiers",
         "date": "Saturday, April 15th, 2023",
         "details": {
-            "where": "TBD",
-            "time": "15 + 5",
-            "clock": "10 am - 3 pm PT"
-        }
+            "where": "St. John's School (2215 W 10th Ave, Vancouver, BC V6K 2J1)",
+            "time": "10 am - 4 pm PT",
+            "clock": "15 + 5"
+        },
+        "link": "https://docs.google.com/document/d/14TnFV7WMu4KxsKuLNfjbFiw2xCQA0d3PrepjqIAr3CM/edit?usp=sharing"
     },
     {
         "name": "Burnaby Qualifiers",
-        "date": "Saturday, May 13th, 2023",
+        "date": "TBD",
         "details": {
             "where": "TBD",
             "time": "TBD",
-            "clock": "TBD"
-        }
+            "clock": "15 + 5"
+        },
+        "link": "https://docs.google.com/document/d/110kjr29ATDSVCNkYsk62KiQrT4LpDCnk-Ulp-yArFcw/edit?usp=sharing"
     },
     {
         "name": "Provincials",

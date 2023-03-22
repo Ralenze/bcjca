@@ -16,8 +16,8 @@
     opacity: 0;
     left: -100px;
     color: rgb(255, 136, 0);
-    -webkit-animation-name: slidingin;
-    -webkit-animation-duration: 8s;
+    /* -webkit-animation-name: slidingin;
+    -webkit-animation-duration: 8s; */
     animation-name: slidingin;
     animation-duration: 6s;
     z-index: 1;
