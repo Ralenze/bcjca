@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://bcjca.ca/sitemap.txt
