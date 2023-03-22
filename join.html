@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head html-src="components/head.html">
-    <link rel="stylesheet" href="events.css">
-    <link rel="stylesheet" href="join.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="index.js" defer></script>
-    <script src="https://kit.fontawesome.com/9f85037272.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <!--rgba(177, 182, 195, 0.7)-->
-    <section class="header" style="background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(63, 31, 76, 0.8))">
-        <nav html-src="components/nav.html"></nav>
-        <h1 class="clubtitle">Come play chess with us</h1>
-        <div class="clubtitleseparator"></div>
-        <form action="https://formsubmit.co/bcjca@gmail.com" method="POST">
-            <!--Honeypot-->
-            <input type="text" name="_honey" style="display: none;">
-            <!--Disable Captcha-->
-            <input type="hidden" name="_captcha" value="false" ;>
-            <!--Success Link-->
-            <input type="hidden" name="_next" value="http://bcjca.ca/success.html">
-            <label class="label">Full name</label>
-            <br>
-            <input type="text" name="name" required>
-            <br>
-            <br>
-            <label class="label">Email</label>
-            <br>
-            <input type="email" name="email" required>
-            <br>
-            <br>
-            <label class="label">School</label>
-            <br>
-            <input type="text" name="school" required>
-            <br>
-            <br>
-            <label class="label">Grade</label>
-            <br>
-            <input type="text" name="grade" required>
-            <br>
-            <br>
-            <label class="label">Chess.com/Lichess Account (Optional)</label>
-            <br>
-            <input type="text" name="account">
-            <br>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-    <footer html-src="components/footer.html"></footer>
-</body>
+    <head html-src="components/head.html">
+        <link rel="stylesheet" href="events.css">
+        <link rel="stylesheet" href="join.css">
+        <script src="https://kit.fontawesome.com/9f85037272.js" crossorigin="anonymous"></script>
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <!--rgba(177, 182, 195, 0.7)-->
+        <section class="header" style="background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(63, 31, 76, 0.8))">
+            <nav html-src="components/nav.html"></nav>
+            <h1 class="clubtitle">Come play chess with us</h1>
+            <div class="clubtitleseparator"></div>
+            <form action="https://formsubmit.co/bcjca@gmail.com" method="POST">
+                <!--Honeypot-->
+                <input type="text" name="_honey" style="display: none;">
+                <!--Disable Captcha-->
+                <input type="hidden" name="_captcha" value="false">
+                <!--Success Link-->
+                <input type="hidden" name="_next" value="http://bcjca.ca/success.html">
+                <label class="label">Full name</label>
+                <br>
+                <input type="text" name="name" required>
+                <br>
+                <br>
+                <label class="label">Email</label>
+                <br>
+                <input type="email" name="email" required>
+                <br>
+                <br>
+                <label class="label">School</label>
+                <br>
+                <input type="text" name="school" required>
+                <br>
+                <br>
+                <label class="label">Grade</label>
+                <br>
+                <input type="text" name="grade" required>
+                <br>
+                <br>
+                <label class="label">Chess.com/Lichess Account (Optional)</label>
+                <br>
+                <input type="text" name="account">
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <footer html-src="components/footer.html"></footer>
+    </body>
 </html>
