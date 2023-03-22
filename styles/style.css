@@ -27,6 +27,7 @@
     font-display: swap;
 }
 
+/* Page layout */
 
 * {
     margin: 0;
@@ -44,17 +45,6 @@ body {
     flex-direction: column;
 }
 
-footer {
-    width: 100%;
-    background-color: rgb(60, 60, 69);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 50px;
-    float: bottom;
-}
-
-
 header {
     min-height: calc(100vh - 70px);
     width: 100%;
@@ -65,44 +55,38 @@ header {
     flex: 1 0 auto;
 }
 
-.selectednavlink {
-    border-bottom: 2px solid #ff3336;
-}
-
 nav {
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
 }
-
 nav img {
     width: 120px;
 }
-
 nav #light {
     font-size: 25px;
     color: white;
+}
+nav .fa {
+    display: none;
 }
 
 .nav-links {
     flex: 1;
     text-align: right;
 }
-
 .nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
-
 .nav-links ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 25px;
 }
-
 .nav-links ul li::after {
     content: '';
     width: 0%;
@@ -117,46 +101,20 @@ nav #light {
     width: 100%;
 }
 
-.text-box {
-    width: 90%;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+footer {
+    width: 100%;
+    background-color: rgb(60, 60, 69);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    float: bottom;
 }
 
-.text-box h1 {
-    font-size: 62px;
-}
+/* Page classes */
 
-.text-box p {
-    margin: 10px 0 40px;
-    font-size: 25px;
-    color: #fff;
-}
-
-nav .fa {
-    display: none;
-}
-
-.hero-btn {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 12px 34px;
-    font-size: 26px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.hero-btn:hover {
-    background-color: rgba(0, 255, 255, 0.4);
-    border: 1px solid rgba(0, 255, 255, 0.4);
+.selectednavlink {
+    border-bottom: 2px solid #ff3336;
 }
 
 .text-panels {
@@ -165,13 +123,12 @@ nav .fa {
     width: 100%;
     background: linear-gradient(0deg, rgb(29, 31, 33), rgb(0, 0, 0));
 }
-
 .text-panels h1 {
     text-align: center;
     color: white;
 }
 
-.headline>h1 {
+.headline > h1 {
     font-size: 50px;
 }
 
@@ -180,7 +137,6 @@ nav .fa {
     width: 100%;
     /* padding-bottom: 5vh; */
 }
-
 .cardholder .card .image {
     height: 300px;
     width: 300px;
@@ -188,7 +144,6 @@ nav .fa {
     background: #7d2ae8;
     align-items: center;
 }
-
 .cardholder .card .image img {
     height: 100%;
     width: 100%;
@@ -224,7 +179,6 @@ nav .fa {
     overflow-x: visible;
     transition: 250ms all ease-in-out;
 }
-
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0px 2px 40px #101213;
@@ -241,7 +195,6 @@ nav .fa {
     backdrop-filter: grayscale(80%);
     justify-content: center;
 }
-
 .cardcaption a {
     border: none;
     text-align: center;
@@ -259,8 +212,7 @@ nav .fa {
     position: absolute;
     bottom: 0;
 }
-
-.footer-hori-bar>p {
+.footer-hori-bar > p {
     color: rgb(76, 79, 94);
     margin-left: 2em;
     font-size: 24px;
@@ -280,7 +232,6 @@ nav .fa {
     /* margin-right: 2vh; */
     /* margin-left: 2vh; */
 }
-
 .footer-ext-link * {
     padding: 10px;
     cursor: pointer;
@@ -288,14 +239,19 @@ nav .fa {
     font-size: 32px;
     z-index: 100000;
 }
-
 .footer-ext-link * :hover {
     font-size: 45px;
 }
-
 .footer-ext-link #Github {
     border-left: 3px solid rgb(0, 0, 0);
     border-radius: 3%;
+}
+
+.coloritnice {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(80, 230, 228)), to(rgb(39, 62, 125)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @media screen and (max-width: 600px) {
@@ -334,48 +290,7 @@ nav .fa {
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(64, 222, 231)), color-stop(0.72, rgb(43, 193, 197)), color-stop(0.86, rgb(21, 163, 171)));
 }
 
-@keyframes slidingin {
-    15% {
-        opacity: 0
-    }
-
-    30% {
-        opacity: 1;
-        left: 0px;
-    }
-
-    70% {
-        opacity: 1;
-        left: 0px;
-    }
-
-    85% {
-        opacity: 0
-    }
-
-    100% {
-        opacity: 0;
-        left: -100px;
-    }
-}
-
-.coloritnice {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgb(80, 230, 228)), to(rgb(39, 62, 125)));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-@media(max-width: 800px) {
-
-    .text-box h1 {
-        font-size: 32px;
-    }
-
-    .text-box p {
-        font-size: 24px;
-    }
-
+@media screen and (max-width: 800px) {
     .nav-links ul li {
         display: block;
     }
