@@ -5,10 +5,12 @@ let lightIcon, logo, menuBtn, menu;
 function toggleLightMode() {
     if (lightIcon.style.color === "white") {
         lightIcon.style.color = "rgba(255, 240, 0, 1)";
-        logo.src = "/images/bcjcalight.png";
+        logo.src =
+            "https://github.com/Ralenze/bcjca/blob/main/images/bcjcalight.png?raw=true";
     } else {
         lightIcon.style.color = "white";
-        logo.src = "/images/bcjcalogo.png";
+        logo.src =
+            "https://github.com/Ralenze/bcjca/blob/main/images/bcjcalogo.png?raw=true";
     }
 }
 
