@@ -36,11 +36,11 @@
     border-radius: 10%;
 }
 
-.header {
+header {
     background-image: linear-gradient(rgb(0, 0, 0), var(--autotest));
 }
 
-.header p {
+header p {
     padding: 24px;
     margin-left: 15%;
     margin-right: 15%;
@@ -68,7 +68,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .header p {
+    header p {
         font-size: 25px;
     }
 
