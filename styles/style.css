@@ -1,39 +1,9 @@
-/* latin-ext */
-@font-face {
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/bebasneue/v9/JTUSjIg69CK48gW7PXoo9Wdhyzbi.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-@font-face {
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/bebasneue/v9/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-    font-family: 'FontAwesome';
-    src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
-        url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 /* Page layout */
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Bebas Neue', sans-serif;
-    box-sizing: border-box;
 }
 
 html, body {
@@ -61,13 +31,16 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
 nav img {
     width: 120px;
 }
+
 nav #light {
     font-size: 25px;
     color: white;
 }
+
 nav .fa {
     display: none;
 }
@@ -76,17 +49,20 @@ nav .fa {
     flex: 1;
     text-align: right;
 }
+
 .nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
+
 .nav-links ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 25px;
 }
+
 .nav-links ul li::after {
     content: '';
     width: 0%;
@@ -123,12 +99,13 @@ footer {
     width: 100%;
     background: linear-gradient(0deg, rgb(29, 31, 33), rgb(0, 0, 0));
 }
+
 .text-panels h1 {
     text-align: center;
     color: white;
 }
 
-.headline > h1 {
+.headline>h1 {
     font-size: 50px;
 }
 
@@ -137,6 +114,7 @@ footer {
     width: 100%;
     /* padding-bottom: 5vh; */
 }
+
 .cardholder .card .image {
     height: 300px;
     width: 300px;
@@ -144,6 +122,7 @@ footer {
     background: #7d2ae8;
     align-items: center;
 }
+
 .cardholder .card .image img {
     height: 100%;
     width: 100%;
@@ -179,6 +158,7 @@ footer {
     overflow-x: visible;
     transition: 250ms all ease-in-out;
 }
+
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0px 2px 40px #101213;
@@ -195,6 +175,7 @@ footer {
     backdrop-filter: grayscale(80%);
     justify-content: center;
 }
+
 .cardcaption a {
     border: none;
     text-align: center;
@@ -212,7 +193,8 @@ footer {
     position: absolute;
     bottom: 0;
 }
-.footer-hori-bar > p {
+
+.footer-hori-bar>p {
     color: rgb(76, 79, 94);
     margin-left: 2em;
     font-size: 24px;
@@ -232,6 +214,7 @@ footer {
     /* margin-right: 2vh; */
     /* margin-left: 2vh; */
 }
+
 .footer-ext-link * {
     padding: 10px;
     cursor: pointer;
@@ -239,9 +222,11 @@ footer {
     font-size: 32px;
     z-index: 100000;
 }
+
 .footer-ext-link * :hover {
     font-size: 45px;
 }
+
 .footer-ext-link #Github {
     border-left: 3px solid rgb(0, 0, 0);
     border-radius: 3%;

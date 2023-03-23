@@ -18,13 +18,25 @@ header {
     background-image: linear-gradient(rgb(0, 0, 0), var(--autotest));
 }
 
-header p {
+header h2 {
     padding: 24px;
+    padding-bottom: 0.25em;
     margin-left: 15%;
     margin-right: 15%;
     font-size: 35px;
     text-indent: 4%;
-    color: rgb(90, 237, 235)
+    color: rgb(255, 136, 0);
+}
+
+header p {
+    padding: 1em;
+    padding-top: 0;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 20px;
+    text-indent: 4%;
+    color: rgb(90, 237, 235);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 /* Page classes */
@@ -60,11 +72,12 @@ header p {
 
 
 .clubcardtitle {
-    --heighttotal: 650vh;
+    /* --heighttotal: 650vh; */
     /* height: var(--heighttotal); */
     /* width: 100%; */
     background: linear-gradient(180deg, var(--autotest), rgb(55, 19, 103));
-    padding: 8em;
+    padding-top: 0;
+    padding-bottom: calc(1em + 50px);
     min-height: calc(100vh - 50px);
 }
 
@@ -263,48 +276,6 @@ header p {
     }
 }
 
-@media only screen and (max-width:700px) {
-
-    .nav- p {
-        font-size: 18px;
-    }
-
-    .clubcardtitle {
-        height: 1600vh;
-    }
-
-    .clubcardrow {
-        flex-direction: column;
-        height: 300vh;
-        width: 90vh;
-    }
-
-    .clubcard {
-        height: 200%;
-        width: 75%;
-        align-self: center;
-        margin: 10px;
-    }
-
-    /* .clubcardtop {
-        height: 72vh;
-        height: 400px;
-        z-index: 0;
-        position: absolute;
-    } */
-
-    .clubcard .clubcardtop img {
-        height: 100%;
-        width: 100%;
-        background: center center;
-    }
-
-    /* .clubcardbottom {
-        height: 18vh;
-        z-index: 1;
-        position: absolute;
-    } */
-}
 
 /* Animation */
 @keyframes slidingin {
