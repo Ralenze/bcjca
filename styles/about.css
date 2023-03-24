@@ -18,13 +18,23 @@ header {
     background-image: linear-gradient(rgb(0, 0, 0), var(--autotest));
 }
 
-header p {
+header h2 {
     padding: 24px;
-    margin-left: 15%;
-    margin-right: 15%;
+    padding-bottom: 0.25em;
+    margin: 0 15%;
     font-size: 35px;
     text-indent: 4%;
-    color: rgb(90, 237, 235)
+    color: rgb(255, 136, 0);
+}
+
+header p {
+    padding: 1em;
+    padding-top: 0;
+    margin: 0 15%;
+    font-size: 18px;
+    text-indent: 4%;
+    color: rgb(90, 237, 235);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 /* Page classes */
@@ -60,15 +70,25 @@ header p {
 
 
 .clubcardtitle {
-    --heighttotal: 650vh;
+    /* --heighttotal: 650vh; */
     /* height: var(--heighttotal); */
     /* width: 100%; */
     background: linear-gradient(180deg, var(--autotest), rgb(55, 19, 103));
-    padding: 8em;
+    padding-top: 0;
+    padding-bottom: calc(1em + 50px);
     min-height: calc(100vh - 50px);
 }
 
 .clubcardtitle h1 {
+    text-align: center;
+    position: relative;
+    padding-top: 45px;
+    font-size: 100px;
+    color: rgb(57, 157, 203);
+    padding-bottom: 0.5em;
+}
+
+.clubcardtitle h2 {
     text-align: center;
     position: relative;
     padding-top: 45px;
@@ -176,6 +196,11 @@ header p {
     padding: 0.5em 0.5em;
 }
 
+.info h2 {
+    font-size: 30px;
+    padding: 0.5em 0.5em;
+}
+
 .info p {
     text-align: center;
     font-size: 16px;
@@ -217,6 +242,15 @@ header p {
     top: -45px !important;
 }
 
+.clubcardbottom h2 {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    bottom: 25%;
+    color: rgb(13, 196, 196);
+    top: -45px !important;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -248,9 +282,10 @@ header p {
 }
 
 /* Responsive design */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     header p {
-        font-size: 25px;
+        font-size: 16px;
+        margin: 0 1em;
     }
 
     .clubcardtitle h1 {
@@ -263,48 +298,6 @@ header p {
     }
 }
 
-@media only screen and (max-width:700px) {
-
-    .nav- p {
-        font-size: 18px;
-    }
-
-    .clubcardtitle {
-        height: 1600vh;
-    }
-
-    .clubcardrow {
-        flex-direction: column;
-        height: 300vh;
-        width: 90vh;
-    }
-
-    .clubcard {
-        height: 200%;
-        width: 75%;
-        align-self: center;
-        margin: 10px;
-    }
-
-    /* .clubcardtop {
-        height: 72vh;
-        height: 400px;
-        z-index: 0;
-        position: absolute;
-    } */
-
-    .clubcard .clubcardtop img {
-        height: 100%;
-        width: 100%;
-        background: center center;
-    }
-
-    /* .clubcardbottom {
-        height: 18vh;
-        z-index: 1;
-        position: absolute;
-    } */
-}
 
 /* Animation */
 @keyframes slidingin {

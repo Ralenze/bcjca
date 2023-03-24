@@ -7,34 +7,48 @@ function schoolCards() {
             const clubCardHolder = document.getElementById("clubcardholder");
             clubCardHolder.innerHTML = "";
             clubCardHolder.className = "grid-container animate-grid";
+            let clubCard,
+                info,
+                h2,
+                br,
+                contact,
+                p,
+                leaders,
+                text,
+                last,
+                a,
+                clubCardTop,
+                img,
+                clubLeader,
+                clubCardBottom;
 
             for (let i = 0; i < data.length; i++) {
-                let clubCard = document.createElement("div");
+                clubCard = document.createElement("div");
                 clubCard.className = "clubcard grid-item";
 
-                let info = document.createElement("div");
+                info = document.createElement("div");
                 info.className = "info";
 
-                let h1 = document.createElement("h1");
-                h1.innerHTML = `-EST. ${data[i].est}-`;
-                h1.style = "padding-bottom: 0;";
-                info.appendChild(h1);
+                h2 = document.createElement("h2");
+                h2.innerHTML = `-EST. ${data[i].est}-`;
+                h2.style = "padding-bottom: 0;";
+                info.appendChild(h2);
 
                 br = document.createElement("br");
                 info.appendChild(br);
 
-                const contact = data[i]["contact"];
+                contact = data[i]["contact"];
 
                 if (contact.leaders.length > 0) {
                     p = document.createElement("p");
-                    let leaders = contact.leaders;
-                    let text = "";
+                    leaders = contact.leaders;
+                    text = "";
                     if (leaders.length === 1) {
                         text = leaders[0];
                     } else if (leaders.length === 2) {
                         text = leaders.join(" and ");
                     } else if (leaders.length > 2) {
-                        const last = leaders.pop();
+                        last = leaders.pop();
                         text = `${leaders.join(", ")}, and ${last}`;
                     }
                     p.innerHTML = `<i class="fa-solid fa-users"></i> ${text}`;
@@ -43,7 +57,7 @@ function schoolCards() {
 
                 if (contact.email) {
                     p = document.createElement("p");
-                    let a = document.createElement("a");
+                    a = document.createElement("a");
                     a.href = `mailto:${contact.email}`;
                     a.innerHTML = `<i class="fa-solid fa-envelope"></i> Contact Us`;
                     p.appendChild(a);
@@ -67,9 +81,9 @@ function schoolCards() {
 
                 clubCard.appendChild(info);
 
-                let clubCardTop = document.createElement("div");
+                clubCardTop = document.createElement("div");
                 clubCardTop.className = "clubcardtop";
-                let img = document.createElement("img");
+                img = document.createElement("img");
                 if (data[i].image === "") {
                     img.src = "images/defaultclublogo.jpg";
                 } else {
@@ -79,16 +93,18 @@ function schoolCards() {
                 img.style.width = "200px";
                 img.style.height = "200px";
                 clubCardTop.appendChild(img);
-                let clubLeader = document.createElement("div");
+
+                clubLeader = document.createElement("div");
                 clubLeader.className = "clubleader";
                 clubCardTop.appendChild(clubLeader);
                 clubCard.appendChild(clubCardTop);
 
-                let clubCardBottom = document.createElement("div");
+                clubCardBottom = document.createElement("div");
                 clubCardBottom.className = "clubcardbottom";
-                h1 = document.createElement("h1");
-                h1.innerHTML = data[i].name;
-                clubCardBottom.appendChild(h1);
+
+                h2 = document.createElement("h2");
+                h2.innerHTML = data[i].name;
+                clubCardBottom.appendChild(h2);
                 clubCard.appendChild(clubCardBottom);
 
                 clubCardHolder.appendChild(clubCard);
