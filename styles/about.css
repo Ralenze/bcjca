@@ -88,6 +88,15 @@ header p {
     padding-bottom: 0.5em;
 }
 
+.clubcardtitle h2 {
+    text-align: center;
+    position: relative;
+    padding-top: 45px;
+    font-size: 100px;
+    color: rgb(57, 157, 203);
+    padding-bottom: 0.5em;
+}
+
 .clubcardholder {
     display: flex;
     flex-direction: column;
@@ -187,6 +196,11 @@ header p {
     padding: 0.5em 0.5em;
 }
 
+.info h2 {
+    font-size: 30px;
+    padding: 0.5em 0.5em;
+}
+
 .info p {
     text-align: center;
     font-size: 16px;
@@ -220,6 +234,15 @@ header p {
 }
 
 .clubcardbottom h1 {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    bottom: 25%;
+    color: rgb(13, 196, 196);
+    top: -45px !important;
+}
+
+.clubcardbottom h2 {
     position: relative;
     text-align: center;
     font-size: 30px;
