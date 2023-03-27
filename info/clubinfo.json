@@ -15,7 +15,7 @@
         "name": "Burnaby Central",
         "est": 2022,
         "description": "",
-        "image": "images/bcsschess.png",
+        "image": "images/bcsschess.webp",
         "contact": {
             "leaders": [],
             "email": "",
@@ -28,7 +28,7 @@
         "name": "Burnaby North",
         "est": 2022,
         "description": "",
-        "image": "images/BNSChess.jpg",
+        "image": "images/BNSChess.webp",
         "contact": {
             "leaders": [],
             "email": "",
@@ -41,7 +41,7 @@
         "name": "Burnaby South",
         "est": 2022,
         "description": "",
-        "image": "images/bsss.png",
+        "image": "images/bsss.webp",
         "contact": {
             "leaders": [],
             "email": "",
@@ -54,7 +54,7 @@
         "name": "Kitsilano",
         "est": 2022,
         "description": "",
-        "image": "images/kits.png",
+        "image": "images/kits.webp",
         "contact": {
             "leaders": [],
             "email": "",
@@ -67,7 +67,7 @@
         "name": "MacNeill",
         "est": 2021,
         "description": "",
-        "image": "images/MacNeillLogo.png",
+        "image": "images/MacNeillLogo.webp",
         "contact": {
             "leaders": [
                 "Prajwal Prashanth",
@@ -86,7 +86,7 @@
         "name": "McMath",
         "est": 2022,
         "description": "",
-        "image": "images/mcmath.png",
+        "image": "images/mcmath.webp",
         "contact": {
             "leaders": [
                 "Andrew",
@@ -103,7 +103,7 @@
         "name": "Moscrop",
         "est": 2020,
         "description": "",
-        "image": "images/moscroplogo.png",
+        "image": "images/moscroplogo.webp",
         "contact": {
             "leaders": [
                 "Bella Wang",
@@ -119,7 +119,7 @@
         "name": "Mount Douglas",
         "est": 2022,
         "description": "",
-        "image": "images/mountdouglas.png",
+        "image": "images/mountdouglas.webp",
         "contact": {
             "leaders": [],
             "email": "",
@@ -132,7 +132,7 @@
         "name": "New West",
         "est": 2022,
         "description": "",
-        "image": "images/hyacks.png",
+        "image": "images/hyacks.webp",
         "contact": {
             "leaders": [],
             "email": "",
@@ -145,7 +145,7 @@
         "name": "North Surrey",
         "est": 2022,
         "description": "",
-        "image": "images/nwsssimon.png",
+        "image": "images/nwsssimon.webp",
         "contact": {
             "leaders": [
                 "Isaac Brugge",
@@ -162,7 +162,7 @@
         "name": "Sentinel",
         "est": 2019,
         "description": "",
-        "image": "images/sentinellogo.png",
+        "image": "images/sentinellogo.webp",
         "contact": {
             "leaders": [
                 "Raymond Zhang",
@@ -178,7 +178,7 @@
         "name": "Tupper",
         "est": 2022,
         "description": "",
-        "image": "images/tupperlogo.png",
+        "image": "images/tupperlogo.webp",
         "contact": {
             "leaders": [],
             "email": "",
@@ -190,7 +190,7 @@
     {
         "name": "West Van",
         "est": 2020,
-        "image": "images/westvantemporary.png",
+        "image": "images/westvantemporary.webp",
         "contact": {
             "leaders": [
                 "Eric Tao Xie"

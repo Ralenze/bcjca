@@ -90,8 +90,8 @@ function schoolCards() {
                     img.src = data[i].image;
                 }
                 img.alt = data[i].name;
-                img.style.width = "200px";
-                img.style.height = "200px";
+                img.width = "200";
+                img.height = "200";
                 clubCardTop.appendChild(img);
 
                 clubLeader = document.createElement("div");

@@ -5,10 +5,10 @@ let lightIcon, logo, menuBtn, menu;
 function toggleLightMode() {
     if (lightIcon.style.color === "white") {
         lightIcon.style.color = "rgba(255, 240, 0, 1)";
-        logo.src = "images/bcjcalight.png";
+        logo.src = "images/bcjcalight.webp";
     } else {
         lightIcon.style.color = "white";
-        logo.src = "images/bcjcalogo.png";
+        logo.src = "images/bcjcalogo.webp";
     }
 }
 
