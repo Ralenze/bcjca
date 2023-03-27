@@ -18,7 +18,7 @@ body {
 header {
     min-height: calc(100vh - 70px);
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("../images/chessplaceholder.png");
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("../images/chessplaceholder.webp");
     background-position: center;
     background-size: cover;
     position: relative;
