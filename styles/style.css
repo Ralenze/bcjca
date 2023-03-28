@@ -30,6 +30,7 @@ nav {
     padding: 1em 3em;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.3s ease-in-out;
 }
 
 nav img {
