@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function link(event) {
     const location = event.target.parentElement.dataset.location;
     if (location !== "undefined") {
-        window.open(location, "_blank");
+        window.open(location, "_blank", "noopener, noreferrer");
     }
 }
 

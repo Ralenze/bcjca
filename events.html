@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head html-src="components/head.html">
+    <head>
+        <!-- <meta> -->
+        <meta charset="UTF-8">
+        <meta name="author" content="British Columbia Junior Chess Association">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <!-- </meta> -->
+        <!-- <link> -->
+        <link rel="stylesheet" href="styles/fonts.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- </link> -->
         <title>Events | British Columbia Junior Chess Association</title>
         <meta property="og:title" content="Events | British Columbia Junior Chess Association">
         <meta name="twitter:title" content="Events | British Columbia Junior Chess Association">
@@ -16,7 +28,41 @@
     </head>
     <body>
         <header style="background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(63, 31, 76, 0.8))">
-            <nav html-src="components/nav.html"></nav>
+            <nav>
+                <a href="/">
+                    <img
+                        width="120"
+                        height="120"
+                        id="logo"
+                        src="images/bcjcalight.webp"
+                        alt="BCJCA logo, which is the outline of a knight chess piece on top of the Canadian flag"
+                    >
+                </a>
+                <!-- <i class="fa-regular fa-lightbulb" id="light" onclick="toggleLightMode()"></i> -->
+                <!-- text in logo not seen, need a border or something -->
+                <div class="nav-links" id="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="about.html">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="events.html">EVENTS</a>
+                        </li>
+                        <li>
+                            <a href="join.html">JOIN US!</a>
+                        </li>
+                    </ul>
+                </div>
+                <i
+                    id="menubtn"
+                    class="fa fa-bars"
+                    onclick="showBtn()"
+                    aria-hidden="true"
+                ></i>
+            </nav>
             <h1 class="clubtitle"> Upcoming</h1>
             <!-- Change the dash back to circle, unable because fontawesome faster than compLoad() -->
             <h1 class="clubtitle slider" style="color:#f44336">
@@ -31,6 +77,24 @@
             <br>
             <br>
         </header>
-        <footer html-src="components/footer.html"></footer>
+        <footer>
+            <div class="footer-hori-bar">
+                <div class="footer-ext-link">
+                    <a href="mailto:bcjca@gmail.com" aria-label="Email address" target="_blank">
+                        <i class="fa-regular fa-envelope coloritnice"></i>
+                    </a>
+                    <a href="https://www.instagram.com/bcjrchess/" aria-label="Instagram" target="_blank">
+                        <i class="fa-brands fa-instagram coloritnice"></i>
+                    </a>
+                    <a href="https://github.com/Ralenze/bcjca" aria-label="GitHub" target="_blank">
+                        <i class="fa-brands fa-github coloritnice"></i>
+                    </a>
+                    <a href="https://discord.gg/QRjbTbdbJx" aria-label="Discord" target="_blank">
+                        <i class="fa-brands fa-discord coloritnice"></i>
+                    </a>
+                </div>
+                <p> Copyright © 2023</p>
+            </div>
+        </footer>
     </body>
 </html>
