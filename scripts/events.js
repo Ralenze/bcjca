@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Define the link function
-function link() {
-    const location = document.querySelector(".flip-card-back").dataset.location;
+function link(event) {
+    const location = event.target.parentElement.dataset.location;
     if (location !== "undefined") {
         window.open(location, "_blank");
     }
