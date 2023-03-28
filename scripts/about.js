@@ -34,9 +34,6 @@ function schoolCards() {
                 h2.style = "padding-bottom: 0;";
                 info.appendChild(h2);
 
-                br = document.createElement("br");
-                info.appendChild(br);
-
                 contact = data[i]["contact"];
 
                 if (contact.leaders.length > 0) {
@@ -60,6 +57,7 @@ function schoolCards() {
                     a = document.createElement("a");
                     a.href = `mailto:${contact.email}`;
                     a.innerHTML = `<i class="fa-solid fa-envelope"></i> Contact Us`;
+                    a.target = "_blank";
                     p.appendChild(a);
                     info.appendChild(p);
                 }
@@ -75,6 +73,17 @@ function schoolCards() {
                     a = document.createElement("a");
                     a.href = contact.discord;
                     a.innerHTML = `<i class="fa-brands fa-discord"></i> Discord`;
+                    a.target = "_blank";
+                    p.appendChild(a);
+                    info.appendChild(p);
+                }
+
+                if (contact.instagram) {
+                    p = document.createElement("p");
+                    a = document.createElement("a");
+                    a.href = `https://instagram.com/${contact.instagram}`;
+                    a.innerHTML = `<i class="fa-brands fa-instagram"></i> Instagram`;
+                    a.target = "_blank";
                     p.appendChild(a);
                     info.appendChild(p);
                 }
