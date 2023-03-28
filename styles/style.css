@@ -27,7 +27,7 @@ header {
 
 nav {
     display: flex;
-    padding: 2% 6%;
+    padding: 1em 3em;
     justify-content: space-between;
     align-items: center;
 }
@@ -172,6 +172,7 @@ footer {
     position: relative;
     bottom: 90px;
     background-color: rgba(4, 9, 30, 0.4);
+    -webkit-backdrop-filter: grayscale(80%);
     backdrop-filter: grayscale(80%);
     justify-content: center;
 }

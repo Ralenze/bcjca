@@ -10,7 +10,6 @@ function schoolCards() {
             let clubCard,
                 info,
                 h2,
-                br,
                 contact,
                 p,
                 leaders,
@@ -58,6 +57,7 @@ function schoolCards() {
                     a.href = `mailto:${contact.email}`;
                     a.innerHTML = `<i class="fa-solid fa-envelope"></i> Contact Us`;
                     a.target = "_blank";
+                    a.rel = "noopener noreferrer";
                     p.appendChild(a);
                     info.appendChild(p);
                 }
@@ -74,6 +74,7 @@ function schoolCards() {
                     a.href = contact.discord;
                     a.innerHTML = `<i class="fa-brands fa-discord"></i> Discord`;
                     a.target = "_blank";
+                    a.rel = "noopener noreferrer";
                     p.appendChild(a);
                     info.appendChild(p);
                 }
@@ -84,6 +85,7 @@ function schoolCards() {
                     a.href = `https://instagram.com/${contact.instagram}`;
                     a.innerHTML = `<i class="fa-brands fa-instagram"></i> Instagram`;
                     a.target = "_blank";
+                    a.rel = "noopener noreferrer";
                     p.appendChild(a);
                     info.appendChild(p);
                 }
@@ -176,8 +178,8 @@ async function slidetextabout() {
     let incrementer = 0;
     const num = slider.length;
     while (true) {
-        let moduloselector = incrementer % num;
-        await getPromiseFromEvent(slider[moduloselector], "animationend");
-        incrementer = (incrementer % num) + 1;
+        await getPromiseFromEvent(slider[incrementer], "animationend");
+        incrementer++;
+        incrementer %= num;
     }
 }
