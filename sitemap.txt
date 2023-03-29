@@ -1,7 +1,6 @@
 https://bcjca.ca/
 https://bcjca.ca/about.html
 https://bcjca.ca/events.html
-https://bcjca.ca/join.html
 https://bcjca.ca/images/bcsschess.webp
 https://bcjca.ca/images/BNSChess.webp
 https://bcjca.ca/images/bsss.webp
