@@ -18,21 +18,44 @@
             onload="this.onload=null;this.rel='stylesheet'"
         >
         <!-- </link> -->
-        <title>Home | British Columbia Junior Chess Association</title>
-        <meta property="og:title" content="Home | British Columbia Junior Chess Association">
-        <meta name="twitter:title" content="Home | British Columbia Junior Chess Association">
-        <meta name="description" content="The British Columbia Junior Chess Association is a chess organization directed towards bringing together secondary school students to play chess. Through tournaments, events, and play, its main goal is to not only play chess together, but to create life long connections among British Columbia's youth and share our passion and love for the game. Whether you're a beginner or an experienced player, the BCJCA is the place for you.">
-        <meta property="og:description" content="The British Columbia Junior Chess Association is a chess organization directed towards bringing together secondary school students to play chess. Through tournaments, events, and play, its main goal is to not only play chess together, but to create life long connections among British Columbia's youth and share our passion and love for the game. Whether you're a beginner or an experienced player, the BCJCA is the place for you.">
-        <meta name="twitter:description" content="The British Columbia Junior Chess Association is a chess organization directed towards bringing together secondary school students to play chess. Through tournaments, events, and play, its main goal is to not only play chess together, but to create life long connections among British Columbia's youth and share our passion and love for the game. Whether you're a beginner or an experienced player, the BCJCA is the place for you.">
-        <meta property="og:image" content="images/BCJCA.webp">
+        <title>Our Sponsor | British Columbia Junior Chess Association</title>
+        <meta property="og:title" content="Our Sponsor | British Columbia Junior Chess Association">
+        <meta name="twitter:title" content="Our Sponsor | British Columbia Junior Chess Association">
+        <meta name="description" content="Meet our sponsor, Lulu Island Chess!">
+        <meta property="og:description" content="Meet our sponsor, Lulu Island Chess!">
+        <meta name="twitter:description" content="Meet our sponsor, Lulu Island Chess!">
+        <meta property="og:image" content="images/luluislandchess.webp">
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:image" content="images/BCJCA.webp">
+        <meta name="twitter:image" content="images/luluislandchess.webp">
+        <style>
+            #lululogo {
+                width: calc(min(max(55vh, 55vw), 600px));
+                height: calc(min(max(55vh, 55vw), 600px));
+                object-fit: contain;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                z-index: 0;
+                filter: brightness(90%) blur(1px);
+                border-radius: 50%;
+            }
+            nav {
+                position: relative;
+                z-index: 1000;
+            }
+            .text-box {
+                text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                z-index: 2;
+            }
+        </style>
         <link rel="stylesheet" href="styles/index.css">
         <script src="https://kit.fontawesome.com/9f85037272.js" crossorigin="anonymous" async></script>
         <script src="scripts/index.js" defer></script>
     </head>
     <body>
-        <header>
+        <header style="background-image: linear-gradient(rgb(80, 187, 58), rgb(183, 231, 133));">
             <nav>
                 <a href="/">
                     <img
@@ -68,20 +91,22 @@
                     aria-hidden="true"
                 ></i>
             </nav>
-            <div class="text-box">
-                <h1>
-                    BC's Greatest High School Chess Organization
-                </h1>
-                <p>
-                    The British Columbia Junior Chess Association is a wonderful way 
-                    to participate in tournaments across BC!
-                </p>
-                <a
-                    href="https://gofund.me/91635740"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="hero-btn"
-                >Support BCJCA here!</a>
+            <div>
+                <img id="lululogo" src="images/luluislandchess.webp" alt="Lulu Island Chess logo">
+                <div class="text-box">
+                    <p style="margin-bottom: 0">
+                        Meet our sponsor
+                    </p>
+                    <h1 style="margin-bottom: 0.2em">
+                        Lulu Island Chess
+                    </h1>
+                    <a
+                        href="https://www.luluislandchess.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hero-btn"
+                    >View website</a>
+                </div>
             </div>
         </header>
         <footer>

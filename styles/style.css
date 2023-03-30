@@ -277,7 +277,7 @@ footer {
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(64, 222, 231)), color-stop(0.72, rgb(43, 193, 197)), color-stop(0.86, rgb(21, 163, 171)));
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
     .nav-links ul li {
         display: block;
     }
