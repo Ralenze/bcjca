@@ -68,6 +68,7 @@ header p {
 
 .eventBtn:hover {
     background: rgba(0, 255, 255, 0.4);
+    cursor: pointer;
 }
 
 .eventError {

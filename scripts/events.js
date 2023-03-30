@@ -61,13 +61,13 @@ function eventCards() {
 
                 back = document.createElement("div");
                 back.className = "flip-card-back";
-                back.setAttribute("data-location", data[i].link);
-                back.onclick = link;
 
                 if (data[i].link !== undefined) {
+                    back.setAttribute("data-location", data[i].link);
                     button = document.createElement("button");
                     button.className = "eventBtn";
-                    button.innerHTML = "Join!";
+                    button.innerHTML = "More Info";
+                    button.onclick = link;
                     back.appendChild(button);
                 }
 
