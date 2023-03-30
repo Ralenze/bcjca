@@ -8,9 +8,11 @@
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
 .text-box h1 {
     font-size: 62px;
 }
+
 .text-box p {
     margin: 10px 0 40px;
     font-size: 25px;
@@ -29,15 +31,17 @@
     cursor: pointer;
     transition: 0.2s;
 }
+
 .hero-btn:hover {
     background-color: rgba(0, 255, 255, 0.4);
     border: 1px solid rgba(0, 255, 255, 0.4);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .text-box h1 {
         font-size: 32px;
     }
+
     .text-box p {
         font-size: 24px;
     }
