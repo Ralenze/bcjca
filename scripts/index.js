@@ -1,16 +1,9 @@
 // Cache frequently accessed DOM elements
-let lightIcon, logo, menuBtn, menu, nav, img;
+let logo, menuBtn, menu, nav, img;
 
-// Toggle light/dark mode
-function toggleLightMode() {
-    if (lightIcon.style.color === "white") {
-        lightIcon.style.color = "rgba(255, 240, 0, 1)";
-        logo.src = "images/bcjcalight.webp";
-    } else {
-        lightIcon.style.color = "white";
-        logo.src = "images/bcjcalogo.webp";
-    }
-}
+window.addEventListener("load", function () {
+    window.scrollTo(0, 0);
+});
 
 // Toggle menu visibility
 function showBtn() {
@@ -18,27 +11,11 @@ function showBtn() {
     menuBtn.style.display = "none";
 }
 
-async function loadComponents() {
-    const components = document.querySelectorAll("[html-src]");
-    const promises = [];
-
-    for (const component of components) {
-        const promise = fetch(component.getAttribute("html-src"))
-            .then((res) => res.text())
-            .then((html) => {
-                component.innerHTML = html + component.innerHTML;
-            });
-
-        promises.push(promise);
-    }
-
-    await Promise.all(promises);
-}
-
 document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", function () {
         if (nav === undefined || img === undefined) return;
         if (window.scrollY > 0) {
+            if (nav.style.position === "fixed") return;
             nav.style.position = "fixed";
             nav.style.top = "0";
             nav.style.left = "0";
@@ -49,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
             img.style.width = "50px";
             img.style.height = "50px";
         } else {
+            if (nav.style.position === "relative") return;
             nav.style.position = "relative";
             nav.style.top = "0";
             nav.style.left = "0";
@@ -61,20 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Initialize the page
-async function init() {
-    // loadComponents().then(() => {
-    lightIcon = document.getElementById("light");
-    logo = document.getElementById("logo");
-    menuBtn = document.getElementById("menubtn");
-    menu = document.getElementById("menu");
-    nav = document.querySelector("nav");
-    img = nav.children[0].children[0];
-
-    // lightIcon.style.color = "white";
-    // toggleLightMode(); // initialize one to change for black background
-    window.scrollTo(0, 0); // scroll to top
-    // });
-}
-
-init();
+logo = document.getElementById("logo");
+menuBtn = document.getElementById("menubtn");
+menu = document.getElementById("menu");
+nav = document.querySelector("nav");
+img = nav.children[0].children[0];
