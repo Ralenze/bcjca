@@ -21,30 +21,30 @@ let min = 0;
 let max = van_west_pics.length - 1;
 
 function setup() {
-    main_img.src = `gallery/van_west/${van_west_pics[main]}.jpg`;
-    next_img.src = `gallery/van_west/${van_west_pics[main + 1]}.jpg`;
+    main_img.src = `gallery/van_west/${van_west_pics[main]}.webp`;
+    next_img.src = `gallery/van_west/${van_west_pics[main + 1]}.webp`;
 }
 
 function prev() {
     console.log("prev");
     main = Math.max(main - 1, min);
     if (main > min) {
-        prev_img.src = `gallery/van_west/${van_west_pics[main - 1]}.jpg`;
+        prev_img.src = `gallery/van_west/${van_west_pics[main - 1]}.webp`;
     } else {
         prev_img.src = "";
     }
-    main_img.src = `gallery/van_west/${van_west_pics[main]}.jpg`;
-    next_img.src = `gallery/van_west/${van_west_pics[main + 1]}.jpg`;
+    main_img.src = `gallery/van_west/${van_west_pics[main]}.webp`;
+    next_img.src = `gallery/van_west/${van_west_pics[main + 1]}.webp`;
 }
 
 function next() {
     console.log("next");
     main = Math.min(main + 1, max);
     if (main < max) {
-        next_img.src = `gallery/van_west/${van_west_pics[main + 1]}.jpg`;
+        next_img.src = `gallery/van_west/${van_west_pics[main + 1]}.webp`;
     } else {
         next_img.src = "";
     }
-    main_img.src = `gallery/van_west/${van_west_pics[main]}.jpg`;
-    prev_img.src = `gallery/van_west/${van_west_pics[main - 1]}.jpg`;
+    main_img.src = `gallery/van_west/${van_west_pics[main]}.webp`;
+    prev_img.src = `gallery/van_west/${van_west_pics[main - 1]}.webp`;
 }
