@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- <meta> -->
+        <meta charset="UTF-8">
+        <meta name="author" content="British Columbia Junior Chess Association">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <!-- </meta> -->
+        <!-- <link> -->
+        <link rel="stylesheet" href="styles/fonts.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link
+            rel="preload"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            as="style"
+            onload="this.onload=null;this.rel='stylesheet'"
+        >
+        <!-- </link> -->
+        <title>Gallery | British Columbia Junior Chess Association</title>
+        <meta property="og:title" content="Gallery | British Columbia Junior Chess Association">
+        <meta name="twitter:title" content="Gallery | British Columbia Junior Chess Association">
+        <meta name="description" content="View pictures of recent events in BCJCA!">
+        <meta property="og:description" content="View pictures of recent events in BCJCA!">
+        <meta name="twitter:description" content="View pictures of recent events in BCJCA!">
+        <meta property="og:image" content="images/BCJCA.webp">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="images/BCJCA.webp">
+        <link rel="stylesheet" href="styles/gallery.css">
+        <script src="https://kit.fontawesome.com/9f85037272.js" crossorigin="anonymous" async></script>
+        <script src="scripts/index.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="/">
+                    <img
+                        width="120"
+                        height="120"
+                        id="logo"
+                        src="images/bcjcalight.webp"
+                        alt="BCJCA logo, which is the outline of a knight chess piece on top of the Canadian flag"
+                    >
+                </a>
+                <!-- <i class="fa-regular fa-lightbulb" id="light" onclick="toggleLightMode()"></i> -->
+                <!-- text in logo not seen, need a border or something -->
+                <div class="nav-links" id="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="about.html">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="events.html">EVENTS</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">GALLERY</a>
+                        </li>
+                        <li>
+                            <a href="sponsor.html">OUR SPONSOR</a>
+                        </li>
+                    </ul>
+                </div>
+                <i
+                    id="menubtn"
+                    class="fa fa-bars"
+                    onclick="showBtn()"
+                    aria-hidden="true"
+                ></i>
+            </nav>
+            <div id="container">
+                <div id="images">
+                    <img id="prev" onclick="prev()">
+                    <img id="next" onclick="next()">
+                    <img id="main">
+                </div>
+                <select id="galleries">
+                    <option value="van_west">Vancouver West Qualifier Tournament</option>
+                </select>
+            </div>
+            <script src="scripts/gallery.js"></script>
+            <script>setup()</script>
+        </header>
+        <footer>
+            <div class="footer-hori-bar">
+                <div class="footer-ext-link">
+                    <a
+                        href="mailto:bcjca@gmail.com"
+                        aria-label="Email address"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-regular fa-envelope coloritnice"></i>
+                    </a>
+                    <a
+                        href="https://www.instagram.com/bcjrchess/"
+                        aria-label="Instagram"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-instagram coloritnice"></i>
+                    </a>
+                    <a
+                        href="https://github.com/Ralenze/bcjca"
+                        aria-label="GitHub"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-github coloritnice"></i>
+                    </a>
+                    <a
+                        href="https://discord.gg/QRjbTbdbJx"
+                        aria-label="Discord"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="fa-brands fa-discord coloritnice"></i>
+                    </a>
+                </div>
+                <p> Copyright © 2023</p>
+            </div>
+        </footer>
+    </body>
+</html>
