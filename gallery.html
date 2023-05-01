@@ -18,16 +18,21 @@
             onload="this.onload=null;this.rel='stylesheet'"
         >
         <!-- </link> -->
-        <meta name="googlebot" content="none">
-        <link rel="stylesheet" href="styles/events.css">
-        <link rel="stylesheet" href="styles/join.css">
-        <link rel="stylesheet" href="styles/index.css">
+        <title>Gallery | British Columbia Junior Chess Association</title>
+        <meta property="og:title" content="Gallery | British Columbia Junior Chess Association">
+        <meta name="twitter:title" content="Gallery | British Columbia Junior Chess Association">
+        <meta name="description" content="View pictures of recent events in BCJCA!">
+        <meta property="og:description" content="View pictures of recent events in BCJCA!">
+        <meta name="twitter:description" content="View pictures of recent events in BCJCA!">
+        <meta property="og:image" content="images/BCJCA.webp">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="images/BCJCA.webp">
+        <link rel="stylesheet" href="styles/gallery.css">
         <script src="https://kit.fontawesome.com/9f85037272.js" crossorigin="anonymous" async></script>
         <script src="scripts/index.js" defer></script>
     </head>
     <body>
-        <!--rgba(177, 182, 195, 0.7)-->
-        <header class="header" style="background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(63, 31, 76, 0.8));">
+        <header>
             <nav>
                 <a href="/">
                     <img
@@ -66,23 +71,52 @@
                     aria-hidden="true"
                 ></i>
             </nav>
-            <h1 class="clubtitle">Come play chess with us</h1>
-            <div class="clubtitleseparator"></div>
-            <p>Thank you for signing up! We will get back to you very soon. In the meantime, check out our social media platforms:</p>
+            <div id="container">
+                <div id="images">
+                    <img id="prev" onclick="prev()">
+                    <img id="next" onclick="next()">
+                    <img id="main">
+                </div>
+            </div>
+            <select id="galleries">
+                <option value="van_west">Vancouver West Qualifier Tournament</option>
+            </select>
+            <script src="scripts/gallery.js"></script>
+            <script>setup()</script>
         </header>
         <footer>
             <div class="footer-hori-bar">
                 <div class="footer-ext-link">
-                    <a href="mailto:bcjca@gmail.com" aria-label="Email address" target="_blank">
+                    <a
+                        href="mailto:bcjca@gmail.com"
+                        aria-label="Email address"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <i class="fa-regular fa-envelope coloritnice"></i>
                     </a>
-                    <a href="https://www.instagram.com/bcjrchess/" aria-label="Instagram" target="_blank">
+                    <a
+                        href="https://www.instagram.com/bcjrchess/"
+                        aria-label="Instagram"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <i class="fa-brands fa-instagram coloritnice"></i>
                     </a>
-                    <a href="https://github.com/Ralenze/bcjca" aria-label="GitHub" target="_blank">
+                    <a
+                        href="https://github.com/Ralenze/bcjca"
+                        aria-label="GitHub"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <i class="fa-brands fa-github coloritnice"></i>
                     </a>
-                    <a href="https://discord.gg/QRjbTbdbJx" aria-label="Discord" target="_blank">
+                    <a
+                        href="https://discord.gg/QRjbTbdbJx"
+                        aria-label="Discord"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <i class="fa-brands fa-discord coloritnice"></i>
                     </a>
                 </div>
