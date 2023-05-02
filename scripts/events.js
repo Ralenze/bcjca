@@ -48,11 +48,13 @@ function eventCards() {
 
                 h6 = document.createElement("h6");
                 h6.innerHTML = `<i class="fa-solid fa-location-dot"></i> `;
-                h6.innerHTML += data[i]["details"]["where"];
+                h6.innerHTML += data[i]["details"]["where"] + "<br>";
                 h6.innerHTML += ` <i class="fa-solid fa-clock"></i> `;
-                h6.innerHTML += data[i]["details"]["time"];
-                h6.innerHTML += ` <i class="fa-solid fa-stopwatch-20"></i> `;
-                h6.innerHTML += data[i]["details"]["clock"];
+                h6.innerHTML += data[i]["details"]["time"] + "<br>";
+                if (data[i]["details"]["clock"] !== undefined) {
+                    h6.innerHTML += ` <i class="fa-solid fa-stopwatch-20"></i> `;
+                    h6.innerHTML += data[i]["details"]["clock"];
+                }
                 details.appendChild(h6);
 
                 front.appendChild(details);

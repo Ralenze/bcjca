@@ -1,10 +1,10 @@
 [
     {
         "name": "Template",
-        "date": "Monday, November 21, 2022",
+        "date": "Sunday, May 21th, 2023",
         "details": {
-            "where": "Chess.com",
-            "time": "6 - 7 pm PT",
+            "where": "Location (address)",
+            "time": "start - end pm PT",
             "clock": "15 | 5"
         },
         "link": "https://chess.com/home"
@@ -28,6 +28,25 @@
             "clock": "15 + 5"
         },
         "link": "https://docs.google.com/document/d/110kjr29ATDSVCNkYsk62KiQrT4LpDCnk-Ulp-yArFcw/edit?usp=sharing"
+    },
+    {
+        "name": "Krispy Kreme Fundraiser #2",
+        "date": "Friday, May 19th, 2023",
+        "details": {
+            "where": "Metrotown Station (Burnaby, BC)",
+            "time": "10 am - TBD PT"
+        },
+        "link": "https://chess.com/home"
+    },
+    {
+        "name": "North Shore Qualifiers",
+        "date": "Saturday, May 27th, 2023",
+        "details": {
+            "where": "Sentinel Secondary School Library (1250 Chartwell Dr, West Vancouver, BC V7S 2R2)",
+            "time": "6 - 7 pm PT",
+            "clock": "15 | 5"
+        },
+        "link": "https://docs.google.com/document/d/1VyTaY35l5OsSXWYR7zuUJJws7MPR-ABKpBh1iT7OjDU/edit"
     },
     {
         "name": "Provincials",
