@@ -86,6 +86,7 @@ footer {
     left: 0;
     height: 50px;
     float: bottom;
+    z-index: 10;
 }
 
 /* Page classes */
