@@ -1,8 +1,10 @@
 // Wait for the document to be ready before running the code
 document.addEventListener("DOMContentLoaded", function () {
     let toSlide = document.querySelectorAll(".slider");
-    toSlide[0].style.opacity = "1";
-    toSlide[0].style.left = "35%";
+    for (let i = 0; i < toSlide.length; i++) {
+        toSlide[i].style.opacity = "1";
+        toSlide[i].style.left = "35%";
+    }
 });
 
 // Define the link function
@@ -13,13 +15,13 @@ function link(event) {
     }
 }
 
-function eventCards() {
+function eventCards(type="") {
     console.log("eventcards");
-    fetch("info/events.json")
+    fetch(`info/${type}events.json`)
         .then((response) => response.json())
         .then((data) => {
             data.shift();
-            const timeline = document.getElementById("timeline");
+            const timeline = document.getElementById(`${type}timeline`);
             timeline.className = "timeline";
 
             let card, inner, front, back, h2, p, h6, details, button;

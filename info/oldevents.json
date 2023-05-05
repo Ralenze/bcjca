@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Template",
+        "date": "Sunday, May 21th, 2023",
+        "details": {
+            "where": "Location (address)",
+            "time": "start - end pm PT",
+            "clock": "15 | 5"
+        },
+        "link": "https://chess.com/home"
+    },
+    {
+        "name": "Van West Qualifiers",
+        "date": "Saturday, April 15th, 2023",
+        "details": {
+            "where": "St. John's School (2215 W 10th Ave, Vancouver, BC V6K 2J1)",
+            "time": "10 am - 4 pm PT",
+            "clock": "15 + 5"
+        },
+        "link": "https://docs.google.com/document/d/14TnFV7WMu4KxsKuLNfjbFiw2xCQA0d3PrepjqIAr3CM/edit?usp=sharing"
+    },
+    {
+        "name": "Krispy Kreme Fundraiser #1",
+        "date": "Saturday, April 8th, 2023",
+        "details": {
+            "where": "Metrotown Station (Burnaby, BC)",
+            "time": "10 am - 4 pm PT"
+        },
+        "link": "https://www.instagram.com/p/CqzKaK9LLng/?utm_source=ig_web_copy_link"
+    }
+]
