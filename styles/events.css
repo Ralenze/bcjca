@@ -203,21 +203,21 @@ header p {
     top: 22px;
     width: 0;
     z-index: 1;
-    border: medium solid rgba(255, 255, 255, 0.25);
+    border: medium solid rgba(255, 255, 255, 0.1);
 }
 
 /* Add arrows to the left container (pointing right) */
 .left::before {
     right: 30px;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent rgba(255, 255, 255, 0.25);
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0.1);
 }
 
 /* Add arrows to the right container (pointing left) */
 .right::before {
     left: 30px;
     border-width: 10px 10px 10px 0;
-    border-color: transparent rgba(242, 97, 97, 0.25) transparent transparent;
+    border-color: transparent rgba(242, 97, 97, 0.1) transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -228,7 +228,7 @@ header p {
 /* The actual content */
 .content {
     padding: 20px 30px;
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.1);
     position: relative;
     border-radius: 6px;
 }

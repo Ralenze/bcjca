@@ -15,7 +15,9 @@ a {
 
 /* Page layout */
 header {
-    background-image: linear-gradient(rgb(0, 0, 0), var(--autotest));
+    background-image: none;
+    /*linear-gradient(90deg, rgba(7, 0, 28, 1) 0%, rgba(20, 10, 60, 1) 50%, rgba(51, 25, 89, 1) 100%); */
+    /* background-attachment: fixed; */
 }
 
 header h2 {
@@ -33,7 +35,7 @@ header p {
     margin: 0 15%;
     font-size: 18px;
     text-indent: 4%;
-    color: rgb(90, 237, 235);
+    color: #83ceeb;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
@@ -73,7 +75,7 @@ header p {
     /* --heighttotal: 650vh; */
     /* height: var(--heighttotal); */
     /* width: 100%; */
-    background: linear-gradient(180deg, var(--autotest), rgb(55, 19, 103));
+    /* background: linear-gradient(180deg, var(--autotest), rgb(55, 19, 103)); */
     padding-top: 0;
     padding-bottom: calc(1em + 50px);
     min-height: calc(100vh - 50px);
@@ -227,7 +229,7 @@ header p {
 .clubcardbottom {
     z-index: 1;
     height: 20%;
-    background-color: rgba(55, 0, 255, 0.7);
+    background-color: rgb(49, 22, 150);
     justify-content: center;
     top: -40px !important;
     position: relative;
@@ -238,7 +240,7 @@ header p {
     text-align: center;
     font-size: 30px;
     bottom: 25%;
-    color: rgb(13, 196, 196);
+    color: rgb(27, 167, 167);
     top: -45px !important;
 }
 
@@ -247,7 +249,7 @@ header p {
     text-align: center;
     font-size: 30px;
     bottom: 25%;
-    color: rgb(13, 196, 196);
+    color: rgb(27, 167, 167);
     top: -45px !important;
 }
 

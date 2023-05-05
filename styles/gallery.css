@@ -1,5 +1,5 @@
 html, body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 h1, h2 {
@@ -55,6 +55,7 @@ select {
     margin: 1em 50%;
     transform: translateX(-50%);
     z-index: 1;
+    margin-bottom: 5em;
 }
 
 img {
