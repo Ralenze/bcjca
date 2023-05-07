@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
             nav.style.right = "0";
             nav.style.zIndex = "100000";
             nav.style.padding = "0.1em 1em";
-            nav.style.backgroundColor = "rgba(4, 8, 27, 0.8)";
+            nav.style.backgroundColor = "rgba(4, 8, 27, 0.6)";
             img.style.width = "50px";
             img.style.height = "50px";
         } else {
