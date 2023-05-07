@@ -78,7 +78,9 @@
                     <img id="main">
                 </div>
             </div>
-            <select id="galleries">
+            <select id="galleries" onchange="selectChange(event)">
+                <option value="default" selected>Select a gallery</option>
+                <option value="richmond">Richmond Qualifier Tournament</option>
                 <option value="van_west">Vancouver West Qualifier Tournament</option>
             </select>
             <script src="scripts/gallery.js"></script>

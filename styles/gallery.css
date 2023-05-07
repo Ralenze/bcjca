@@ -67,9 +67,14 @@ img {
     z-index: 3;
 }
 
-#main:hover, #main:focus {
+#main:hover:not(.disable-hover), #main:focus:not(.disable-hover) {
     transform: scale(1.5);
     z-index: 3;
+}
+
+.disable-hover:hover, .disable-hover:focus {
+    transform: none;
+    z-index: auto;
 }
 
 #images {
