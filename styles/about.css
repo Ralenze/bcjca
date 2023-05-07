@@ -16,8 +16,6 @@ a {
 /* Page layout */
 header {
     background-image: none;
-    /*linear-gradient(90deg, rgba(7, 0, 28, 1) 0%, rgba(20, 10, 60, 1) 50%, rgba(51, 25, 89, 1) 100%); */
-    /* background-attachment: fixed; */
 }
 
 header h2 {
@@ -37,7 +35,6 @@ header p {
     text-indent: 4%;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     background: linear-gradient(90deg, hsl(254, 88%, 75%) 0%, hsl(252, 68%, 75%) 50%, hsl(278, 58%, 75%) 100%);
-    /* background: linear-gradient(90deg, hsl(254, 100%, 79%) 0%, hsl(252, 96%, 78%) 50%, hsl(278, 100%, 79%) 100%); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -59,8 +56,8 @@ header p {
     opacity: 0;
     left: -100px;
     color: rgb(255, 136, 0);
-    /* -webkit-animation-name: slidingin;
-    -webkit-animation-duration: 8s; */
+    -webkit-animation-name: slidingin;
+    -webkit-animation-duration: 6s;
     animation-name: slidingin;
     animation-duration: 6s;
     z-index: 1;
@@ -72,16 +69,11 @@ header p {
     width: 70%;
     left: 15%;
     background: linear-gradient(90deg, hsla(254, 88%, 7%, 0.8) 0%, hsla(252, 88%, 10%, 0.8) 50%, hsla(278, 88%, 10%, 0.8) 100%);
-    /* background: linear-gradient(90deg, rgba(13, 3, 44, 0.8) 0%, rgba(20, 11, 58, 0.8) 50%, rgba(50, 18, 68, 0.8) 100%); */
     border-radius: 30%;
 }
 
 
 .clubcardtitle {
-    /* --heighttotal: 650vh; */
-    /* height: var(--heighttotal); */
-    /* width: 100%; */
-    /* background: linear-gradient(180deg, var(--autotest), rgb(55, 19, 103)); */
     padding-top: 0;
     padding-bottom: calc(1em + 50px);
     min-height: calc(100vh - 50px);
@@ -109,16 +101,9 @@ header p {
     display: flex;
     flex-direction: column;
     height: 80%;
-    /* width: 100%; */
     max-width: 90%;
     margin: 0 auto;
 }
-
-/* 
-#container {
-    max-width: 90%;
-    margin: 0 auto;
-} */
 
 .clubcardrow {
     position: relative;
@@ -164,28 +149,13 @@ header p {
 
 
 .clubcardtop {
-    /* height: 60vh; */
-    /* background: linear-gradient(60deg, rgb(243, 148, 203), rgb(238, 13, 204)); */
     justify-content: center;
     overflow: hidden;
 }
 
 .clubcardtop img {
     background-position: center center;
-    /* height: 100%;
-    width: 100%; */
 }
-
-/* .clubleader {
-    position: relative;
-    height: 325px;
-    width: 325px;
-    left: calc(50% - 162.5px);
-    top: calc(50% - 162.5px);
-    border-radius: 100%;
-    background-color: rgb(84, 84, 236);
-    overflow: hidden;
-} */
 
 .info {
     z-index: 100;
@@ -332,21 +302,3 @@ header p {
         left: -100px;
     }
 }
-
-/* .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    justify-items: center;
-    gap: 8em 16em;
-}
-
-.grid-item {
-    background-color: #ccc;
-    width: 400px;
-    height: 400px;
-}
-
-.animate-grid {
-    opacity: 0;
-    transition: opacity 1s ease-out;
-} */

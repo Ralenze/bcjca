@@ -53,7 +53,6 @@ header p {
     width: 70%;
     left: 15%;
     background: linear-gradient(90deg, hsla(350, 80%, 26%, 0.4) 0%, hsla(340, 61%, 19%, 0.4) 60%, hsla(330, 64%, 14%, 0.4) 100%);
-    /* background-color: rgba(244, 67, 54, 0.4); */
     border-radius: 30%;
 }
 
