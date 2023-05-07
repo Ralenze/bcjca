@@ -24,7 +24,7 @@ header h2 {
     padding: 24px;
     padding-bottom: 0.25em;
     margin: 0 15%;
-    font-size: 35px;
+    font-size: 40px;
     text-indent: 4%;
     color: rgb(255, 136, 0);
 }
@@ -33,10 +33,14 @@ header p {
     padding: 1em;
     padding-top: 0;
     margin: 0 15%;
-    font-size: 18px;
+    font-size: 22px;
     text-indent: 4%;
-    color: #83ceeb;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, rgb(173, 148, 255) 0%, rgb(167, 145, 253) 50%, rgb(215, 147, 255) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 /* Page classes */
@@ -66,8 +70,8 @@ header p {
     position: relative;
     width: 70%;
     left: 15%;
-    background-color: rgba(0, 255, 255, 0.2);
-    border-radius: 10%;
+    background: linear-gradient(90deg, rgba(13, 3, 44, 0.8) 0%, rgba(20, 11, 58, 0.8) 50%, rgba(50, 18, 68, 0.8) 100%);
+    border-radius: 30%;
 }
 
 
@@ -84,7 +88,7 @@ header p {
 .clubcardtitle h1 {
     text-align: center;
     position: relative;
-    padding-top: 45px;
+    padding-top: 20px;
     font-size: 100px;
     color: rgb(57, 157, 203);
     padding-bottom: 0.5em;
