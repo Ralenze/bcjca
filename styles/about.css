@@ -36,7 +36,8 @@ header p {
     font-size: 22px;
     text-indent: 4%;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    background: linear-gradient(90deg, rgb(173, 148, 255) 0%, rgb(167, 145, 253) 50%, rgb(215, 147, 255) 100%);
+    background: linear-gradient(90deg, hsl(254, 88%, 75%) 0%, hsl(252, 68%, 75%) 50%, hsl(278, 58%, 75%) 100%);
+    /* background: linear-gradient(90deg, hsl(254, 100%, 79%) 0%, hsl(252, 96%, 78%) 50%, hsl(278, 100%, 79%) 100%); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -70,7 +71,8 @@ header p {
     position: relative;
     width: 70%;
     left: 15%;
-    background: linear-gradient(90deg, rgba(13, 3, 44, 0.8) 0%, rgba(20, 11, 58, 0.8) 50%, rgba(50, 18, 68, 0.8) 100%);
+    background: linear-gradient(90deg, hsla(254, 88%, 7%, 0.8) 0%, hsla(252, 88%, 10%, 0.8) 50%, hsla(278, 88%, 10%, 0.8) 100%);
+    /* background: linear-gradient(90deg, rgba(13, 3, 44, 0.8) 0%, rgba(20, 11, 58, 0.8) 50%, rgba(50, 18, 68, 0.8) 100%); */
     border-radius: 30%;
 }
 
