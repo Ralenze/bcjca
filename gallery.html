@@ -78,7 +78,9 @@
                     <img id="main">
                 </div>
             </div>
-            <select id="galleries">
+            <select id="galleries" onchange="selectChange(event)">
+                <option value="default" selected>Select a gallery</option>
+                <option value="richmond">Richmond Qualifier Tournament</option>
                 <option value="van_west">Vancouver West Qualifier Tournament</option>
             </select>
             <script src="scripts/gallery.js"></script>
@@ -88,7 +90,7 @@
             <div class="footer-hori-bar">
                 <div class="footer-ext-link">
                     <a
-                        href="mailto:bcjca@gmail.com"
+                        href="mailto:info@bcjca.ca"
                         aria-label="Email address"
                         target="_blank"
                         rel="noopener noreferrer"
