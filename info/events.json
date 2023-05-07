@@ -5,16 +5,25 @@
         "details": {
             "where": "Location (address)",
             "time": "start - end pm PT",
-            "clock": "15 | 5"
+            "clock": "15 + 5"
         },
         "link": "https://chess.com/home"
     },
     {
-        "name": "Burnaby Qualifiers",
+        "name": "Van East Qualifier",
+        "date": "Monday, May 8th, 2023",
+        "details": {
+            "where": "Vancouver Technical Secondary School room 407 (2600 East Broadway, Vancouver, BC V5M 1Y5)",
+            "time": "3:45 - 6:15 pm PT",
+            "clock": "15 + 5"
+        }
+    },
+    {
+        "name": "Burnaby Qualifier",
         "date": "Sunday, May 14th, 2023",
         "details": {
             "where": "Tommy Douglas Library (7311 Kingsway, Burnaby, BC V5E 1G8)",
-            "time": "12 pm - 5 pm PT",
+            "time": "12 - 5 pm PT",
             "clock": "15 + 5"
         },
         "link": "https://docs.google.com/document/d/110kjr29ATDSVCNkYsk62KiQrT4LpDCnk-Ulp-yArFcw/edit?usp=sharing"
@@ -29,12 +38,12 @@
         "link": "https://chess.com/home"
     },
     {
-        "name": "North Shore Qualifiers",
+        "name": "North Shore Qualifier",
         "date": "Saturday, May 27th, 2023",
         "details": {
             "where": "Sentinel Secondary School Library (1250 Chartwell Dr, West Vancouver, BC V7S 2R2)",
             "time": "6 - 7 pm PT",
-            "clock": "15 | 5"
+            "clock": "15 + 5"
         },
         "link": "https://docs.google.com/document/d/1VyTaY35l5OsSXWYR7zuUJJws7MPR-ABKpBh1iT7OjDU/edit"
     },
