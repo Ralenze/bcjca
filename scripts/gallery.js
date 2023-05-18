@@ -1,7 +1,15 @@
 let galleries = document.getElementById("galleries");
+
+let first_img = document.getElementById("first");
 let prev_img = document.getElementById("prev");
 let main_img = document.getElementById("main");
 let next_img = document.getElementById("next");
+let last_img = document.getElementById("last");
+
+let first_span = document.getElementById("firstSpan");
+let prev_span = document.getElementById("prevSpan");
+let next_span = document.getElementById("nextSpan");
+let last_span = document.getElementById("lastSpan");
 
 const default_pics = ["default_left", "default_middle", "default_right"];
 default_pics.name = "default";
@@ -51,38 +59,111 @@ let max = images.length - 1;
 function setup() {
     if (images.name === "default") {
         galleries.value = "default";
+        first_img.src = `gallery/${images.name}/${images[min]}.webp`;
         prev_img.src = `gallery/${images.name}/${images[main]}.webp`;
         main_img.src = `gallery/${images.name}/${images[main + 1]}.webp`;
         next_img.src = `gallery/${images.name}/${images[main + 2]}.webp`;
+        last_img.src = `gallery/${images.name}/${images[max]}.webp`;
+        first_span.hidden = false;
+        prev_span.hidden = false;
+        next_span.hidden = false;
+        last_span.hidden = false;
         main_img.classList.add("disable-hover");
     } else {
         main_img.src = `gallery/${images.name}/${images[main]}.webp`;
         next_img.src = `gallery/${images.name}/${images[main + 1]}.webp`;
+        last_img.src = `gallery/${images.name}/${images[max]}.webp`;
+        first_img.src = "";
         prev_img.src = "";
+        first_span.hidden = true;
+        prev_span.hidden = true;
+        next_span.hidden = false;
+        last_span.hidden = false;
         main_img.classList.remove("disable-hover");
     }
+}
+
+function first() {
+    main = min;
+    main_img.src = `gallery/${images.name}/${images[main]}.webp`;
+    next_img.src = `gallery/${images.name}/${images[main + 1]}.webp`;
+    last_img.src = `gallery/${images.name}/${images[max]}.webp`;
+    first_img.src = "";
+    prev_img.src = "";
+    first_span.hidden = true;
+    prev_span.hidden = true;
+    next_span.hidden = false;
+    last_span.hidden = false;
 }
 
 function prev() {
     main = Math.max(main - 1, min);
     if (main > min) {
         prev_img.src = `gallery/${images.name}/${images[main - 1]}.webp`;
+        first_img.src = `gallery/${images.name}/${images[min]}.webp`;
+        prev_span.hidden = false;
+        first_span.hidden = false;
     } else {
         prev_img.src = "";
+        first_img.src = "";
+        prev_span.hidden = true;
+        first_span.hidden = true;
     }
     main_img.src = `gallery/${images.name}/${images[main]}.webp`;
     next_img.src = `gallery/${images.name}/${images[main + 1]}.webp`;
+    last_img.src = `gallery/${images.name}/${images[max]}.webp`;
+    next_span.hidden = false;
+    last_span.hidden = false;
+    if (main === min + 1) {
+        prev_img.src = "";
+        prev_span.hidden = true;
+    }
+    if (main === max - 1) {
+        next_img.src = "";
+        next_span.hidden = true;
+    }
+    console.log(main, max);
 }
 
 function next() {
     main = Math.min(main + 1, max);
     if (main < max) {
         next_img.src = `gallery/${images.name}/${images[main + 1]}.webp`;
+        last_img.src = `gallery/${images.name}/${images[max]}.webp`;
+        next_span.hidden = false;
+        last_span.hidden = false;
     } else {
         next_img.src = "";
+        last_img.src = "";
+        next_span.hidden = true;
+        last_span.hidden = true;
     }
     main_img.src = `gallery/${images.name}/${images[main]}.webp`;
+    first_img.src = `gallery/${images.name}/${images[min]}.webp`;
     prev_img.src = `gallery/${images.name}/${images[main - 1]}.webp`;
+    first_span.hidden = false;
+    prev_span.hidden = false;
+    if (main === min + 1) {
+        prev_img.src = "";
+        prev_span.hidden = true;
+    }
+    if (main === max - 1) {
+        next_img.src = "";
+        next_span.hidden = true;
+    }
+}
+
+function last() {
+    main = max;
+    main_img.src = `gallery/${images.name}/${images[main]}.webp`;
+    first_img.src = `gallery/${images.name}/${images[min]}.webp`;
+    prev_img.src = `gallery/${images.name}/${images[main - 1]}.webp`;
+    first_span.hidden = false;
+    prev_span.hidden = false;
+    next_img.src = "";
+    last_img.src = "";
+    next_span.hidden = true;
+    last_span.hidden = true;
 }
 
 const imageMapping = {
