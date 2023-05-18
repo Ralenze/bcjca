@@ -3,12 +3,8 @@ let prev_img = document.getElementById("prev");
 let main_img = document.getElementById("main");
 let next_img = document.getElementById("next");
 
-const default_pics = [
-    "default_left",
-    "default_middle",
-    "default_right",
-]
-default_pics.name = "default"
+const default_pics = ["default_left", "default_middle", "default_right"];
+default_pics.name = "default";
 const van_west_pics = [
     "DSC_1309",
     "DSC_1324",
@@ -36,6 +32,16 @@ const richmond_pics = [
     "IMG_0871",
 ];
 richmond_pics.name = "richmond";
+const burnaby_pics = [
+    "20230514_131321",
+    "20230514_131340",
+    "20230514_131401",
+    "20230514_131517",
+    "20230514_132707",
+    "20230514_165215",
+    "20230514_165436",
+];
+burnaby_pics.name = "burnaby";
 let images = default_pics;
 images.name = "default";
 let main = 0;
@@ -79,18 +85,15 @@ function next() {
     prev_img.src = `gallery/${images.name}/${images[main - 1]}.webp`;
 }
 
+const imageMapping = {
+    default: default_pics,
+    burnaby: burnaby_pics,
+    richmond: richmond_pics,
+    van_west: van_west_pics,
+};
+
 function selectChange(event) {
-    switch (event.target.value) {
-        case "default":
-            images = default_pics;
-            break;
-        case "richmond":
-            images = richmond_pics;
-            break;
-        case "van_west":
-            images = van_west_pics;
-            break;
-    }
+    images = imageMapping[event.target.value] || default_pics;
     images.name = event.target.value;
     main = 0;
     min = 0;
