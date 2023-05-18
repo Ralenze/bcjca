@@ -1,8 +1,10 @@
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
-h1, h2 {
+h1,
+h2 {
     margin: 0 auto;
     color: white;
     font-size: 55px;
@@ -20,7 +22,6 @@ h2 {
     justify-items: center;
     justify-content: center;
     display: flex;
-
 }
 
 footer {
@@ -33,16 +34,136 @@ footer {
     place-items: center;
 }
 
-#prev, #next {
+.image-container {
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: default;
+}
+
+#prev,
+#next {
     max-height: 10svh;
     max-width: 30svw;
-    z-index: 2;
+    z-index: 1;
 }
+
+#prev {
+    filter: brightness(90%);
+}
+
+#next {
+    filter: brightness(90%);
+}
+
+
+#first,
+#last {
+    max-height: 10svh;
+    max-width: 30svw;
+    z-index: 1;
+}
+
+#first {
+    filter: brightness(90%);
+}
+
+#last {
+    filter: brightness(90%);
+}
+
+#first:before,
+#last:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#first:before {
+    content: "First";
+}
+
+#last:before {
+    content: "Last";
+}
+
+
+#images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    /* Adjust the gap value as per your preference */
+}
+
+.top-row {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    /* Adjust the gap value as per your preference */
+}
+
+.bottom-row {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    padding: 0px 3px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#first .text-overlay {
+    content: "First";
+}
+
+#prev .text-overlay {
+    content: "Previous";
+}
+
+#next .text-overlay {
+    content: "Next";
+}
+
+#last .text-overlay {
+    content: "Last";
+}
+
+#main {
+    max-width: 100%;
+    height: auto;
+}
+
 
 #main {
     max-height: 50svh;
     max-width: 80svw;
-    z-index: 2;
+    z-index: 10;
 }
 
 select {
@@ -62,36 +183,47 @@ img {
     transition: transform 0.2s ease-in;
 }
 
-#prev:hover, #next:hover, #prev:focus, #next:focus {
+.image-container:hover img {
     transform: scale(1.2);
     z-index: 3;
 }
 
-#main:hover:not(.disable-hover), #main:focus:not(.disable-hover) {
+#main:hover {
     transform: scale(1.5);
+    z-index: 10;
+    position: relative;
+}
+
+
+#prev:hover:before,
+#next:hover:before {
+    transform: scale(1.2);
     z-index: 3;
 }
 
-.disable-hover:hover, .disable-hover:focus {
-    transform: none;
-    z-index: auto;
+#prev:before,
+#next:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#prev:before {
+    content: "Previous";
+}
+
+#next:before {
+    content: "Next";
 }
 
 #images {
     grid-row: 1 / span 1;
     grid-column: 1 / span 2;
-}
-
-#prev {
-    grid-row: 1 / span 1;
-    grid-column: 1 / span 1;
-    margin: 0;
-}
-
-#next {
-    grid-row: 1 / span 1;
-    grid-column: 2 / span 1;
-    margin: 0;
 }
 
 #main {

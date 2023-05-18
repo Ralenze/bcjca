@@ -73,16 +73,41 @@
             </nav>
             <div id="container">
                 <div id="images">
-                    <img id="prev" onclick="prev()">
-                    <img id="next" onclick="next()">
-                    <img id="main">
+                    <div class="top-row">
+                        <div class="image-container">
+                            <span id="firstSpan" class="text-overlay" onclick="first()">First</span>
+                            <img id="first" onclick="first()">
+                        </div>
+                        <div class="image-container">
+                            <span id="prevSpan" class="text-overlay" onclick="prev()">Previous</span>
+                            <img id="prev" onclick="prev()">
+                        </div>
+                        <div class="image-container">
+                            <span id="nextSpan" class="text-overlay" onclick="next()">Next</span>
+                            <img id="next" onclick="next()">
+                        </div>
+                        <div class="image-container">
+                            <span id="lastSpan" class="text-overlay" onclick="last()">Last</span>
+                            <img id="last" onclick="last()">
+                        </div>
+                    </div>
+                    <div class="bottom-row">
+                        <div class="image-container">
+                            <img id="main">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <select id="galleries" onchange="selectChange(event)">
-                <option value="default" selected>Select a gallery</option>
-                <option value="richmond">Richmond Qualifier Tournament</option>
-                <option value="van_west">Vancouver West Qualifier Tournament</option>
+            <select id="galleries" onchange="selectChange(event)" style="margin-bottom: 2px;">
+                <!-- select the latest gallery -->
+                <optgroup label="Qualifier Tournaments 2023">
+                    <option value="burnaby" selected>Burnaby</option>
+                    <option value="richmond">Richmond</option>
+                    <option value="van_east">Vancouver East</option>
+                    <option value="van_west">Vancouver West</option>
+                </optgroup>
             </select>
+            <select id="imageDescriptions" onchange="imageDescChange(event)" style="margin-top: 2px;"></select>
             <script src="scripts/gallery.js"></script>
             <script>setup()</script>
         </header>
