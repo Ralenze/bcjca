@@ -98,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            <select id="galleries" onchange="selectChange(event)">
+            <select id="galleries" onchange="selectChange(event)" style="margin-bottom: 2px;">
                 <!-- select the latest gallery -->
                 <optgroup label="Qualifier Tournaments 2023">
                     <option value="burnaby" selected>Burnaby</option>
@@ -107,6 +107,7 @@
                     <option value="van_west">Vancouver West</option>
                 </optgroup>
             </select>
+            <select id="imageDescriptions" onchange="imageDescChange(event)" style="margin-top: 2px;"></select>
             <script src="scripts/gallery.js"></script>
             <script>setup()</script>
         </header>
