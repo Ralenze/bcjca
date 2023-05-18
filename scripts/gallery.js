@@ -13,6 +13,27 @@ let last_span = document.getElementById("lastSpan");
 
 const default_pics = ["default_left", "default_middle", "default_right"];
 default_pics.name = "default";
+const burnaby_pics = [
+    "20230514_131321",
+    "20230514_131340",
+    "20230514_131401",
+    "20230514_131517",
+    "20230514_132707",
+    "20230514_165215",
+    "20230514_165436",
+];
+burnaby_pics.name = "burnaby";
+const van_east_pics = [
+    "IMG_4177",
+    "IMG_4179",
+    "IMG_4181",
+    "IMG_4182",
+    "IMG_4183",
+    "IMG_4184",
+    "IMG_4190",
+    "IMG_4195",
+];
+van_east_pics.name = "van_east";
 const van_west_pics = [
     "DSC_1309",
     "DSC_1324",
@@ -40,16 +61,6 @@ const richmond_pics = [
     "IMG_0871",
 ];
 richmond_pics.name = "richmond";
-const burnaby_pics = [
-    "20230514_131321",
-    "20230514_131340",
-    "20230514_131401",
-    "20230514_131517",
-    "20230514_132707",
-    "20230514_165215",
-    "20230514_165436",
-];
-burnaby_pics.name = "burnaby";
 let images = default_pics;
 images.name = "default";
 let main = 0;
@@ -171,6 +182,7 @@ const imageMapping = {
     burnaby: burnaby_pics,
     richmond: richmond_pics,
     van_west: van_west_pics,
+    van_east: van_east_pics,
 };
 
 function selectChange(event) {

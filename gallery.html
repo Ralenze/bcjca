@@ -100,9 +100,12 @@
             </div>
             <select id="galleries" onchange="selectChange(event)">
                 <option value="default" selected>Select a gallery</option>
-                <option value="burnaby">Burnaby Qualifier Tournament</option>
-                <option value="richmond">Richmond Qualifier Tournament</option>
-                <option value="van_west">Vancouver West Qualifier Tournament</option>
+                <optgroup label="Qualifier Tournaments 2023">
+                    <option value="burnaby">Burnaby</option>
+                    <option value="richmond">Richmond</option>
+                    <option value="van_east">Vancouver East</option>
+                    <option value="van_west">Vancouver West</option>
+                </optgroup>
             </select>
             <script src="scripts/gallery.js"></script>
             <script>setup()</script>
