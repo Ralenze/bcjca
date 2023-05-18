@@ -61,24 +61,13 @@ const richmond_pics = [
     "IMG_0871",
 ];
 richmond_pics.name = "richmond";
-let images = default_pics;
+let images = burnaby_pics; // choose the latest gallery
 let main = 0;
 let min = 0;
 let max = images.length - 1;
 
 function setup() {
     if (images.name === "default") {
-        // galleries.value = "default";
-        // first_img.src = `gallery/${images.name}/${images[min]}.webp`;
-        // prev_img.src = `gallery/${images.name}/${images[main]}.webp`;
-        // main_img.src = `gallery/${images.name}/${images[main + 1]}.webp`;
-        // next_img.src = `gallery/${images.name}/${images[main + 2]}.webp`;
-        // last_img.src = `gallery/${images.name}/${images[max]}.webp`;
-        // first_span.hidden = false;
-        // prev_span.hidden = false;
-        // next_span.hidden = false;
-        // last_span.hidden = false;
-        // main_img.classList.add("disable-hover");
         galleries.value = "default";
         first_img.src = ``;
         prev_img.src = ``;
