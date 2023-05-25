@@ -10,6 +10,15 @@
         "link": "https://chess.com/home"
     },
     {
+        "name": "Krispy Kreme Fundraiser #2",
+        "date": "Friday, May 19th, 2023",
+        "details": {
+            "where": "Metrotown Station (Burnaby, BC)",
+            "time": "10 am - TBD PT"
+        },
+        "link": "https://www.instagram.com/p/Cskd_8NL3yP/"
+    },
+    {
         "name": "Burnaby Qualifier",
         "date": "Sunday, May 14th, 2023",
         "details": {
@@ -55,6 +64,6 @@
             "where": "Metrotown Station (Burnaby, BC)",
             "time": "10 am - 4 pm PT"
         },
-        "link": "https://www.instagram.com/p/CqzKaK9LLng/?utm_source=ig_web_copy_link"
+        "link": "https://www.instagram.com/p/CqzKaK9LLng/"
     }
 ]
