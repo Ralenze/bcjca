@@ -175,6 +175,22 @@
         }
     },
     {
+        "name": "SWC",
+        "est": 2000,
+        "image": "images/swc.webp",
+        "contact": {
+            "leaders": [
+                "Edric Mei",
+                "Jennifer Zhang",
+                "Nathaniel Wang"
+            ],
+            "email": "",
+            "location": "Vancouver, BC",
+            "discord": "",
+            "instagram": ""
+        }
+    },
+    {
         "name": "Tupper",
         "est": 2022,
         "description": "",
