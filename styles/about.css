@@ -1,5 +1,5 @@
 :root {
-    --autotest: rgba(27, 16, 146, 0.8);
+    --number-of-club-images: 15;
 }
 
 /* Control class */
@@ -16,6 +16,7 @@ a {
 /* Page layout */
 header {
     background-image: none;
+    min-height: 100px;
 }
 
 header h2 {
@@ -76,16 +77,16 @@ header p {
 .clubcardtitle {
     padding-top: 0;
     padding-bottom: calc(1em + 50px);
-    min-height: calc(100vh - 50px);
+    /* min-height: calc(100vh - 50px); */
 }
 
 .clubcardtitle h1 {
     text-align: center;
     position: relative;
     padding-top: 20px;
-    font-size: 100px;
+    font-size: 70px;
     color: rgb(57, 157, 203);
-    padding-bottom: 0.5em;
+    padding-bottom: 0;
 }
 
 .clubcardtitle h2 {
@@ -259,6 +260,107 @@ header p {
     opacity: 1;
 }
 
+
+
+
+
+
+
+
+
+
+#photocontainer {
+    height: calc(200px + 3 * 8px);
+    position: relative;
+    overflow: hidden;
+}
+
+#photocontainer::before,
+#photocontainer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 20vw;
+    /* Adjust the width of the fade */
+    pointer-events: none;
+}
+
+#photocontainer::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(9, 2, 32, 1), rgba(9, 2, 32, 0));
+    z-index: 1;
+    /* Add z-index to position it above the images */
+}
+
+#photocontainer::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(55, 20, 75, 1), rgba(55, 20, 75, 0));
+}
+
+#photocontainer:hover .photobanner {
+    animation-play-state: paused;
+}
+
+.photobanner {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.photobanner img {
+    margin: 0 8px;
+    max-width: 100px;
+}
+
+.photobanner img:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+#photobanner1 {
+    left: 0;
+    animation: bannermoveLeft 30s linear infinite;
+}
+
+#photobanner2 {
+    right: 0;
+    animation: bannermoveRight 30s linear infinite;
+    margin-top: calc(100px + 2 * 8px);
+    margin-bottom: calc(2 * 8px);
+}
+
+@keyframes bannermoveLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-1 * (var(--number-of-club-images) + 1) * (100px + 8px)));
+    }
+}
+
+@keyframes bannermoveRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc((var(--number-of-club-images) + 1) * (100px + 8px)));
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive design */
 @media screen and (max-width: 600px) {
     header p {
@@ -269,8 +371,8 @@ header p {
     .clubcardtitle h1 {
         text-align: center;
         position: relative;
-        padding-top: 45px;
-        font-size: 60px;
+        padding-top: 15px;
+        font-size: 40px;
         color: rgb(57, 157, 203);
         padding-bottom: 0.5em;
     }

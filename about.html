@@ -100,14 +100,62 @@
         </header>
         <main>
             <div class="clubcardtitle">
-                <h1>Meet the Team</h1>
+                <h1>Meet our partners</h1>
+                <div id="photocontainer">
+                    <div class="photobanner" id="photobanner1"></div>
+                    <div class="photobanner" id="photobanner2"></div>
+                </div>
+                <!-- <script>
+                    fetch("info/clubinfo.json")
+                    .then((response) => response.json())
+                    .then((data) => {
+                        data.shift();
+                        console.log(data.length);
+                        const photobanner1 = document.getElementById("photobanner1");
+                        const photobanner2 = document.getElementById("photobanner2");
+                    
+                        function shuffleArray(array) {
+                        for (let i = array.length - 1; i > 0; i--) {
+                            const j = Math.floor(Math.random() * (i + 1));
+                            [array[i], array[j]] = [array[j], array[i]];
+                        }
+                        return array;
+                        }
+                    
+                        const shuffledData1 = shuffleArray([...data]);
+                        const shuffledData2 = shuffleArray([...data]);
+
+                        const screenWidth = window.innerWidth;
+                        const screenHeight = window.innerHeight;
+
+                        const maxScreenLength = Math.max(screenWidth, screenHeight);
+                        const numPhotos = Math.floor(maxScreenLength / (100 + 8));
+                        const numLoops = 1 + Math.floor(numPhotos / Math.floor(data.length / 2));
+
+                        for (let x = 0; x < numLoops; x++) {  // number to cover screen length
+                            for (let i = 0; i < data.length; i++) {
+                                const club1 = shuffledData1[i];
+                                const img1 = document.createElement("img");
+                                img1.src = club1.image;
+                                img1.alt = club1.name;
+                                photobanner1.appendChild(img1);
+
+                                const club2 = shuffledData2[i];
+                                const img2 = document.createElement("img");
+                                img2.src = club2.image;
+                                img2.alt = club2.name;
+                                photobanner2.appendChild(img2);
+                            }
+                        }
+                    });
+                </script> -->
                 <div id="container">
                     <div class="clubcardholder" id="clubcardholder"></div>
                 </div>
                 <script src="scripts/about.js"></script>
                 <script>
                     slidetextabout();
-                    schoolCards();
+                    // schoolCards();
                 </script>
             </div>
         </main>
