@@ -198,9 +198,23 @@
         "contact": {
             "leaders": [],
             "email": "",
-            "location": "Surrey, BC",
+            "location": "Vancouver, BC",
             "discord": "",
             "instagram": "tupper.chess.club"
+        }
+    },
+    {
+        "name": "Van Tech",
+        "est": 2019,
+        "image": "images/vtss.webp",
+        "contact": {
+            "leaders": [
+                "Tai Belke"
+            ],
+            "email": "",
+            "location": "Vancouver, BC",
+            "discord": "",
+            "instagram": "@vt.chess.club"
         }
     },
     {

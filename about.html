@@ -100,14 +100,29 @@
         </header>
         <main>
             <div class="clubcardtitle">
-                <h1>Meet the Team</h1>
+                <h1>Meet our partners</h1>
+                <dialog id="popup">
+                    <div id="popup-background">
+                        <img
+                            id="popup-image"
+                            src=""
+                            alt="Club logo"
+                            width="200"
+                            height="200"
+                        >
+                    </div>
+                    <div id="popup-content"></div>
+                </dialog>
+                <div id="photocontainer">
+                    <div class="photobanner" id="photobanner1"></div>
+                    <div class="photobanner" id="photobanner2"></div>
+                </div>
                 <div id="container">
                     <div class="clubcardholder" id="clubcardholder"></div>
                 </div>
                 <script src="scripts/about.js"></script>
                 <script>
                     slidetextabout();
-                    schoolCards();
                 </script>
             </div>
         </main>
