@@ -14,7 +14,7 @@ function showBtn() {
 document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", function () {
         if (nav === undefined || img === undefined) return;
-        if (window.scrollY > 0) {
+        if (window.scrollY > 200) {
             if (nav.style.position === "fixed") return;
             nav.style.position = "fixed";
             nav.style.top = "0";
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
             img.style.width = "50px";
             img.style.height = "50px";
         } else {
-            if (nav.style.position === "relative") return;
+            if (nav.style.position === "relative" || window.scrollY > 0) return;
             nav.style.position = "relative";
             nav.style.top = "0";
             nav.style.left = "0";

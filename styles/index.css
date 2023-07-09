@@ -37,6 +37,81 @@
     border: 1px solid rgba(0, 255, 255, 0.4);
 }
 
+.about {
+    min-height: calc(100vh - 50px);
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.9), rgba(4, 9, 30, 0.7)), url("../images/chessplaceholder.webp");
+    transform: scaleY(-1);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    flex: 1 0 auto;
+}
+
+.about-text {
+    width: 90%;
+    color: #fff;
+    position: relative;
+    top: 80%;
+    left: 50%;
+    transform: scaleY(-1) translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.scroll-indicator {
+    position: fixed;
+    bottom: -10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+}
+
+.caret {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    transform: rotate(-45deg);
+    animation: float 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: rotate(-45deg);
+    }
+
+    25% {
+        transform: rotate(-48deg);
+    }
+
+    50% {
+        transform: rotate(-45deg);
+    }
+
+    75% {
+        transform: rotate(-42deg);
+    }
+
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
+
+
 @media screen and (max-width: 600px) {
     .text-box h1 {
         font-size: 32px;
@@ -44,5 +119,89 @@
 
     .text-box p {
         font-size: 24px;
+    }
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    transform: scaleY(-1);
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.card {
+    position: relative;
+    width: 30%;
+    padding: 20px;
+    background-color: rgba(241, 241, 241, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.card img {
+    display: block;
+    margin: 0 auto;
+    /* Added code */
+    width: 100%;
+    border-radius: 8px;
+    max-width: 250px;
+    max-height: 250px;
+    filter: brightness(0.8);
+}
+
+.card-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+    /* translate: 0% -250px; */
+    position: absolute;
+    text-shadow: 2px 2px 4px #000000;
+    top: 40px;
+    left: 0%;
+    right: 0%;
+    padding: 1em;
+}
+
+.card-text p {
+    font-size: 18px;
+    color: white;
+    /* translate: 0% -200px; */
+    position: absolute;
+    text-shadow: 2px 2px 4px #000000;
+    top: 110px;
+    left: 0%;
+    right: 0%;
+    padding: 1em;
+}
+
+.card-status {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 800px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }

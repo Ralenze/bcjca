@@ -16,9 +16,9 @@ body {
 }
 
 header {
-    min-height: calc(100vh - 70px);
+    height: calc(100vh - 50px);
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("../images/chessplaceholder.webp");
+    background-image: linear-gradient(rgba(4, 9, 30, 0.9), rgba(4, 9, 30, 0.7)), url("../images/chessplaceholder.webp");
     background-position: center;
     background-size: cover;
     position: relative;
