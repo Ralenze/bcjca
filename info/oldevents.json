@@ -10,11 +10,47 @@
         "link": "https://chess.com/home"
     },
     {
+        "name": "Krispy Kreme Fundraiser #3",
+        "date": "Friday, May 19th, 2023",
+        "details": {
+            "where": "Metrotown Station (Burnaby, BC), Richmond-Brighouse Station (Richmond, BC)",
+            "time": "10 am - 4 pm PT"
+        },
+        "link": "https://www.instagram.com/p/Cskd_8NL3yP/"
+    },
+    {
+        "name": "Provincials",
+        "date": "Saturday, June 17th, 2023",
+        "details": {
+            "where": "Canada Royal Arts High School (896 W 8th Ave, Vancouver, BC V5Z 3Y1)",
+            "time": "10:30 am - 6 pm PT",
+            "clock": "15 + 5"
+        },
+        "link": "https://docs.google.com/document/d/1gPKwxQIsZ59lQxA4WyXRi7xOcZ7CYeDUom6S4PwFGpU/edit?usp=sharing"
+    },
+    {
+        "name": "Surrey Qualifier",
+        "date": "Monday, May 29th, 2023",
+        "details": {
+            "clock": "15 + 5"
+        }
+    },
+    {
+        "name": "North Shore Qualifier",
+        "date": "Saturday, May 27th, 2023",
+        "details": {
+            "where": "Sentinel Secondary School Library (1250 Chartwell Dr, West Vancouver, BC V7S 2R2)",
+            "time": "6 - 7 pm PT",
+            "clock": "15 + 5"
+        },
+        "link": "https://docs.google.com/document/d/1VyTaY35l5OsSXWYR7zuUJJws7MPR-ABKpBh1iT7OjDU/edit"
+    },
+    {
         "name": "Krispy Kreme Fundraiser #2",
         "date": "Friday, May 19th, 2023",
         "details": {
             "where": "Metrotown Station (Burnaby, BC)",
-            "time": "10 am - TBD PT"
+            "time": "10 am - 4 pm PT"
         },
         "link": "https://www.instagram.com/p/Cskd_8NL3yP/"
     },
