@@ -8,24 +8,5 @@
             "clock": "15 + 5"
         },
         "link": "https://chess.com/home"
-    },
-    {
-        "name": "North Shore Qualifier",
-        "date": "Saturday, May 27th, 2023",
-        "details": {
-            "where": "Sentinel Secondary School Library (1250 Chartwell Dr, West Vancouver, BC V7S 2R2)",
-            "time": "6 - 7 pm PT",
-            "clock": "15 + 5"
-        },
-        "link": "https://docs.google.com/document/d/1VyTaY35l5OsSXWYR7zuUJJws7MPR-ABKpBh1iT7OjDU/edit"
-    },
-    {
-        "name": "Provincials",
-        "date": "Saturday, June 17th, 2023",
-        "details": {
-            "where": "TBD",
-            "time": "TBD",
-            "clock": "TBD"
-        }
     }
 ]

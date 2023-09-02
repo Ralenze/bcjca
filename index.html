@@ -85,8 +85,58 @@
                     rel="noopener noreferrer"
                     class="hero-btn"
                 >Support BCJCA here!</a>
+                <div class="scroll-indicator" onclick="scrollToElement('bcjca-does')">
+                    <span class="caret"></span>
+                </div>
             </div>
         </header>
+        <div class="about" id="bcjca-does">
+            <div class="about-text">
+                <h1>BCJCA does...</h1>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/trophy.webp" alt="BC High School Chess League">
+                    <div class="card-text">
+                        <h2>BC High School Chess League</h2>
+                        <p>
+                            The BC High School Chess League spans across metro Vancouver,
+                            where high schools across districts compete against each other in
+                            a league format.
+                        </p>
+                    </div>
+                    <div class="card-status">
+                        <p>Active</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/defaultclublogo.webp" alt="Chess Tournaments">
+                    <div class="card-text">
+                        <h2>Chess Tournaments</h2>
+                        <p>
+                            BCJCA will host low cost tournaments for high school students across BC. 
+                            These tournaments are a great way to meet new people and 
+                            play chess!
+                        </p>
+                    </div>
+                    <div class="card-status">
+                        <p>Planned</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/defaultclublogo.webp" alt="Elementary Chess Lessons">
+                    <div class="card-text">
+                        <h2>Elementary Chess Lessons</h2>
+                        <p>
+                            BCJCA will teach chess lessons to elementary students across BC.
+                        </p>
+                    </div>
+                    <div class="card-status">
+                        <p>Planned</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer>
             <div class="footer-hori-bar">
                 <div class="footer-ext-link">
@@ -126,5 +176,20 @@
                 <p> Copyright © 2023</p>
             </div>
         </footer>
+        <!-- <script>
+            function handleScreenSizeChange() {
+                if (window.innerWidth < 800) {
+                    const aboutTextElements = document.querySelectorAll('.about-text');
+                    aboutTextElements.forEach(function(element) {
+                      const windowHeight = window.innerHeight;
+                      const pageHeight = document.documentElement.scrollHeight;
+                      const offset = pageHeight - windowHeight + 160;
+                      element.style.top = offset + 'px';});
+                }
+              }
+          
+              window.addEventListener('resize', handleScreenSizeChange);
+              handleScreenSizeChange();
+        </script> -->
     </body>
 </html>
