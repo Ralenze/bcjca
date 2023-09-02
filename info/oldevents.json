@@ -7,16 +7,33 @@
             "time": "start - end pm PT",
             "clock": "15 + 5"
         },
-        "link": "https://chess.com/home"
+        "link": "https://example.com/"
     },
     {
-        "name": "Krispy Kreme Fundraiser #3",
-        "date": "Friday, May 19th, 2023",
+        "name": "Krispy Kreme Fundraiser #5",
+        "date": "Saturday, August 26th, 2023",
+        "details": {
+            "where": "Richmond-Brighouse Station (Richmond, BC)",
+            "time": "10 am - 6 pm PT"
+        }
+    },
+    {
+        "name": "Krispy Kreme Fundraiser #4",
+        "date": "Saturday, August 5th, 2023",
         "details": {
             "where": "Metrotown Station (Burnaby, BC), Richmond-Brighouse Station (Richmond, BC)",
             "time": "10 am - 4 pm PT"
         },
-        "link": "https://www.instagram.com/p/Cskd_8NL3yP/"
+        "link": "https://www.instagram.com/p/CvopPYmuxpF/"
+    },
+    {
+        "name": "Krispy Kreme Fundraiser #3",
+        "date": "Saturday, July 8th, 2023",
+        "details": {
+            "where": "Metrotown Station (Burnaby, BC), Richmond-Brighouse Station (Richmond, BC)",
+            "time": "10 am - 4 pm PT"
+        },
+        "link": "https://www.instagram.com/p/Cuqmjv5usXP/"
     },
     {
         "name": "Provincials",

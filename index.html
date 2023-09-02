@@ -85,18 +85,18 @@
                     rel="noopener noreferrer"
                     class="hero-btn"
                 >Support BCJCA here!</a>
-                <div class="scroll-indicator">
+                <div class="scroll-indicator" onclick="scrollToElement('bcjca-does')">
                     <span class="caret"></span>
                 </div>
             </div>
         </header>
-        <div class="about">
+        <div class="about" id="bcjca-does">
             <div class="about-text">
                 <h1>BCJCA does...</h1>
             </div>
             <div class="cards">
                 <div class="card">
-                    <img src="images/defaultclublogo.webp" alt="BC High School Chess League">
+                    <img src="images/trophy.webp" alt="BC High School Chess League">
                     <div class="card-text">
                         <h2>BC High School Chess League</h2>
                         <p>
@@ -176,5 +176,20 @@
                 <p> Copyright © 2023</p>
             </div>
         </footer>
+        <!-- <script>
+            function handleScreenSizeChange() {
+                if (window.innerWidth < 800) {
+                    const aboutTextElements = document.querySelectorAll('.about-text');
+                    aboutTextElements.forEach(function(element) {
+                      const windowHeight = window.innerHeight;
+                      const pageHeight = document.documentElement.scrollHeight;
+                      const offset = pageHeight - windowHeight + 160;
+                      element.style.top = offset + 'px';});
+                }
+              }
+          
+              window.addEventListener('resize', handleScreenSizeChange);
+              handleScreenSizeChange();
+        </script> -->
     </body>
 </html>

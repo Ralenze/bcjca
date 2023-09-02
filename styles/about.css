@@ -28,7 +28,7 @@ header h2 {
     color: rgb(255, 136, 0);
 }
 
-header p {
+.p-info {
     padding: 1em;
     padding-top: 0;
     margin: 0 15%;
@@ -394,12 +394,13 @@ header p {
     text-shadow: 0 0 8px rgba(15, 46, 59, 0.8);
 }
 
-#popup p {
+#popup-content p {
     text-align: center;
     font-size: 16px;
     color: white;
     margin: 0;
     padding: 0 1em;
+    background: default;
 }
 
 

@@ -230,3 +230,8 @@ img {
     grid-row: 2 / span 1;
     grid-column: 1 / span 2;
 }
+
+header {
+    min-height: calc(100vh - 50px);
+    height: initial;
+}
