@@ -129,6 +129,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     max-width: 300px;
     max-height: 300px;
+    cursor: pointer;
     /* margin: 10px; */
 }
 
@@ -179,11 +180,19 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #4caf50;
+    /* background-color: #4caf50; */
     color: #fff;
     padding: 6px 10px;
     font-size: 12px;
     border-radius: 4px;
+}
+
+.active {
+    background-color: #4caf50;
+}
+
+.planned {
+    background-color: #c7b300;
 }
 
 @media screen and (max-width: 900px) {
