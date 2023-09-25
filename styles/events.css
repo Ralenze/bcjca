@@ -65,14 +65,117 @@ header p {
     padding: 1em;
     padding-top: 0;
     margin: 0 15%;
-    font-size: 22px;
+    font-size: 18px;
     text-indent: 4%;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     /* background: linear-gradient(90deg, hsl(254, 88%, 75%) 0%, hsl(252, 68%, 75%) 50%, hsl(278, 58%, 75%) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text; */
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.p-info strong {
+    font-weight: bold;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.list-items {
+    padding-bottom: 1em;
+}
+
+.list-items li {
+    padding: 1em;
+    padding-top: 0;
+    padding-bottom: 0.25em;
+    margin: 0 22%;
+    font-size: 18px;
+    /* text-indent: 4%; */
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    /* background: linear-gradient(90deg, hsl(254, 88%, 75%) 0%, hsl(252, 68%, 75%) 50%, hsl(278, 58%, 75%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; */
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.list-items strong {
+    font-weight: bold;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.list-items a {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: lightgoldenrodyellow;
+}
+
+.multi-line {
+    padding-bottom: 0.25em;
+}
+
+.h2-info {
+    padding: 1em;
+    padding-top: 0;
+    margin: 0 15%;
+    margin-top: 2em;
+    font-size: 28px;
+    /* text-indent: 4%; */
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    /* background: linear-gradient(90deg, hsl(254, 88%, 75%) 0%, hsl(252, 68%, 75%) 50%, hsl(278, 58%, 75%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; */
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+
+#tourneyposter {
+    position: relative;
+    left: calc(50% - 150px);
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1em;
+}
+
+#tourneyposter:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#bottom-of-page {
+    margin-bottom: 5em;
+}
+
+.button-container {
+    text-align: center;
+    margin: 1em auto;
+}
+
+.register-button {
+    position: relative;
+    text-align: center;
+    margin: 1em auto;
+    padding: 0.5em 1em;
+    font-size: 25px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.google-sheet-container {
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#registered-players {
+    position: relative;
+    width: 100%;
+    border: none;
 }
 
 .eventBtn {
