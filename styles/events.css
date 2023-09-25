@@ -61,6 +61,20 @@ header p {
     border-radius: 30%;
 }
 
+.p-info {
+    padding: 1em;
+    padding-top: 0;
+    margin: 0 15%;
+    font-size: 22px;
+    text-indent: 4%;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    /* background: linear-gradient(90deg, hsl(254, 88%, 75%) 0%, hsl(252, 68%, 75%) 50%, hsl(278, 58%, 75%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; */
+    color: rgba(255, 255, 255, 0.8);
+}
+
 .eventBtn {
     background: transparent;
     color: white;

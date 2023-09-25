@@ -32,6 +32,21 @@
         <script src="scripts/index.js" defer></script>
     </head>
     <body>
+        <div class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <h1>BC Junior Chess Rapid</h1>
+                <ul>
+                    <li>CFC Quick Rated tournament for grades K-12 students</li>
+                    <li>$250 cash prize with 14 trophies</li>
+                    <li>Date: Saturday, November 25th</li>
+                </ul>
+                <a href="/bcjuniorchessrapid.html" id="link">
+                    <p>Find out more</p>
+                </a>
+            </div>
+        </div>
+        <script src="scripts/popup.js"></script>
         <header>
             <nav>
                 <a href="/">
@@ -53,8 +68,16 @@
                         <li>
                             <a href="about.html">ABOUT</a>
                         </li>
-                        <li>
-                            <a href="events.html">EVENTS</a>
+                        <li class="has-submenu">
+                            <a href="#">EVENTS</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="events.html">Scheduled Events</a>
+                                </li>
+                                <li>
+                                    <a href="bcjuniorchessrapid.html">BC Junior Chess Rapid</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="gallery.html">GALLERY</a>
