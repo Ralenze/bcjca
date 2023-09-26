@@ -136,8 +136,7 @@ header p {
 
 #tourneyposter {
     position: relative;
-    /* left: calc(50% - 150px); */
-    max-width: 600px;
+    width: min(600px, 80vw);
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -180,7 +179,7 @@ header p {
 
 #registered-players {
     position: relative;
-    width: 100%;
+    width: min(800px, 80vw);
     border: none;
 }
 
