@@ -58,3 +58,17 @@ function scrollToElement(elementId) {
         });
     }
 }
+
+document
+    .querySelector(".has-submenu a")
+    .addEventListener("click", function (e) {
+        e.preventDefault();
+        const submenu = this.parentNode.querySelector(".submenu");
+        if (submenu.style.display === "block") {
+            submenu.style.display = "none";
+            this.parentNode.classList.remove("active-submenu");
+        } else {
+            submenu.style.display = "block";
+            this.parentNode.classList.add("active-submenu");
+        }
+    });

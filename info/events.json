@@ -8,5 +8,23 @@
             "clock": "15 + 5"
         },
         "link": "https://chess.com/home"
+    },
+    {
+        "name": "Krispy Kreme Fundraiser #6",
+        "date": "Saturday, September 30th, 2023",
+        "details": {
+            "where": "Metrotown Staton (Burnaby, BC), Richmond-Brighouse Station (Richmond, BC)",
+            "time": "10 am - 4 pm PT"
+        }
+    },
+    {
+        "name": "BC Junior Chess Rapid",
+        "date": "Saturday, November 25th, 2023",
+        "details": {
+            "where": "Confederation Community Centre (4585 Albert St, Burnaby, BC V5C 2G6)",
+            "time": "1 pm - 8 pm PT",
+            "clock": "15 + 10"
+        },
+        "link": "/bcjuniorchessrapid.html"
     }
 ]
