@@ -391,11 +391,11 @@ header p {
 
     /* font sizing on mobile */
     .p-info {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .list-items li {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
