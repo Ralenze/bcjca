@@ -80,6 +80,11 @@ header p {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
+.center-text {
+    text-align: center;
+    text-indent: 0;
+}
+
 .list-items {
     padding-bottom: 1em;
 }
@@ -131,8 +136,8 @@ header p {
 
 #tourneyposter {
     position: relative;
-    left: calc(50% - 150px);
-    width: 300px;
+    /* left: calc(50% - 150px); */
+    max-width: 600px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -150,6 +155,7 @@ header p {
 .button-container {
     text-align: center;
     margin: 1em auto;
+    margin-bottom: 2em;
 }
 
 .register-button {
