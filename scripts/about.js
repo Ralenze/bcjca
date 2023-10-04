@@ -135,7 +135,7 @@ function resetPopup(event) {
 }
 
 document.addEventListener("click", resetPopup);
-document.addEventListener("mouseover", resetPopup);
+// document.addEventListener("mouseover", resetPopup);
 
 function openPopup(event) {
     const popup = document.getElementById("popup");
@@ -211,6 +211,10 @@ function openPopup(event) {
                 p.appendChild(a);
                 popupContent.appendChild(p);
             }
+            p = document.createElement("p");
+            p.innerHTML = "Click anywhere to close popup";
+            p.classList.add("p-bottom");
+            popupContent.appendChild(p);
 
             clubCardTop = document.createElement("div");
             clubCardTop.className = "clubcardtop";
