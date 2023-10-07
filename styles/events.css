@@ -179,7 +179,8 @@ header p {
 
 #registered-players {
     position: relative;
-    width: min(800px, 80vw);
+    width: min(850px, 80vw);
+    height: 300px;
     border: none;
 }
 
