@@ -43,8 +43,10 @@
         "description": "",
         "image": "images/bsss.webp",
         "contact": {
-            "leaders": [],
-            "email": "",
+            "leaders": [
+                "Johnny Dong"
+            ],
+            "email": "johnnydong1010@gmail.com",
             "location": "Burnaby, BC",
             "discord": "https://discord.gg/ZxEY6nxq5T",
             "instagram": "southchessclub"
@@ -85,11 +87,13 @@
         "description": "",
         "image": "images/mcmath.webp",
         "contact": {
+            
             "leaders": [
-                "Andrew",
-                "Bennett",
-                "Vishnugupt"
+                "Daniel Wang",
+                "Gabriel S"
             ],
+        
+                 
             "email": "",
             "location": "Richmond, BC",
             "discord": "",
@@ -118,7 +122,9 @@
         "description": "",
         "image": "images/mountdouglas.webp",
         "contact": {
-            "leaders": [],
+            "leaders": [
+                "William Li"
+            ],
             "email": "",
             "location": "Victoria, BC",
             "discord": "",
@@ -164,7 +170,8 @@
             "leaders": [
                 "Raymond Zhang",
                 "Robert Sentrov",
-                "Gavin Wang"
+                "Gavin Wang",
+                "Theo Estoup Ruiz"
             ],
             "email": "raymondztn@outlook.com",
             "location": "West Vancouver, BC",
