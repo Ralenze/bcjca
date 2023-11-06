@@ -114,6 +114,26 @@ header p {
     color: lightgoldenrodyellow;
 }
 
+.timetable {
+    padding-bottom: 1em;
+    margin: 0 20%;
+}
+
+.timetable tr td {
+    padding: 1em;
+    padding-top: 0;
+    padding-bottom: 0.25em;
+    margin: 0 22%;
+    font-size: 18px;
+    /* text-indent: 4%; */
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    /* background: linear-gradient(90deg, hsl(254, 88%, 75%) 0%, hsl(252, 68%, 75%) 50%, hsl(278, 58%, 75%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; */
+    color: rgba(255, 255, 255, 0.9);
+}
+
 .multi-line {
     padding-bottom: 0.25em;
 }
@@ -398,9 +418,20 @@ header p {
     /* font sizing on mobile */
     .p-info {
         font-size: 14px;
+        margin: 0 1%;
     }
 
     .list-items li {
+        font-size: 14px;
+        margin: 0 15%;
+    }
+
+    .timetable {
+        padding-bottom: 1em;
+        margin: 0 12%;
+    }
+
+    .timetable tr td {
         font-size: 14px;
     }
 }
