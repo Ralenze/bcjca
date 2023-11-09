@@ -191,6 +191,11 @@ header p {
     transition: 0.2s;
 }
 
+.register-button:hover {
+    background: rgba(139, 7, 6, 0.4);
+    cursor: pointer;
+}
+
 .google-sheet-container {
     width: 80%;
     margin: 0 auto;

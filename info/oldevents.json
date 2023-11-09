@@ -10,6 +10,14 @@
         "link": "https://example.com/"
     },
     {
+        "name": "Krispy Kreme Fundraiser #6",
+        "date": "Saturday, September 30th, 2023",
+        "details": {
+            "where": "Metrotown Station (Burnaby, BC), Richmond-Brighouse Station (Richmond, BC)",
+            "time": "10 am - 4 pm PT"
+        }
+    },
+    {
         "name": "Krispy Kreme Fundraiser #5",
         "date": "Saturday, August 26th, 2023",
         "details": {
