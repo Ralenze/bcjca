@@ -169,7 +169,7 @@ header p {
 
 .center-div {
     margin: auto;
-    width: 75%
+    width: 50%
 }
 
 #bottom-of-page {
@@ -207,7 +207,7 @@ header p {
     align-items: center;
 }
 
-#registered-players {
+.registered-players {
     position: relative;
     width: min(850px, 80vw);
     height: 300px;
