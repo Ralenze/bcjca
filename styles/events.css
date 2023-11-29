@@ -154,7 +154,7 @@ header p {
     text-align: center;
 }
 
-#tourneyposter {
+#poster {
     position: relative;
     width: min(600px, 80vw);
     height: auto;
@@ -163,8 +163,13 @@ header p {
     margin-bottom: 1em;
 }
 
-#tourneyposter:hover {
+#poster:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.center-div {
+    margin: auto;
+    width: 50%
 }
 
 #bottom-of-page {
@@ -191,13 +196,18 @@ header p {
     transition: 0.2s;
 }
 
+.register-button:hover {
+    background: rgba(139, 7, 6, 0.4);
+    cursor: pointer;
+}
+
 .google-sheet-container {
     width: 80%;
     margin: 0 auto;
     align-items: center;
 }
 
-#registered-players {
+.registered-players {
     position: relative;
     width: min(850px, 80vw);
     height: 300px;
@@ -433,6 +443,10 @@ header p {
 
     .timetable tr td {
         font-size: 14px;
+    }
+
+    .center-div {
+        width: 80%;
     }
 }
 
