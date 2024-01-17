@@ -1,405 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- <meta> -->
-        <meta charset="UTF-8" />
-        <meta
-            name="author"
-            content="British Columbia Junior Chess Association"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
-        <!-- </meta> -->
-        <!-- <link> -->
-        <link rel="stylesheet" href="styles/fonts.css" />
-        <link rel="stylesheet" href="styles/style.css" />
-        <link
-            rel="preload"
-            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-            as="style"
-            onload="this.onload=null;this.rel='stylesheet'"
-        />
-        <!-- </link> -->
-        <title>
-            BC Junior Chess Rapid | British Columbia Junior Chess Association
-        </title>
-        <meta
-            property="og:title"
-            content="BC Junior Chess Rapid | British Columbia Junior Chess Association"
-        />
-        <meta
-            name="twitter:title"
-            content="BC Junior Chess Rapid | British Columbia Junior Chess Association"
-        />
-        <meta
-            name="description"
-            content="View upcoming events happening in BC's greatest high school chess organization."
-        />
-        <meta
-            property="og:description"
-            content="View upcoming events happening in BC's greatest high school chess organization."
-        />
-        <meta
-            name="twitter:description"
-            content="View upcoming events happening in BC's greatest high school chess organization."
-        />
-        <meta
-            property="og:image"
-            content="https://bcjca.ca/images/banner.png"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-            name="twitter:image"
-            content="https://bcjca.ca/images/banner.png"
-        />
-        <link rel="stylesheet" href="styles/events.css" />
-        <script
-            src="https://kit.fontawesome.com/9f85037272.js"
-            crossorigin="anonymous"
-            async
-        ></script>
-        <script src="scripts/index.js" defer></script>
-    </head>
 
-    <body>
-        <header
-            style="
+<head>
+    <!-- <meta> -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="British Columbia Junior Chess Association" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- </meta> -->
+    <!-- <link> -->
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preload" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'" />
+    <!-- </link> -->
+    <title>
+        BC Junior Chess Rapid | British Columbia Junior Chess Association
+    </title>
+    <meta property="og:title" content="BC Junior Chess Rapid | British Columbia Junior Chess Association" />
+    <meta name="twitter:title" content="BC Junior Chess Rapid | British Columbia Junior Chess Association" />
+    <meta name="description"
+        content="View upcoming events happening in BC's greatest high school chess organization." />
+    <meta property="og:description"
+        content="View upcoming events happening in BC's greatest high school chess organization." />
+    <meta name="twitter:description"
+        content="View upcoming events happening in BC's greatest high school chess organization." />
+    <meta property="og:image" content="https://bcjca.ca/images/banner.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://bcjca.ca/images/banner.png" />
+    <link rel="stylesheet" href="styles/events.css" />
+    <script src="https://kit.fontawesome.com/9f85037272.js" crossorigin="anonymous" async></script>
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <header style="
                 background-image: linear-gradient(
                     90deg,
                     hsl(350, 60%, 16%) 0%,
                     hsl(340, 40%, 9%) 60%,
                     hsl(330, 44%, 4%) 100%
                 );
-            "
-        >
-            <nav>
-                <a href="/">
-                    <img
-                        width="120"
-                        height="120"
-                        id="logo"
-                        src="images/bcjcalight.webp"
-                        alt="BCJCA logo, which is the outline of a knight chess piece on top of the Canadian flag"
-                    />
-                </a>
-                <!-- <i class="fa-regular fa-lightbulb" id="light" onclick="toggleLightMode()"></i> -->
-                <!-- text in logo not seen, need a border or something -->
-                <div class="nav-links" id="menu">
-                    <ul>
-                        <li>
-                            <a href="index.html">HOME</a>
-                        </li>
-                        <li>
-                            <a href="about.html">ABOUT</a>
-                        </li>
-                        <li class="has-submenu">
-                            <a href="#">EVENTS</a>
-                            <ul class="submenu">
-                                <li>
-                                    <a href="events.html">Scheduled Events</a>
-                                </li>
-                                <li>
-                                    <a href="bcjuniorchessrapid.html"
-                                        >BC Junior Chess Rapid</a
-                                    >
-                                </li>
-                                <li>
-                                    <a href="afterschoolchess.html"
-                                        >After School Chess</a
-                                    >
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="gallery.html">GALLERY</a>
-                        </li>
-                        <li>
-                            <a href="sponsor.html">OUR SPONSOR</a>
-                        </li>
-                    </ul>
-                </div>
-                <i
-                    id="menubtn"
-                    class="fa fa-bars"
-                    onclick="showBtn()"
-                    aria-hidden="true"
-                ></i>
-            </nav>
-            <h1 class="clubtitle">BCJCA presents</h1>
-            <!-- Change the dash back to circle, unable because fontawesome faster than compLoad() -->
-            <h1 class="clubtitle slider" style="color: #f44336">
-                BC Junior Chess Rapid
-            </h1>
-            <br />
-            <div class="clubtitleseparator"></div>
-            <br />
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    let toSlide = document.querySelectorAll(".slider");
-                    for (let i = 0; i < toSlide.length; i++) {
-                        toSlide[i].style.opacity = "1";
-                        toSlide[i].style.left = "35%";
-                    }
-                });
-            </script>
-            <p class="p-info center-text">
-                Our first ever CFC-rated tournament for K-12 on November 25th,
-                2023!
+            ">
+        <nav>
+            <a href="/">
+                <img width="120" height="120" id="logo" src="images/bcjcalight.webp"
+                    alt="BCJCA logo, which is the outline of a knight chess piece on top of the Canadian flag" />
+            </a>
+            <!-- <i class="fa-regular fa-lightbulb" id="light" onclick="toggleLightMode()"></i> -->
+            <!-- text in logo not seen, need a border or something -->
+            <div class="nav-links" id="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">EVENTS</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="events.html">Scheduled Events</a>
+                            </li>
+                            <li>
+                                <a href="bcjuniorchessrapid.html">BC Junior Chess Rapid</a>
+                            </li>
+                            <li>
+                                <a href="afterschoolchess.html">After School Chess</a>
+                            </li>
+                            <li>
+                                <a href="bchighschoolchessleague2024.html">BC High School Chess League 2024</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="gallery.html">GALLERY</a>
+                    </li>
+                    <li>
+                        <a href="sponsor.html">OUR SPONSOR</a>
+                    </li>
+                </ul>
+            </div>
+            <i id="menubtn" class="fa fa-bars" onclick="showBtn()" aria-hidden="true"></i>
+        </nav>
+        <h1 class="clubtitle">BCJCA presents</h1>
+        <!-- Change the dash back to circle, unable because fontawesome faster than compLoad() -->
+        <h1 class="clubtitle slider" style="color: #f44336">
+            BC Junior Chess Rapid
+        </h1>
+        <br />
+        <div class="clubtitleseparator"></div>
+        <br />
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let toSlide = document.querySelectorAll(".slider");
+                for (let i = 0; i < toSlide.length; i++) {
+                    toSlide[i].style.opacity = "1";
+                    toSlide[i].style.left = "35%";
+                }
+            });
+        </script>
+        <p class="p-info center-text">
+            Our first ever CFC-rated tournament for K-12 on November 25th,
+            2023!
+        </p>
+        <div class="button-container">
+            <img id="poster" src="images/tourneyposter.webp" />
+        </div>
+        <h2 class="h2-info">Details</h2>
+        <div class="center-div">
+            <p class="p-info multi-line">
+                <strong>Type:</strong>
+                CFC Rated Quick
             </p>
-            <div class="button-container">
-                <img id="poster" src="images/tourneyposter.webp" />
+            <p class="p-info multi-line">
+                *This is not a BCCF sanctioned tournament,
+            </p>
+            <p class="p-info">
+                we won't be declaring a provincial champion title
+            </p>
+            <p class="p-info multi-line">
+                <strong>Date:</strong>
+                Saturday, November 25th, 2023
+            </p>
+            <p class="p-info">1:00 PM - 8:00 PM PT</p>
+            <p class="p-info multi-line">
+                <strong>Location:</strong>
+                Confederation Community Centre
+            </p>
+            <p class="p-info multi-line">
+                4585 Albert St, Burnaby, BC V5C 2G6
+            </p>
+            <p class="p-info">Lots of complementary event parking</p>
+            <p class="p-info">
+                <strong>Entry Fee:</strong>
+                $30 (or $25 with discount)
+            </p>
+            <p class="p-info">
+                <strong>Playing Up:</strong>
+                $5 within 200 points
+            </p>
+            <p class="p-info multi-line">
+                <strong>Timetable:</strong>
+            </p>
+            <table class="timetable">
+                <tr>
+                    <td>Round 1</td>
+                    <td>1:15 PM</td>
+                </tr>
+                <tr>
+                    <td>Round 2</td>
+                    <td>2:15 PM</td>
+                </tr>
+                <tr>
+                    <td>Round 3</td>
+                    <td>3:15 PM</td>
+                </tr>
+                <tr>
+                    <td>Round 4</td>
+                    <td>4:15 PM</td>
+                </tr>
+                <tr>
+                    <td>Round 5</td>
+                    <td>5:15 PM</td>
+                </tr>
+                <tr>
+                    <td>Break</td>
+                    <td>6:15 PM</td>
+                </tr>
+                <tr>
+                    <td>Round 6</td>
+                    <td>6:45 PM</td>
+                </tr>
+                <tr>
+                    <td>
+                        Award Ceremony
+                        <br />
+                        Closing Remarks
+                    </td>
+                    <td>8:00 PM</td>
+                </tr>
+            </table>
+            <p class="p-info">
+                <strong>Time Control:</strong>
+                15 minutes + 10 seconds increment
+            </p>
+            <p class="p-info">
+                <strong>Sections:</strong>
+            </p>
+            <ul class="list-items">
+                <li>Open</li>
+                <li>U1400</li>
+            </ul>
+            <p class="p-info">
+                <strong>Prizes:</strong>
+            </p>
+            <ul class="list-items">
+                <li>
+                    <strong>Open:</strong>
+                </li>
+                <li>1st - Lucas Yao</li>
+                <li>2nd - Christian Grecu</li>
+                <li>3rd - Aryan Anand</li>
+                <li style="padding-top: 1em">
+                    <strong>U1400:</strong>
+                </li>
+                <li>1st - Ryder Hsu</li>
+                <li>2nd - Felix Fang</li>
+                <li>3rd - Rex Yu</li>
+                <li style="padding-top: 1em">
+                    <strong>Top unrated</strong>
+                    - Ivan Gelimson
+                </li>
+                <li style="padding-top: 1em">
+                    <strong>Top boy and girl of each grade category:</strong>
+                </li>
+                <li>K-3 - Sky Cui, Ava Chen</li>
+                <li>4-6 - Brady Li, Karen Chen</li>
+                <li>7-9 - Alp Topcu, May Wangluo</li>
+                <li>10-12 - Leeyo Xu</li>
+                <li style="padding-top: 1em">
+                    <strong>$450 total prize pool</strong>
+                </li>
+            </ul>
+        </div>
+        <h2 class="h2-info">Open Standings</h2>
+        <div class="button-container">
+            <iframe class="registered-players"
+                src="https://docs.google.com/spreadsheets/d/1v1d4bavf4SoAD8x-75aDJtcYlZWhu567poKbjWN2URs/htmlview#"></iframe>
+        </div>
+        <h2 class="h2-info">U1400 Standings</h2>
+        <div class="button-container">
+            <iframe class="registered-players"
+                src="https://docs.google.com/spreadsheets/d/1mSTj-OjjbYnsGUMeCDQxFdRjOXskx4Yr5rV_1EiDOzw/htmlview#"></iframe>
+        </div>
+        <h2 class="h2-info">Policies</h2>
+        <div class="center-div">
+            <p class="p-info">
+                <strong>Refunds</strong>
+            </p>
+            <ul class="list-items">
+                <li>
+                    You may request a full refund before registration closes
+                </li>
+            </ul>
+            <p class="p-info">
+                <strong>Registration</strong>
+            </p>
+            <ul class="list-items">
+                <li>
+                    We reserve the right to move players to the appropriate
+                    section based on their CFC rating
+                </li>
+            </ul>
+            <p class="p-info">
+                <strong>Byes</strong>
+            </p>
+            <ul class="list-items">
+                <li>You may request a maximum of two ½ point byes</li>
+                <li>
+                    No byes on Round 6 (requests for a bye on Round 6 will
+                    be ignored, or you will receive a 0 point bye)
+                </li>
+            </ul>
+            <p class="p-info">
+                <strong>Playing Area</strong>
+            </p>
+            <ul class="list-items">
+                <li>No food in the playing area</li>
+                <li>
+                    Silence is required in the playing area while games are
+                    in progress
+                </li>
+                <li>
+                    All electronics capable of making noise, communicating,
+                    or playing chess must be powered fully off while playing
+                </li>
+            </ul>
+            <p class="p-info">
+                <strong>Photo & Video</strong>
+            </p>
+            <ul class="list-items">
+                <li>
+                    BCJCA may film certain games throughout the event. We
+                    always ask players involved for their permission
+                </li>
+                <li>
+                    Photos by spectators are allowed for the first 5 minutes
+                    of each round, but please be discrete and respectful to
+                    not disturb players
+                </li>
+            </ul>
+            <p class="p-info">
+                <strong>Tiebreaks</strong>
+            </p>
+            <ul class="list-items">
+                <li>Prize money split evenly among everyone tied</li>
+                <li>Tiebreak for non-cash prizes decided by:</li>
+                <ol class="list-items" style="margin: 0 5%">
+                    <li>Head-to-head score of tied players</li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Buchholz_system">Cumulative score of opponents</a>
+                    </li>
+                    <li>
+                        <a href="https://www.chess.com/terms/armageddon-chess">Armageddon Blitz</a>
+                        5|4
+                    </li>
+                </ol>
+            </ul>
+        </div>
+        <div id="bottom-of-page"></div>
+    </header>
+    <footer>
+        <div class="footer-hori-bar">
+            <div class="footer-ext-link">
+                <a href="mailto:info@bcjca.ca" aria-label="Email address" target="_blank">
+                    <i class="fa-regular fa-envelope coloritnice"></i>
+                </a>
+                <a href="https://www.instagram.com/bcjrchess/" aria-label="Instagram" target="_blank">
+                    <i class="fa-brands fa-instagram coloritnice"></i>
+                </a>
+                <a href="https://github.com/Ralenze/bcjca" aria-label="GitHub" target="_blank">
+                    <i class="fa-brands fa-github coloritnice"></i>
+                </a>
+                <a href="https://discord.gg/QRjbTbdbJx" aria-label="Discord" target="_blank">
+                    <i class="fa-brands fa-discord coloritnice"></i>
+                </a>
             </div>
-            <h2 class="h2-info">Details</h2>
-            <div class="center-div">
-                <p class="p-info multi-line">
-                    <strong>Type:</strong>
-                    CFC Rated Quick
-                </p>
-                <p class="p-info multi-line">
-                    *This is not a BCCF sanctioned tournament,
-                </p>
-                <p class="p-info">
-                    we won't be declaring a provincial champion title
-                </p>
-                <p class="p-info multi-line">
-                    <strong>Date:</strong>
-                    Saturday, November 25th, 2023
-                </p>
-                <p class="p-info">1:00 PM - 8:00 PM PT</p>
-                <p class="p-info multi-line">
-                    <strong>Location:</strong>
-                    Confederation Community Centre
-                </p>
-                <p class="p-info multi-line">
-                    4585 Albert St, Burnaby, BC V5C 2G6
-                </p>
-                <p class="p-info">Lots of complementary event parking</p>
-                <p class="p-info">
-                    <strong>Entry Fee:</strong>
-                    $30 (or $25 with discount)
-                </p>
-                <p class="p-info">
-                    <strong>Playing Up:</strong>
-                    $5 within 200 points
-                </p>
-                <p class="p-info multi-line">
-                    <strong>Timetable:</strong>
-                </p>
-                <table class="timetable">
-                    <tr>
-                        <td>Round 1</td>
-                        <td>1:15 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Round 2</td>
-                        <td>2:15 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Round 3</td>
-                        <td>3:15 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Round 4</td>
-                        <td>4:15 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Round 5</td>
-                        <td>5:15 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Break</td>
-                        <td>6:15 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Round 6</td>
-                        <td>6:45 PM</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Award Ceremony
-                            <br />
-                            Closing Remarks
-                        </td>
-                        <td>8:00 PM</td>
-                    </tr>
-                </table>
-                <p class="p-info">
-                    <strong>Time Control:</strong>
-                    15 minutes + 10 seconds increment
-                </p>
-                <p class="p-info">
-                    <strong>Sections:</strong>
-                </p>
-                <ul class="list-items">
-                    <li>Open</li>
-                    <li>U1400</li>
-                </ul>
-                <p class="p-info">
-                    <strong>Prizes:</strong>
-                </p>
-                <ul class="list-items">
-                    <li>
-                        <strong>Open:</strong>
-                    </li>
-                    <li>1st - Lucas Yao</li>
-                    <li>2nd - Christian Grecu</li>
-                    <li>3rd - Aryan Anand</li>
-                    <li style="padding-top: 1em">
-                        <strong>U1400:</strong>
-                    </li>
-                    <li>1st - Ryder Hsu</li>
-                    <li>2nd - Felix Fang</li>
-                    <li>3rd - Rex Yu</li>
-                    <li style="padding-top: 1em">
-                        <strong>Top unrated</strong>
-                        - Ivan Gelimson
-                    </li>
-                    <li style="padding-top: 1em">
-                        <strong
-                            >Top boy and girl of each grade category:</strong
-                        >
-                    </li>
-                    <li>K-3 - Sky Cui, Ava Chen</li>
-                    <li>4-6 - Brady Li, Karen Chen</li>
-                    <li>7-9 - Alp Topcu, May Wangluo</li>
-                    <li>10-12 - Leeyo Xu</li>
-                    <li style="padding-top: 1em">
-                        <strong>$450 total prize pool</strong>
-                    </li>
-                </ul>
-            </div>
-            <h2 class="h2-info">Open Standings</h2>
-            <div class="button-container">
-                <iframe
-                    class="registered-players"
-                    src="https://docs.google.com/spreadsheets/d/1v1d4bavf4SoAD8x-75aDJtcYlZWhu567poKbjWN2URs/htmlview#"
-                ></iframe>
-            </div>
-            <h2 class="h2-info">U1400 Standings</h2>
-            <div class="button-container">
-                <iframe
-                    class="registered-players"
-                    src="https://docs.google.com/spreadsheets/d/1mSTj-OjjbYnsGUMeCDQxFdRjOXskx4Yr5rV_1EiDOzw/htmlview#"
-                ></iframe>
-            </div>
-            <h2 class="h2-info">Policies</h2>
-            <div class="center-div">
-                <p class="p-info">
-                    <strong>Refunds</strong>
-                </p>
-                <ul class="list-items">
-                    <li>
-                        You may request a full refund before registration closes
-                    </li>
-                </ul>
-                <p class="p-info">
-                    <strong>Registration</strong>
-                </p>
-                <ul class="list-items">
-                    <li>
-                        We reserve the right to move players to the appropriate
-                        section based on their CFC rating
-                    </li>
-                </ul>
-                <p class="p-info">
-                    <strong>Byes</strong>
-                </p>
-                <ul class="list-items">
-                    <li>You may request a maximum of two ½ point byes</li>
-                    <li>
-                        No byes on Round 6 (requests for a bye on Round 6 will
-                        be ignored, or you will receive a 0 point bye)
-                    </li>
-                </ul>
-                <p class="p-info">
-                    <strong>Playing Area</strong>
-                </p>
-                <ul class="list-items">
-                    <li>No food in the playing area</li>
-                    <li>
-                        Silence is required in the playing area while games are
-                        in progress
-                    </li>
-                    <li>
-                        All electronics capable of making noise, communicating,
-                        or playing chess must be powered fully off while playing
-                    </li>
-                </ul>
-                <p class="p-info">
-                    <strong>Photo & Video</strong>
-                </p>
-                <ul class="list-items">
-                    <li>
-                        BCJCA may film certain games throughout the event. We
-                        always ask players involved for their permission
-                    </li>
-                    <li>
-                        Photos by spectators are allowed for the first 5 minutes
-                        of each round, but please be discrete and respectful to
-                        not disturb players
-                    </li>
-                </ul>
-                <p class="p-info">
-                    <strong>Tiebreaks</strong>
-                </p>
-                <ul class="list-items">
-                    <li>Prize money split evenly among everyone tied</li>
-                    <li>Tiebreak for non-cash prizes decided by:</li>
-                    <ol class="list-items" style="margin: 0 5%">
-                        <li>Head-to-head score of tied players</li>
-                        <li>
-                            <a
-                                href="https://en.wikipedia.org/wiki/Buchholz_system"
-                                >Cumulative score of opponents</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="https://www.chess.com/terms/armageddon-chess"
-                                >Armageddon Blitz</a
-                            >
-                            5|4
-                        </li>
-                    </ol>
-                </ul>
-            </div>
-            <div id="bottom-of-page"></div>
-        </header>
-        <footer>
-            <div class="footer-hori-bar">
-                <div class="footer-ext-link">
-                    <a
-                        href="mailto:info@bcjca.ca"
-                        aria-label="Email address"
-                        target="_blank"
-                    >
-                        <i class="fa-regular fa-envelope coloritnice"></i>
-                    </a>
-                    <a
-                        href="https://www.instagram.com/bcjrchess/"
-                        aria-label="Instagram"
-                        target="_blank"
-                    >
-                        <i class="fa-brands fa-instagram coloritnice"></i>
-                    </a>
-                    <a
-                        href="https://github.com/Ralenze/bcjca"
-                        aria-label="GitHub"
-                        target="_blank"
-                    >
-                        <i class="fa-brands fa-github coloritnice"></i>
-                    </a>
-                    <a
-                        href="https://discord.gg/QRjbTbdbJx"
-                        aria-label="Discord"
-                        target="_blank"
-                    >
-                        <i class="fa-brands fa-discord coloritnice"></i>
-                    </a>
-                </div>
-                <p>Copyright © 2023</p>
-            </div>
-        </footer>
-    </body>
+            <p>Copyright © 2023</p>
+        </div>
+    </footer>
+</body>
+
 </html>
