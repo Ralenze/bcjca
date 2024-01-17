@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- <meta> -->
-        <meta charset="UTF-8">
-        <meta name="author" content="British Columbia Junior Chess Association">
-        <meta name="robots" content="index, follow">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <!-- </meta> -->
-        <!-- <link> -->
-        <link rel="stylesheet" href="styles/fonts.css">
-        <link rel="stylesheet" href="styles/style.css">
-        <link
-            rel="preload"
-            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-            as="style"
-            onload="this.onload=null;this.rel='stylesheet'"
-        >
-        <!-- </link> -->
-        <title>Home | British Columbia Junior Chess Association</title>
-        <meta property="og:title" content="Home | British Columbia Junior Chess Association">
-        <meta name="twitter:title" content="Home | British Columbia Junior Chess Association">
-        <meta name="description" content="The British Columbia Junior Chess Association is a chess organization directed towards bringing together secondary school students to play chess. Through tournaments, events, and play, its main goal is to not only play chess together, but to create life long connections among British Columbia's youth and share our passion and love for the game. Whether you're a beginner or an experienced player, the BCJCA is the place for you.">
-        <meta property="og:description" content="The British Columbia Junior Chess Association is a chess organization directed towards bringing together secondary school students to play chess. Through tournaments, events, and play, its main goal is to not only play chess together, but to create life long connections among British Columbia's youth and share our passion and love for the game. Whether you're a beginner or an experienced player, the BCJCA is the place for you.">
-        <meta name="twitter:description" content="The British Columbia Junior Chess Association is a chess organization directed towards bringing together secondary school students to play chess. Through tournaments, events, and play, its main goal is to not only play chess together, but to create life long connections among British Columbia's youth and share our passion and love for the game. Whether you're a beginner or an experienced player, the BCJCA is the place for you.">
-        <meta property="og:image" content="https://bcjca.ca/images/banner.png">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:image" content="https://bcjca.ca/images/banner.png">
-        <link rel="stylesheet" href="styles/index.css">
-        <script src="https://kit.fontawesome.com/9f85037272.js" crossorigin="anonymous" async></script>
-        <script src="scripts/index.js" defer></script>
-    </head>
-    <body>
-        <!-- Popup for main page -->
-        <!-- <div class="popup">
+
+<head>
+    <!-- <meta> -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="British Columbia Junior Chess Association" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- </meta> -->
+    <!-- <link> -->
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preload" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'" />
+    <!-- </link> -->
+    <title>Home | British Columbia Junior Chess Association</title>
+    <meta property="og:title" content="Home | British Columbia Junior Chess Association" />
+    <meta name="twitter:title" content="Home | British Columbia Junior Chess Association" />
+    <meta name="description"
+        content="The British Columbia Junior Chess Association is a chess organization directed towards bringing together secondary school students to play chess. Through tournaments, events, and play, its main goal is to not only play chess together, but to create life long connections among British Columbia's youth and share our passion and love for the game. Whether you're a beginner or an experienced player, the BCJCA is the place for you." />
+    <meta property="og:description"
+        content="The British Columbia Junior Chess Association is a chess organization directed towards bringing together secondary school students to play chess. Through tournaments, events, and play, its main goal is to not only play chess together, but to create life long connections among British Columbia's youth and share our passion and love for the game. Whether you're a beginner or an experienced player, the BCJCA is the place for you." />
+    <meta name="twitter:description"
+        content="The British Columbia Junior Chess Association is a chess organization directed towards bringing together secondary school students to play chess. Through tournaments, events, and play, its main goal is to not only play chess together, but to create life long connections among British Columbia's youth and share our passion and love for the game. Whether you're a beginner or an experienced player, the BCJCA is the place for you." />
+    <meta property="og:image" content="https://bcjca.ca/images/banner.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://bcjca.ca/images/banner.png" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="https://kit.fontawesome.com/9f85037272.js" crossorigin="anonymous" async></script>
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <!-- Popup for main page -->
+    <!-- <div class="popup">
             <div class="popup-content">
                 <span class="close-btn" onclick="closePopup()">&times;</span>
                 <img src="images/tourneyposter.webp">
@@ -42,163 +43,133 @@
                 </a>
             </div>
         </div> -->
-        <script src="scripts/popup.js"></script>
-        <header>
-            <nav>
-                <a href="/">
-                    <img
-                        width="120"
-                        height="120"
-                        id="logo"
-                        src="images/bcjcalight.webp"
-                        alt="BCJCA logo, which is the outline of a knight chess piece on top of the Canadian flag"
-                    >
-                </a>
-                <!-- <i class="fa-regular fa-lightbulb" id="light" onclick="toggleLightMode()"></i> -->
-                <!-- text in logo not seen, need a border or something -->
-                <div class="nav-links" id="menu">
-                    <ul>
-                        <li>
-                            <a href="index.html">HOME</a>
-                        </li>
-                        <li>
-                            <a href="about.html">ABOUT</a>
-                        </li>
-                        <li class="has-submenu">
-                            <a href="#">EVENTS</a>
-                            <ul class="submenu">
-                                <li>
-                                    <a href="events.html">Scheduled Events</a>
-                                </li>
-                                <li>
-                                    <a href="bcjuniorchessrapid.html">BC Junior Chess Rapid</a>
-                                </li>
-                                <li>
-                                    <a href="afterschoolchess.html">After School Chess</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="gallery.html">GALLERY</a>
-                        </li>
-                        <li>
-                            <a href="sponsor.html">OUR SPONSOR</a>
-                        </li>
-                    </ul>
-                </div>
-                <i
-                    id="menubtn"
-                    class="fa fa-bars"
-                    onclick="showBtn()"
-                    aria-hidden="true"
-                ></i>
-            </nav>
-            <div class="text-box">
-                <h1>
-                    BC's Greatest High School Chess Organization
-                </h1>
-                <p>
-                    The British Columbia Junior Chess Association is a wonderful way 
-                    to participate in tournaments across BC!
-                </p>
-                <a
-                    href="https://gofund.me/91635740"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="hero-btn"
-                >Support BCJCA here!</a>
-                <div class="scroll-indicator" onclick="scrollToElement('bcjca-does')">
-                    <span class="caret"></span>
-                </div>
+    <script src="scripts/popup.js"></script>
+    <header>
+        <nav>
+            <a href="/">
+                <img width="120" height="120" id="logo" src="images/bcjcalight.webp"
+                    alt="BCJCA logo, which is the outline of a knight chess piece on top of the Canadian flag" />
+            </a>
+            <!-- <i class="fa-regular fa-lightbulb" id="light" onclick="toggleLightMode()"></i> -->
+            <!-- text in logo not seen, need a border or something -->
+            <div class="nav-links" id="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">EVENTS</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="events.html">Scheduled Events</a>
+                            </li>
+                            <li>
+                                <a href="bcjuniorchessrapid.html">BC Junior Chess Rapid</a>
+                            </li>
+                            <li>
+                                <a href="afterschoolchess.html">After School Chess</a>
+                            </li>
+                            <li>
+                                <a href="bchighschoolchessleague2024.html">BC High School Chess League 2024</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="gallery.html">GALLERY</a>
+                    </li>
+                    <li>
+                        <a href="sponsor.html">OUR SPONSOR</a>
+                    </li>
+                </ul>
             </div>
-        </header>
-        <div class="about" id="bcjca-does">
-            <div class="about-text">
-                <h1>BCJCA does...</h1>
-            </div>
-            <div class="cards">
-                <a class="card" href="gallery.html">
-                    <img src="images/trophy.webp" alt="BC High School Chess League">
-                    <div class="card-text">
-                        <h2>BC High School Chess Championship</h2>
-                        <p>
-                            The BC High School Chess League spans across metro Vancouver,
-                                where high schools across districts compete against each other in
-                                a league format.
-                        </p>
-                    </div>
-                    <div class="card-status planned">
-                        <p>Planned</p>
-                    </div>
-                </a>
-                <a class="card" href="bcjuniorchessrapid.html">
-                    <img src="images/tournament.webp" alt="Chess Tournaments">
-                    <div class="card-text">
-                        <h2>Chess Tournaments</h2>
-                        <p>
-                            BCJCA will host low cost tournaments for high school students across BC. 
-                            These tournaments are a great way to meet new people and 
-                            play chess!
-                        </p>
-                    </div>
-                    <div class="card-status active">
-                        <p>Active</p>
-                    </div>
-                </a>
-                <a class="card" href="afterschoolchess.html">
-                    <img src="images/defaultclublogo.webp" alt="Afterschool Chess Program">
-                    <div class="card-text">
-                        <h2>Afterschool Chess Program</h2>
-                        <p>
-                            BCJCA will teach chess lessons to elementary students across BC.
-                        </p>
-                    </div>
-                    <div class="card-status planned">
-                        <p>Planned</p>
-                    </div>
-                </a>
+            <i id="menubtn" class="fa fa-bars" onclick="showBtn()" aria-hidden="true"></i>
+        </nav>
+        <div class="text-box">
+            <h1>BC's Greatest High School Chess Organization</h1>
+            <p>
+                The British Columbia Junior Chess Association is a wonderful
+                way to participate in tournaments across BC!
+            </p>
+            <a href="https://gofund.me/91635740" target="_blank" rel="noopener noreferrer" class="hero-btn">Support
+                BCJCA here!</a>
+            <div class="scroll-indicator" onclick="scrollToElement('bcjca-does')">
+                <span class="caret"></span>
             </div>
         </div>
-        <footer>
-            <div class="footer-hori-bar">
-                <div class="footer-ext-link">
-                    <a
-                        href="mailto:info@bcjca.ca"
-                        aria-label="Email address"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <i class="fa-regular fa-envelope coloritnice"></i>
-                    </a>
-                    <a
-                        href="https://www.instagram.com/bcjrchess/"
-                        aria-label="Instagram"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <i class="fa-brands fa-instagram coloritnice"></i>
-                    </a>
-                    <a
-                        href="https://github.com/Ralenze/bcjca"
-                        aria-label="GitHub"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <i class="fa-brands fa-github coloritnice"></i>
-                    </a>
-                    <a
-                        href="https://discord.gg/QRjbTbdbJx"
-                        aria-label="Discord"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <i class="fa-brands fa-discord coloritnice"></i>
-                    </a>
+    </header>
+    <div class="about" id="bcjca-does">
+        <div class="about-text">
+            <h1>BCJCA does...</h1>
+        </div>
+        <div class="cards">
+            <a class="card" href="gallery.html">
+                <img src="images/trophy.webp" alt="BC High School Chess League" />
+                <div class="card-text">
+                    <h2>BC High School Chess Championship</h2>
+                    <p>
+                        The BC High School Chess League spans across metro
+                        Vancouver, where high schools across districts
+                        compete against each other in a league format.
+                    </p>
                 </div>
-                <p> Copyright © 2023</p>
+                <div class="card-status planned">
+                    <p>Planned</p>
+                </div>
+            </a>
+            <a class="card" href="bcjuniorchessrapid.html">
+                <img src="images/tournament.webp" alt="Chess Tournaments" />
+                <div class="card-text">
+                    <h2>Chess Tournaments</h2>
+                    <p>
+                        BCJCA will host low cost tournaments for high school
+                        students across BC. These tournaments are a great
+                        way to meet new people and play chess!
+                    </p>
+                </div>
+                <div class="card-status active">
+                    <p>Active</p>
+                </div>
+            </a>
+            <a class="card" href="afterschoolchess.html">
+                <img src="images/defaultclublogo.webp" alt="Afterschool Chess Program" />
+                <div class="card-text">
+                    <h2>Afterschool Chess Program</h2>
+                    <p>
+                        BCJCA will teach chess lessons to elementary
+                        students across BC.
+                    </p>
+                </div>
+                <div class="card-status planned">
+                    <p>Planned</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-hori-bar">
+            <div class="footer-ext-link">
+                <a href="mailto:info@bcjca.ca" aria-label="Email address" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-regular fa-envelope coloritnice"></i>
+                </a>
+                <a href="https://www.instagram.com/bcjrchess/" aria-label="Instagram" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram coloritnice"></i>
+                </a>
+                <a href="https://github.com/Ralenze/bcjca" aria-label="GitHub" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-github coloritnice"></i>
+                </a>
+                <a href="https://discord.gg/QRjbTbdbJx" aria-label="Discord" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-discord coloritnice"></i>
+                </a>
             </div>
-        </footer>
-        <!-- <script>
+            <p>Copyright © 2023</p>
+        </div>
+    </footer>
+    <!-- <script>
             function handleScreenSizeChange() {
                 if (window.innerWidth < 800) {
                     const aboutTextElements = document.querySelectorAll('.about-text');
@@ -213,5 +184,6 @@
               window.addEventListener('resize', handleScreenSizeChange);
               handleScreenSizeChange();
         </script> -->
-    </body>
+</body>
+
 </html>
