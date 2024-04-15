@@ -18,7 +18,10 @@
             onload="this.onload=null;this.rel='stylesheet'"
         >
         <!-- </link> -->
-        <title>After School Chess Program | British Columbia Junior Chess Association</title>
+        <title>
+            After School Chess Program | British Columbia Junior Chess
+        Association
+        </title>
         <meta property="og:title" content="After School Chess Program | British Columbia Junior Chess Association">
         <meta name="twitter:title" content="After School Chess Program | British Columbia Junior Chess Association">
         <meta name="description" content="View upcoming events happening in BC's greatest high school chess organization.">
@@ -32,7 +35,14 @@
         <script src="scripts/index.js" defer></script>
     </head>
     <body>
-        <header style="background-image: linear-gradient(90deg, hsl(350, 60%, 16%) 0%, hsl(340, 40%, 9%) 60%, hsl(330, 44%, 4%) 100%);">
+        <header style="
+                background-image: linear-gradient(
+                    90deg,
+                    hsl(350, 60%, 16%) 0%,
+                    hsl(340, 40%, 9%) 60%,
+                    hsl(330, 44%, 4%) 100%
+                );
+            ">
             <nav>
                 <a href="/">
                     <img
@@ -65,6 +75,9 @@
                                 <li>
                                     <a href="afterschoolchess.html">After School Chess</a>
                                 </li>
+                                <li>
+                                    <a href="bchighschoolchessleague2024.html">BC High School Chess League 2024</a>
+                                </li>
                             </ul>
                         </li>
                         <li>
@@ -82,40 +95,43 @@
                     aria-hidden="true"
                 ></i>
             </nav>
-            <h1 class="clubtitle"> BCJCA presents</h1>
+            <h1 class="clubtitle">BCJCA presents</h1>
             <!-- Change the dash back to circle, unable because fontawesome faster than compLoad() -->
-            <h1 class="clubtitle slider" style="color:#f44336">
+            <h1 class="clubtitle slider" style="color: #f44336">
                 After School Chess
             </h1>
             <br>
             <div class="clubtitleseparator"></div>
             <br>
             <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    let toSlide = document.querySelectorAll(".slider");
-                    for (let i = 0; i < toSlide.length; i++) {
-                        toSlide[i].style.opacity = "1";
-                        toSlide[i].style.left = "35%";
-                    }
-                });
+            document.addEventListener("DOMContentLoaded", function () {
+                let toSlide = document.querySelectorAll(".slider");
+                for (let i = 0; i < toSlide.length; i++) {
+                    toSlide[i].style.opacity = "1";
+                    toSlide[i].style.left = "35%";
+                }
+            });
             </script>
             <p class="p-info center-text">
-                BCJCA runs after school chess programs for students in elementary schools!
+                BCJCA runs after school chess programs for students in
+            elementary schools!
             </p>
             <div style="margin: auto; width: 50%">
-                <p class="p-info">
-                    We are currently running programs at:
-                </p>
+                <p class="p-info">We are currently running programs at:</p>
                 <ul class="list-items">
                     <li>Anderson Elementary with MacNeill Secondary</li>
-                    <li>Gilpin Elementary with Burnaby Central</li>
-                    <li>Taylor Park Elementary with Burnaby South</li>
+                    <li>Gilpin Elementary with Burnaby Central Secondary</li>
+                    <li>Morley Elementary with Burnaby Central Secondary</li>
+                    <li>Taylor Park Elementary with Burnaby South Secondary</li>
                     <li>Chartwell Elementary with Sentinel Secondary</li>
-                    <li>[TBD] Elementary with Port Moody</li>
+                    <li>[TBD] Elementary with Port Moody Secondary</li>
                     <li>Tommy Douglas Library</li>
                 </ul>
                 <h2 class="h2-info">Mission Statement</h2>
-                <p class="p-info">Our goal is to teach elementary school students how to play chess and level up their skills.</p>
+                <p class="p-info">
+                    Our goal is to teach elementary school students how to play
+                chess and level up their skills.
+                </p>
             </div>
             <div id="bottom-of-page"></div>
         </header>
@@ -135,7 +151,7 @@
                         <i class="fa-brands fa-discord coloritnice"></i>
                     </a>
                 </div>
-                <p> Copyright © 2023</p>
+                <p>Copyright © 2023</p>
             </div>
         </footer>
     </body>
