@@ -1,13 +1,78 @@
 [
     {
         "name": "Template",
-        "date": "Sunday, May 21th, 2023",
+        "date": "Sunday, May 21th, 2024",
         "details": {
             "where": "Location (address)",
             "time": "start - end pm PT",
             "clock": "15 + 5"
         },
         "link": "https://example.com/"
+    },
+    {
+        "name": "Burnaby Qualifier",
+        "date": "Saturday, March 16th, 2024",
+        "details": {
+            "where": "Burnaby Public Library, Tommy Douglas Library (7311 Kingsway, Burnaby, BC V5E 1G8)",
+            "clock": "15 + 5"
+        },
+        "link": "https://example.com/"
+    },
+    {
+        "name": "Surrey Qualifier",
+        "date": "Saturday, March 9th, 2024",
+        "details": {
+            "where": "Surrey Libraries - City Centre Branch (10350 University Dr, Surrey, BC V3T 4B8)",
+            "clock": "15 + 5"
+        },
+        "link": "https://www.instagram.com/p/C4V-B-DP_JO"
+    },
+    {
+        "name": "Tri-Cities Qualifier",
+        "date": "Friday, March 8th, 2024",
+        "details": {
+            "where": "École Riverside Secondary School (2215 Reeve St, Port Coquitlam, BC V3C 6K8)",
+            "clock": "15 + 5"
+        },
+        "link": "https://www.instagram.com/p/C4UPsJyr1Tc"
+    },
+    {
+        "name": "Vancouver East Qualifier",
+        "date": "Sunday, March 3rd, 2024",
+        "details": {
+            "where": "Thunderbird Community Centre (2311 Cassiar St, Vancouver, BC V5M 3X3)",
+            "clock": "15 + 5"
+        },
+        "link": "https://www.instagram.com/p/C4FRK7OuqmG"
+    },
+    {
+        "name": "North Shore Qualifier",
+        "date": "Sunday, March 3rd, 2024",
+        "details": {
+            "where": "West Vancouver Secondary School (1750 Mathers Ave, West Vancouver, BC V7V 2G7)",
+            "time": "10 - 4 pm PT",
+            "clock": "15 + 5"
+        },
+        "link": "https://www.instagram.com/p/C4E82FWrYv8"
+    },
+    {
+        "name": "Vancouver West Qualifier",
+        "date": "Sunday, February 25th, 2024",
+        "details": {
+            "where": "University-Hill Secondary School (3228 Ross Drive, Vancouver, BC V6S 0C6)",
+            "clock": "15 + 5"
+        },
+        "link": "https://www.instagram.com/p/C30IMqtr6HV"
+    },
+    {
+        "name": "Richmond Qualifier",
+        "date": "Thursday, February 15th, 2024",
+        "details": {
+            "where": "A. R. MacNeill Secondary School (6611 No 4 Rd, Richmond, BC V6Y 2T2)",
+            "time": "3:30 - 6:15 pm PT",
+            "clock": "15 + 5"
+        },
+        "link": "https://www.instagram.com/p/C3cTM63O64u"
     },
     {
         "name": "BC Junior Chess Rapid",
