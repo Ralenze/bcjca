@@ -168,9 +168,22 @@ header p {
 }
 
 .center-div {
-    margin: auto;
-    width: 50%
+    width: 100%;
+    /* Set the width of the div to 80% of the viewport */
+    max-width: 1000px;
+    /* Set a maximum width so it doesn't stretch too wide */
+    margin: 0 auto;
+    /* Horizontally center the div by setting left and right margins to auto */
+    padding: 20px;
+    /* Add padding for spacing inside the div */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    /* Optional: Shadow effect */
+    /* background-color: #f4f4f4; */
+    /* Optional: Background color */
+    border-radius: 10px;
+    /* Optional: Rounded corners */
 }
+
 
 #bottom-of-page {
     margin-bottom: 5em;
@@ -446,7 +459,8 @@ header p {
     }
 
     .center-div {
-        width: 80%;
+        width: 100%;
+        max-width: 500px;
     }
 }
 
