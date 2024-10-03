@@ -10,6 +10,26 @@
         "link": "https://example.com/"
     },
     {
+        "name": "BC Junior Chess Rapid",
+        "date": "Saturday, June 29th, 2024",
+        "details": {
+            "where": "BCIT Burnaby Campus, Building NW4 (3700 Willingdon Ave, Burnaby, BC, V5G 3H2)",
+            "time": "8:00 am - 6:00 pm PT",
+            "clock": "15 + 5"
+        },
+        "link": "https://docs.google.com/document/d/1FoRZiNLTHAZe5sr0CRYGCoF57U1Y2QplKu-sAE7jyww/edit?usp=sharing"
+    },
+    {
+        "name": "BC High School Chess Championship Provincials",
+        "date": "Saturday, June 1st, 2024",
+        "details": {
+            "where": "Kensington Community Center (5175 Dumfries St, Vancouver, BC V5P 3A2, Boardroom and Multipurpose Room)",
+            "time": "9:30 am - 3:15 pm PT",
+            "clock": "15 + 5"
+        },
+        "link": "https://docs.google.com/document/d/1FoRZiNLTHAZe5sr0CRYGCoF57U1Y2QplKu-sAE7jyww/edit?usp=sharing"
+    },
+    {
         "name": "Burnaby Qualifier",
         "date": "Saturday, March 16th, 2024",
         "details": {
